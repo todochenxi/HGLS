@@ -1,0 +1,1162 @@
+Logging to results/g_0_ICEWS14s_short_True_short-model_biregcn_long_True_f_gate_fr_gate_ta_0.7_gnn1_regcn_2_gnn2_rgat_r1_3_seq_rnn_8_max_length_10_fil_False_ori_Falselast_True
+use layer :uvrgcn
+activate function: <function rrelu at 0x7e1c88d85440>
+activate function: <function rrelu at 0x7e1c88d85440>
+use layer :uvrgcn
+activate function: <function rrelu at 0x7e1c88d85440>
+activate function: <function rrelu at 0x7e1c88d85440>
+Epoch 0 _ Start training:  2024-10-21 07:12:34.643253 =============================================
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+Logging to results/g_0_ICEWS14s_short_True_short-model_biregcn_long_True_f_gate_fr_gate_ta_0.7_gnn1_regcn_2_gnn2_rgat_r1_3_seq_rnn_8_max_length_10_fil_False_ori_Falselast_True
+use layer :uvrgcn
+activate function: <function rrelu at 0x77c342b85440>
+activate function: <function rrelu at 0x77c342b85440>
+use layer :uvrgcn
+activate function: <function rrelu at 0x77c342b85440>
+activate function: <function rrelu at 0x77c342b85440>
+Epoch 0 _ Start training:  2024-10-21 07:13:59.212342 =============================================
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+'p'
+Logging to results/g_0_ICEWS14s_short_True_short-model_biregcn_long_True_f_gate_fr_gate_ta_0.7_gnn1_regcn_2_gnn2_rgat_r1_3_seq_rnn_8_max_length_10_fil_False_ori_Falselast_True
+use layer :uvrgcn
+activate function: <function rrelu at 0x7bd601b81440>
+activate function: <function rrelu at 0x7bd601b81440>
+use layer :uvrgcn
+activate function: <function rrelu at 0x7bd601b81440>
+activate function: <function rrelu at 0x7bd601b81440>
+Epoch 0 _ Start training:  2024-10-21 07:14:53.195708 =============================================
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+--------------> 'p'
+Logging to results/g_0_ICEWS14s_short_True_short-model_biregcn_long_True_f_gate_fr_gate_ta_0.7_gnn1_regcn_2_gnn2_rgat_r1_3_seq_rnn_8_max_length_10_fil_False_ori_Falselast_True
+use layer :uvrgcn
+activate function: <function rrelu at 0x747392981440>
+activate function: <function rrelu at 0x747392981440>
+use layer :uvrgcn
+activate function: <function rrelu at 0x747392981440>
+activate function: <function rrelu at 0x747392981440>
+Epoch 0 _ Start training:  2024-10-21 07:49:57.996727 =============================================
+node.shape==> torch.Size([542, 200]) relation.shape==> torch.Size([542, 200]) pe.shape==> torch.Size([542, 3])
+node.shape==> torch.Size([542, 200]) relation.shape==> torch.Size([542, 200]) pe.shape==> torch.Size([542, 3])
+node.shape==> torch.Size([654, 200]) relation.shape==> torch.Size([654, 200]) pe.shape==> torch.Size([654, 3])
+node.shape==> torch.Size([654, 200]) relation.shape==> torch.Size([654, 200]) pe.shape==> torch.Size([654, 3])
+node.shape==> torch.Size([626, 200]) relation.shape==> torch.Size([626, 200]) pe.shape==> torch.Size([626, 3])
+node.shape==> torch.Size([626, 200]) relation.shape==> torch.Size([626, 200]) pe.shape==> torch.Size([626, 3])
+node.shape==> torch.Size([502, 200]) relation.shape==> torch.Size([502, 200]) pe.shape==> torch.Size([502, 3])
+node.shape==> torch.Size([502, 200]) relation.shape==> torch.Size([502, 200]) pe.shape==> torch.Size([502, 3])
+node.shape==> torch.Size([518, 200]) relation.shape==> torch.Size([518, 200]) pe.shape==> torch.Size([518, 3])
+node.shape==> torch.Size([518, 200]) relation.shape==> torch.Size([518, 200]) pe.shape==> torch.Size([518, 3])
+node.shape==> torch.Size([350, 200]) relation.shape==> torch.Size([350, 200]) pe.shape==> torch.Size([350, 3])
+node.shape==> torch.Size([350, 200]) relation.shape==> torch.Size([350, 200]) pe.shape==> torch.Size([350, 3])
+node.shape==> torch.Size([362, 200]) relation.shape==> torch.Size([362, 200]) pe.shape==> torch.Size([362, 3])
+node.shape==> torch.Size([362, 200]) relation.shape==> torch.Size([362, 200]) pe.shape==> torch.Size([362, 3])
+node.shape==> torch.Size([578, 200]) relation.shape==> torch.Size([578, 200]) pe.shape==> torch.Size([578, 3])
+node.shape==> torch.Size([578, 200]) relation.shape==> torch.Size([578, 200]) pe.shape==> torch.Size([578, 3])
+node.shape==> torch.Size([578, 200]) relation.shape==> torch.Size([578, 200]) pe.shape==> torch.Size([578, 3])
+node.shape==> torch.Size([578, 200]) relation.shape==> torch.Size([578, 200]) pe.shape==> torch.Size([578, 3])
+node.shape==> torch.Size([362, 200]) relation.shape==> torch.Size([362, 200]) pe.shape==> torch.Size([362, 3])
+node.shape==> torch.Size([362, 200]) relation.shape==> torch.Size([362, 200]) pe.shape==> torch.Size([362, 3])
+node.shape==> torch.Size([350, 200]) relation.shape==> torch.Size([350, 200]) pe.shape==> torch.Size([350, 3])
+node.shape==> torch.Size([350, 200]) relation.shape==> torch.Size([350, 200]) pe.shape==> torch.Size([350, 3])
+node.shape==> torch.Size([518, 200]) relation.shape==> torch.Size([518, 200]) pe.shape==> torch.Size([518, 3])
+node.shape==> torch.Size([518, 200]) relation.shape==> torch.Size([518, 200]) pe.shape==> torch.Size([518, 3])
+node.shape==> torch.Size([502, 200]) relation.shape==> torch.Size([502, 200]) pe.shape==> torch.Size([502, 3])
+node.shape==> torch.Size([502, 200]) relation.shape==> torch.Size([502, 200]) pe.shape==> torch.Size([502, 3])
+node.shape==> torch.Size([626, 200]) relation.shape==> torch.Size([626, 200]) pe.shape==> torch.Size([626, 3])
+node.shape==> torch.Size([626, 200]) relation.shape==> torch.Size([626, 200]) pe.shape==> torch.Size([626, 3])
+node.shape==> torch.Size([654, 200]) relation.shape==> torch.Size([654, 200]) pe.shape==> torch.Size([654, 3])
+node.shape==> torch.Size([654, 200]) relation.shape==> torch.Size([654, 200]) pe.shape==> torch.Size([654, 3])
+node.shape==> torch.Size([542, 200]) relation.shape==> torch.Size([542, 200]) pe.shape==> torch.Size([542, 3])
+node.shape==> torch.Size([542, 200]) relation.shape==> torch.Size([542, 200]) pe.shape==> torch.Size([542, 3])
+--------------> 'p'
+--------------> 'p'
+node.shape==> torch.Size([308, 200]) relation.shape==> torch.Size([308, 200]) pe.shape==> torch.Size([308, 3])
+node.shape==> torch.Size([308, 200]) relation.shape==> torch.Size([308, 200]) pe.shape==> torch.Size([308, 3])
+node.shape==> torch.Size([584, 200]) relation.shape==> torch.Size([584, 200]) pe.shape==> torch.Size([584, 3])
+node.shape==> torch.Size([584, 200]) relation.shape==> torch.Size([584, 200]) pe.shape==> torch.Size([584, 3])
+node.shape==> torch.Size([552, 200]) relation.shape==> torch.Size([552, 200]) pe.shape==> torch.Size([552, 3])
+node.shape==> torch.Size([552, 200]) relation.shape==> torch.Size([552, 200]) pe.shape==> torch.Size([552, 3])
+node.shape==> torch.Size([534, 200]) relation.shape==> torch.Size([534, 200]) pe.shape==> torch.Size([534, 3])
+node.shape==> torch.Size([534, 200]) relation.shape==> torch.Size([534, 200]) pe.shape==> torch.Size([534, 3])
+node.shape==> torch.Size([554, 200]) relation.shape==> torch.Size([554, 200]) pe.shape==> torch.Size([554, 3])
+node.shape==> torch.Size([554, 200]) relation.shape==> torch.Size([554, 200]) pe.shape==> torch.Size([554, 3])
+node.shape==> torch.Size([602, 200]) relation.shape==> torch.Size([602, 200]) pe.shape==> torch.Size([602, 3])
+node.shape==> torch.Size([602, 200]) relation.shape==> torch.Size([602, 200]) pe.shape==> torch.Size([602, 3])
+node.shape==> torch.Size([316, 200]) relation.shape==> torch.Size([316, 200]) pe.shape==> torch.Size([316, 3])
+node.shape==> torch.Size([316, 200]) relation.shape==> torch.Size([316, 200]) pe.shape==> torch.Size([316, 3])
+node.shape==> torch.Size([304, 200]) relation.shape==> torch.Size([304, 200]) pe.shape==> torch.Size([304, 3])
+node.shape==> torch.Size([304, 200]) relation.shape==> torch.Size([304, 200]) pe.shape==> torch.Size([304, 3])
+node.shape==> torch.Size([304, 200]) relation.shape==> torch.Size([304, 200]) pe.shape==> torch.Size([304, 3])
+node.shape==> torch.Size([304, 200]) relation.shape==> torch.Size([304, 200]) pe.shape==> torch.Size([304, 3])
+node.shape==> torch.Size([316, 200]) relation.shape==> torch.Size([316, 200]) pe.shape==> torch.Size([316, 3])
+node.shape==> torch.Size([316, 200]) relation.shape==> torch.Size([316, 200]) pe.shape==> torch.Size([316, 3])
+node.shape==> torch.Size([602, 200]) relation.shape==> torch.Size([602, 200]) pe.shape==> torch.Size([602, 3])
+node.shape==> torch.Size([602, 200]) relation.shape==> torch.Size([602, 200]) pe.shape==> torch.Size([602, 3])
+node.shape==> torch.Size([554, 200]) relation.shape==> torch.Size([554, 200]) pe.shape==> torch.Size([554, 3])
+node.shape==> torch.Size([554, 200]) relation.shape==> torch.Size([554, 200]) pe.shape==> torch.Size([554, 3])
+node.shape==> torch.Size([534, 200]) relation.shape==> torch.Size([534, 200]) pe.shape==> torch.Size([534, 3])
+node.shape==> torch.Size([534, 200]) relation.shape==> torch.Size([534, 200]) pe.shape==> torch.Size([534, 3])
+node.shape==> torch.Size([552, 200]) relation.shape==> torch.Size([552, 200]) pe.shape==> torch.Size([552, 3])
+node.shape==> torch.Size([552, 200]) relation.shape==> torch.Size([552, 200]) pe.shape==> torch.Size([552, 3])
+node.shape==> torch.Size([584, 200]) relation.shape==> torch.Size([584, 200]) pe.shape==> torch.Size([584, 3])
+node.shape==> torch.Size([584, 200]) relation.shape==> torch.Size([584, 200]) pe.shape==> torch.Size([584, 3])
+node.shape==> torch.Size([308, 200]) relation.shape==> torch.Size([308, 200]) pe.shape==> torch.Size([308, 3])
+node.shape==> torch.Size([308, 200]) relation.shape==> torch.Size([308, 200]) pe.shape==> torch.Size([308, 3])
+--------------> 'p'
+--------------> 'p'
+node.shape==> torch.Size([560, 200]) relation.shape==> torch.Size([560, 200]) pe.shape==> torch.Size([560, 3])
+node.shape==> torch.Size([560, 200]) relation.shape==> torch.Size([560, 200]) pe.shape==> torch.Size([560, 3])
+node.shape==> torch.Size([642, 200]) relation.shape==> torch.Size([642, 200]) pe.shape==> torch.Size([642, 3])
+node.shape==> torch.Size([642, 200]) relation.shape==> torch.Size([642, 200]) pe.shape==> torch.Size([642, 3])
+node.shape==> torch.Size([592, 200]) relation.shape==> torch.Size([592, 200]) pe.shape==> torch.Size([592, 3])
+node.shape==> torch.Size([592, 200]) relation.shape==> torch.Size([592, 200]) pe.shape==> torch.Size([592, 3])
+node.shape==> torch.Size([748, 200]) relation.shape==> torch.Size([748, 200]) pe.shape==> torch.Size([748, 3])
+node.shape==> torch.Size([748, 200]) relation.shape==> torch.Size([748, 200]) pe.shape==> torch.Size([748, 3])
+node.shape==> torch.Size([284, 200]) relation.shape==> torch.Size([284, 200]) pe.shape==> torch.Size([284, 3])
+node.shape==> torch.Size([284, 200]) relation.shape==> torch.Size([284, 200]) pe.shape==> torch.Size([284, 3])
+node.shape==> torch.Size([292, 200]) relation.shape==> torch.Size([292, 200]) pe.shape==> torch.Size([292, 3])
+node.shape==> torch.Size([292, 200]) relation.shape==> torch.Size([292, 200]) pe.shape==> torch.Size([292, 3])
+node.shape==> torch.Size([700, 200]) relation.shape==> torch.Size([700, 200]) pe.shape==> torch.Size([700, 3])
+node.shape==> torch.Size([700, 200]) relation.shape==> torch.Size([700, 200]) pe.shape==> torch.Size([700, 3])
+node.shape==> torch.Size([690, 200]) relation.shape==> torch.Size([690, 200]) pe.shape==> torch.Size([690, 3])
+node.shape==> torch.Size([690, 200]) relation.shape==> torch.Size([690, 200]) pe.shape==> torch.Size([690, 3])
+node.shape==> torch.Size([690, 200]) relation.shape==> torch.Size([690, 200]) pe.shape==> torch.Size([690, 3])
+node.shape==> torch.Size([690, 200]) relation.shape==> torch.Size([690, 200]) pe.shape==> torch.Size([690, 3])
+node.shape==> torch.Size([700, 200]) relation.shape==> torch.Size([700, 200]) pe.shape==> torch.Size([700, 3])
+node.shape==> torch.Size([700, 200]) relation.shape==> torch.Size([700, 200]) pe.shape==> torch.Size([700, 3])
+node.shape==> torch.Size([292, 200]) relation.shape==> torch.Size([292, 200]) pe.shape==> torch.Size([292, 3])
+node.shape==> torch.Size([292, 200]) relation.shape==> torch.Size([292, 200]) pe.shape==> torch.Size([292, 3])
+node.shape==> torch.Size([284, 200]) relation.shape==> torch.Size([284, 200]) pe.shape==> torch.Size([284, 3])
+node.shape==> torch.Size([284, 200]) relation.shape==> torch.Size([284, 200]) pe.shape==> torch.Size([284, 3])
+node.shape==> torch.Size([748, 200]) relation.shape==> torch.Size([748, 200]) pe.shape==> torch.Size([748, 3])
+node.shape==> torch.Size([748, 200]) relation.shape==> torch.Size([748, 200]) pe.shape==> torch.Size([748, 3])
+node.shape==> torch.Size([592, 200]) relation.shape==> torch.Size([592, 200]) pe.shape==> torch.Size([592, 3])
+node.shape==> torch.Size([592, 200]) relation.shape==> torch.Size([592, 200]) pe.shape==> torch.Size([592, 3])
+node.shape==> torch.Size([642, 200]) relation.shape==> torch.Size([642, 200]) pe.shape==> torch.Size([642, 3])
+node.shape==> torch.Size([642, 200]) relation.shape==> torch.Size([642, 200]) pe.shape==> torch.Size([642, 3])
+node.shape==> torch.Size([560, 200]) relation.shape==> torch.Size([560, 200]) pe.shape==> torch.Size([560, 3])
+node.shape==> torch.Size([560, 200]) relation.shape==> torch.Size([560, 200]) pe.shape==> torch.Size([560, 3])
+--------------> 'p'
+--------------> 'p'
+node.shape==> torch.Size([554, 200]) relation.shape==> torch.Size([554, 200]) pe.shape==> torch.Size([554, 3])
+node.shape==> torch.Size([554, 200]) relation.shape==> torch.Size([554, 200]) pe.shape==> torch.Size([554, 3])
+node.shape==> torch.Size([630, 200]) relation.shape==> torch.Size([630, 200]) pe.shape==> torch.Size([630, 3])
+node.shape==> torch.Size([630, 200]) relation.shape==> torch.Size([630, 200]) pe.shape==> torch.Size([630, 3])
+node.shape==> torch.Size([638, 200]) relation.shape==> torch.Size([638, 200]) pe.shape==> torch.Size([638, 3])
+node.shape==> torch.Size([638, 200]) relation.shape==> torch.Size([638, 200]) pe.shape==> torch.Size([638, 3])
+node.shape==> torch.Size([598, 200]) relation.shape==> torch.Size([598, 200]) pe.shape==> torch.Size([598, 3])
+node.shape==> torch.Size([598, 200]) relation.shape==> torch.Size([598, 200]) pe.shape==> torch.Size([598, 3])
+node.shape==> torch.Size([668, 200]) relation.shape==> torch.Size([668, 200]) pe.shape==> torch.Size([668, 3])
+node.shape==> torch.Size([668, 200]) relation.shape==> torch.Size([668, 200]) pe.shape==> torch.Size([668, 3])
+node.shape==> torch.Size([256, 200]) relation.shape==> torch.Size([256, 200]) pe.shape==> torch.Size([256, 3])
+node.shape==> torch.Size([256, 200]) relation.shape==> torch.Size([256, 200]) pe.shape==> torch.Size([256, 3])
+node.shape==> torch.Size([266, 200]) relation.shape==> torch.Size([266, 200]) pe.shape==> torch.Size([266, 3])
+node.shape==> torch.Size([266, 200]) relation.shape==> torch.Size([266, 200]) pe.shape==> torch.Size([266, 3])
+node.shape==> torch.Size([534, 200]) relation.shape==> torch.Size([534, 200]) pe.shape==> torch.Size([534, 3])
+node.shape==> torch.Size([534, 200]) relation.shape==> torch.Size([534, 200]) pe.shape==> torch.Size([534, 3])
+node.shape==> torch.Size([534, 200]) relation.shape==> torch.Size([534, 200]) pe.shape==> torch.Size([534, 3])
+node.shape==> torch.Size([534, 200]) relation.shape==> torch.Size([534, 200]) pe.shape==> torch.Size([534, 3])
+node.shape==> torch.Size([266, 200]) relation.shape==> torch.Size([266, 200]) pe.shape==> torch.Size([266, 3])
+node.shape==> torch.Size([266, 200]) relation.shape==> torch.Size([266, 200]) pe.shape==> torch.Size([266, 3])
+node.shape==> torch.Size([256, 200]) relation.shape==> torch.Size([256, 200]) pe.shape==> torch.Size([256, 3])
+node.shape==> torch.Size([256, 200]) relation.shape==> torch.Size([256, 200]) pe.shape==> torch.Size([256, 3])
+node.shape==> torch.Size([668, 200]) relation.shape==> torch.Size([668, 200]) pe.shape==> torch.Size([668, 3])
+node.shape==> torch.Size([668, 200]) relation.shape==> torch.Size([668, 200]) pe.shape==> torch.Size([668, 3])
+node.shape==> torch.Size([598, 200]) relation.shape==> torch.Size([598, 200]) pe.shape==> torch.Size([598, 3])
+node.shape==> torch.Size([598, 200]) relation.shape==> torch.Size([598, 200]) pe.shape==> torch.Size([598, 3])
+node.shape==> torch.Size([638, 200]) relation.shape==> torch.Size([638, 200]) pe.shape==> torch.Size([638, 3])
+node.shape==> torch.Size([638, 200]) relation.shape==> torch.Size([638, 200]) pe.shape==> torch.Size([638, 3])
+node.shape==> torch.Size([630, 200]) relation.shape==> torch.Size([630, 200]) pe.shape==> torch.Size([630, 3])
+node.shape==> torch.Size([630, 200]) relation.shape==> torch.Size([630, 200]) pe.shape==> torch.Size([630, 3])
+node.shape==> torch.Size([554, 200]) relation.shape==> torch.Size([554, 200]) pe.shape==> torch.Size([554, 3])
+node.shape==> torch.Size([554, 200]) relation.shape==> torch.Size([554, 200]) pe.shape==> torch.Size([554, 3])
+--------------> 'p'
+--------------> 'p'
+node.shape==> torch.Size([690, 200]) relation.shape==> torch.Size([690, 200]) pe.shape==> torch.Size([690, 3])
+node.shape==> torch.Size([690, 200]) relation.shape==> torch.Size([690, 200]) pe.shape==> torch.Size([690, 3])
+node.shape==> torch.Size([690, 200]) relation.shape==> torch.Size([690, 200]) pe.shape==> torch.Size([690, 3])
+node.shape==> torch.Size([690, 200]) relation.shape==> torch.Size([690, 200]) pe.shape==> torch.Size([690, 3])
+node.shape==> torch.Size([648, 200]) relation.shape==> torch.Size([648, 200]) pe.shape==> torch.Size([648, 3])
+node.shape==> torch.Size([648, 200]) relation.shape==> torch.Size([648, 200]) pe.shape==> torch.Size([648, 3])
+node.shape==> torch.Size([726, 200]) relation.shape==> torch.Size([726, 200]) pe.shape==> torch.Size([726, 3])
+node.shape==> torch.Size([726, 200]) relation.shape==> torch.Size([726, 200]) pe.shape==> torch.Size([726, 3])
+node.shape==> torch.Size([292, 200]) relation.shape==> torch.Size([292, 200]) pe.shape==> torch.Size([292, 3])
+node.shape==> torch.Size([292, 200]) relation.shape==> torch.Size([292, 200]) pe.shape==> torch.Size([292, 3])
+node.shape==> torch.Size([278, 200]) relation.shape==> torch.Size([278, 200]) pe.shape==> torch.Size([278, 3])
+node.shape==> torch.Size([278, 200]) relation.shape==> torch.Size([278, 200]) pe.shape==> torch.Size([278, 3])
+node.shape==> torch.Size([582, 200]) relation.shape==> torch.Size([582, 200]) pe.shape==> torch.Size([582, 3])
+node.shape==> torch.Size([582, 200]) relation.shape==> torch.Size([582, 200]) pe.shape==> torch.Size([582, 3])
+node.shape==> torch.Size([568, 200]) relation.shape==> torch.Size([568, 200]) pe.shape==> torch.Size([568, 3])
+node.shape==> torch.Size([568, 200]) relation.shape==> torch.Size([568, 200]) pe.shape==> torch.Size([568, 3])
+node.shape==> torch.Size([568, 200]) relation.shape==> torch.Size([568, 200]) pe.shape==> torch.Size([568, 3])
+node.shape==> torch.Size([568, 200]) relation.shape==> torch.Size([568, 200]) pe.shape==> torch.Size([568, 3])
+node.shape==> torch.Size([582, 200]) relation.shape==> torch.Size([582, 200]) pe.shape==> torch.Size([582, 3])
+node.shape==> torch.Size([582, 200]) relation.shape==> torch.Size([582, 200]) pe.shape==> torch.Size([582, 3])
+node.shape==> torch.Size([278, 200]) relation.shape==> torch.Size([278, 200]) pe.shape==> torch.Size([278, 3])
+node.shape==> torch.Size([278, 200]) relation.shape==> torch.Size([278, 200]) pe.shape==> torch.Size([278, 3])
+node.shape==> torch.Size([292, 200]) relation.shape==> torch.Size([292, 200]) pe.shape==> torch.Size([292, 3])
+node.shape==> torch.Size([292, 200]) relation.shape==> torch.Size([292, 200]) pe.shape==> torch.Size([292, 3])
+node.shape==> torch.Size([726, 200]) relation.shape==> torch.Size([726, 200]) pe.shape==> torch.Size([726, 3])
+node.shape==> torch.Size([726, 200]) relation.shape==> torch.Size([726, 200]) pe.shape==> torch.Size([726, 3])
+node.shape==> torch.Size([648, 200]) relation.shape==> torch.Size([648, 200]) pe.shape==> torch.Size([648, 3])
+node.shape==> torch.Size([648, 200]) relation.shape==> torch.Size([648, 200]) pe.shape==> torch.Size([648, 3])
+node.shape==> torch.Size([690, 200]) relation.shape==> torch.Size([690, 200]) pe.shape==> torch.Size([690, 3])
+node.shape==> torch.Size([690, 200]) relation.shape==> torch.Size([690, 200]) pe.shape==> torch.Size([690, 3])
+node.shape==> torch.Size([690, 200]) relation.shape==> torch.Size([690, 200]) pe.shape==> torch.Size([690, 3])
+node.shape==> torch.Size([690, 200]) relation.shape==> torch.Size([690, 200]) pe.shape==> torch.Size([690, 3])
+--------------> 'p'
+--------------> 'p'
+node.shape==> torch.Size([446, 200]) relation.shape==> torch.Size([446, 200]) pe.shape==> torch.Size([446, 3])
+node.shape==> torch.Size([446, 200]) relation.shape==> torch.Size([446, 200]) pe.shape==> torch.Size([446, 3])
+node.shape==> torch.Size([312, 200]) relation.shape==> torch.Size([312, 200]) pe.shape==> torch.Size([312, 3])
+node.shape==> torch.Size([312, 200]) relation.shape==> torch.Size([312, 200]) pe.shape==> torch.Size([312, 3])
+node.shape==> torch.Size([330, 200]) relation.shape==> torch.Size([330, 200]) pe.shape==> torch.Size([330, 3])
+node.shape==> torch.Size([330, 200]) relation.shape==> torch.Size([330, 200]) pe.shape==> torch.Size([330, 3])
+node.shape==> torch.Size([562, 200]) relation.shape==> torch.Size([562, 200]) pe.shape==> torch.Size([562, 3])
+node.shape==> torch.Size([562, 200]) relation.shape==> torch.Size([562, 200]) pe.shape==> torch.Size([562, 3])
+node.shape==> torch.Size([586, 200]) relation.shape==> torch.Size([586, 200]) pe.shape==> torch.Size([586, 3])
+node.shape==> torch.Size([586, 200]) relation.shape==> torch.Size([586, 200]) pe.shape==> torch.Size([586, 3])
+node.shape==> torch.Size([486, 200]) relation.shape==> torch.Size([486, 200]) pe.shape==> torch.Size([486, 3])
+node.shape==> torch.Size([486, 200]) relation.shape==> torch.Size([486, 200]) pe.shape==> torch.Size([486, 3])
+node.shape==> torch.Size([484, 200]) relation.shape==> torch.Size([484, 200]) pe.shape==> torch.Size([484, 3])
+node.shape==> torch.Size([484, 200]) relation.shape==> torch.Size([484, 200]) pe.shape==> torch.Size([484, 3])
+node.shape==> torch.Size([456, 200]) relation.shape==> torch.Size([456, 200]) pe.shape==> torch.Size([456, 3])
+node.shape==> torch.Size([456, 200]) relation.shape==> torch.Size([456, 200]) pe.shape==> torch.Size([456, 3])
+node.shape==> torch.Size([456, 200]) relation.shape==> torch.Size([456, 200]) pe.shape==> torch.Size([456, 3])
+node.shape==> torch.Size([456, 200]) relation.shape==> torch.Size([456, 200]) pe.shape==> torch.Size([456, 3])
+node.shape==> torch.Size([484, 200]) relation.shape==> torch.Size([484, 200]) pe.shape==> torch.Size([484, 3])
+node.shape==> torch.Size([484, 200]) relation.shape==> torch.Size([484, 200]) pe.shape==> torch.Size([484, 3])
+node.shape==> torch.Size([486, 200]) relation.shape==> torch.Size([486, 200]) pe.shape==> torch.Size([486, 3])
+node.shape==> torch.Size([486, 200]) relation.shape==> torch.Size([486, 200]) pe.shape==> torch.Size([486, 3])
+node.shape==> torch.Size([586, 200]) relation.shape==> torch.Size([586, 200]) pe.shape==> torch.Size([586, 3])
+node.shape==> torch.Size([586, 200]) relation.shape==> torch.Size([586, 200]) pe.shape==> torch.Size([586, 3])
+node.shape==> torch.Size([562, 200]) relation.shape==> torch.Size([562, 200]) pe.shape==> torch.Size([562, 3])
+node.shape==> torch.Size([562, 200]) relation.shape==> torch.Size([562, 200]) pe.shape==> torch.Size([562, 3])
+node.shape==> torch.Size([330, 200]) relation.shape==> torch.Size([330, 200]) pe.shape==> torch.Size([330, 3])
+node.shape==> torch.Size([330, 200]) relation.shape==> torch.Size([330, 200]) pe.shape==> torch.Size([330, 3])
+node.shape==> torch.Size([312, 200]) relation.shape==> torch.Size([312, 200]) pe.shape==> torch.Size([312, 3])
+node.shape==> torch.Size([312, 200]) relation.shape==> torch.Size([312, 200]) pe.shape==> torch.Size([312, 3])
+node.shape==> torch.Size([446, 200]) relation.shape==> torch.Size([446, 200]) pe.shape==> torch.Size([446, 3])
+node.shape==> torch.Size([446, 200]) relation.shape==> torch.Size([446, 200]) pe.shape==> torch.Size([446, 3])
+--------------> 'p'
+--------------> 'p'
+node.shape==> torch.Size([630, 200]) relation.shape==> torch.Size([630, 200]) pe.shape==> torch.Size([630, 3])
+node.shape==> torch.Size([630, 200]) relation.shape==> torch.Size([630, 200]) pe.shape==> torch.Size([630, 3])
+node.shape==> torch.Size([524, 200]) relation.shape==> torch.Size([524, 200]) pe.shape==> torch.Size([524, 3])
+node.shape==> torch.Size([524, 200]) relation.shape==> torch.Size([524, 200]) pe.shape==> torch.Size([524, 3])
+node.shape==> torch.Size([572, 200]) relation.shape==> torch.Size([572, 200]) pe.shape==> torch.Size([572, 3])
+node.shape==> torch.Size([572, 200]) relation.shape==> torch.Size([572, 200]) pe.shape==> torch.Size([572, 3])
+node.shape==> torch.Size([314, 200]) relation.shape==> torch.Size([314, 200]) pe.shape==> torch.Size([314, 3])
+node.shape==> torch.Size([314, 200]) relation.shape==> torch.Size([314, 200]) pe.shape==> torch.Size([314, 3])
+node.shape==> torch.Size([284, 200]) relation.shape==> torch.Size([284, 200]) pe.shape==> torch.Size([284, 3])
+node.shape==> torch.Size([284, 200]) relation.shape==> torch.Size([284, 200]) pe.shape==> torch.Size([284, 3])
+node.shape==> torch.Size([490, 200]) relation.shape==> torch.Size([490, 200]) pe.shape==> torch.Size([490, 3])
+node.shape==> torch.Size([490, 200]) relation.shape==> torch.Size([490, 200]) pe.shape==> torch.Size([490, 3])
+node.shape==> torch.Size([558, 200]) relation.shape==> torch.Size([558, 200]) pe.shape==> torch.Size([558, 3])
+node.shape==> torch.Size([558, 200]) relation.shape==> torch.Size([558, 200]) pe.shape==> torch.Size([558, 3])
+node.shape==> torch.Size([608, 200]) relation.shape==> torch.Size([608, 200]) pe.shape==> torch.Size([608, 3])
+node.shape==> torch.Size([608, 200]) relation.shape==> torch.Size([608, 200]) pe.shape==> torch.Size([608, 3])
+node.shape==> torch.Size([608, 200]) relation.shape==> torch.Size([608, 200]) pe.shape==> torch.Size([608, 3])
+node.shape==> torch.Size([608, 200]) relation.shape==> torch.Size([608, 200]) pe.shape==> torch.Size([608, 3])
+node.shape==> torch.Size([558, 200]) relation.shape==> torch.Size([558, 200]) pe.shape==> torch.Size([558, 3])
+node.shape==> torch.Size([558, 200]) relation.shape==> torch.Size([558, 200]) pe.shape==> torch.Size([558, 3])
+node.shape==> torch.Size([490, 200]) relation.shape==> torch.Size([490, 200]) pe.shape==> torch.Size([490, 3])
+node.shape==> torch.Size([490, 200]) relation.shape==> torch.Size([490, 200]) pe.shape==> torch.Size([490, 3])
+node.shape==> torch.Size([284, 200]) relation.shape==> torch.Size([284, 200]) pe.shape==> torch.Size([284, 3])
+node.shape==> torch.Size([284, 200]) relation.shape==> torch.Size([284, 200]) pe.shape==> torch.Size([284, 3])
+node.shape==> torch.Size([314, 200]) relation.shape==> torch.Size([314, 200]) pe.shape==> torch.Size([314, 3])
+node.shape==> torch.Size([314, 200]) relation.shape==> torch.Size([314, 200]) pe.shape==> torch.Size([314, 3])
+node.shape==> torch.Size([572, 200]) relation.shape==> torch.Size([572, 200]) pe.shape==> torch.Size([572, 3])
+node.shape==> torch.Size([572, 200]) relation.shape==> torch.Size([572, 200]) pe.shape==> torch.Size([572, 3])
+node.shape==> torch.Size([524, 200]) relation.shape==> torch.Size([524, 200]) pe.shape==> torch.Size([524, 3])
+node.shape==> torch.Size([524, 200]) relation.shape==> torch.Size([524, 200]) pe.shape==> torch.Size([524, 3])
+node.shape==> torch.Size([630, 200]) relation.shape==> torch.Size([630, 200]) pe.shape==> torch.Size([630, 3])
+node.shape==> torch.Size([630, 200]) relation.shape==> torch.Size([630, 200]) pe.shape==> torch.Size([630, 3])
+--------------> 'p'
+--------------> 'p'
+node.shape==> torch.Size([466, 200]) relation.shape==> torch.Size([466, 200]) pe.shape==> torch.Size([466, 3])
+node.shape==> torch.Size([466, 200]) relation.shape==> torch.Size([466, 200]) pe.shape==> torch.Size([466, 3])
+node.shape==> torch.Size([554, 200]) relation.shape==> torch.Size([554, 200]) pe.shape==> torch.Size([554, 3])
+node.shape==> torch.Size([554, 200]) relation.shape==> torch.Size([554, 200]) pe.shape==> torch.Size([554, 3])
+node.shape==> torch.Size([642, 200]) relation.shape==> torch.Size([642, 200]) pe.shape==> torch.Size([642, 3])
+node.shape==> torch.Size([642, 200]) relation.shape==> torch.Size([642, 200]) pe.shape==> torch.Size([642, 3])
+node.shape==> torch.Size([226, 200]) relation.shape==> torch.Size([226, 200]) pe.shape==> torch.Size([226, 3])
+node.shape==> torch.Size([226, 200]) relation.shape==> torch.Size([226, 200]) pe.shape==> torch.Size([226, 3])
+node.shape==> torch.Size([268, 200]) relation.shape==> torch.Size([268, 200]) pe.shape==> torch.Size([268, 3])
+node.shape==> torch.Size([268, 200]) relation.shape==> torch.Size([268, 200]) pe.shape==> torch.Size([268, 3])
+node.shape==> torch.Size([548, 200]) relation.shape==> torch.Size([548, 200]) pe.shape==> torch.Size([548, 3])
+node.shape==> torch.Size([548, 200]) relation.shape==> torch.Size([548, 200]) pe.shape==> torch.Size([548, 3])
+node.shape==> torch.Size([518, 200]) relation.shape==> torch.Size([518, 200]) pe.shape==> torch.Size([518, 3])
+node.shape==> torch.Size([518, 200]) relation.shape==> torch.Size([518, 200]) pe.shape==> torch.Size([518, 3])
+node.shape==> torch.Size([584, 200]) relation.shape==> torch.Size([584, 200]) pe.shape==> torch.Size([584, 3])
+node.shape==> torch.Size([584, 200]) relation.shape==> torch.Size([584, 200]) pe.shape==> torch.Size([584, 3])
+node.shape==> torch.Size([584, 200]) relation.shape==> torch.Size([584, 200]) pe.shape==> torch.Size([584, 3])
+node.shape==> torch.Size([584, 200]) relation.shape==> torch.Size([584, 200]) pe.shape==> torch.Size([584, 3])
+node.shape==> torch.Size([518, 200]) relation.shape==> torch.Size([518, 200]) pe.shape==> torch.Size([518, 3])
+node.shape==> torch.Size([518, 200]) relation.shape==> torch.Size([518, 200]) pe.shape==> torch.Size([518, 3])
+node.shape==> torch.Size([548, 200]) relation.shape==> torch.Size([548, 200]) pe.shape==> torch.Size([548, 3])
+node.shape==> torch.Size([548, 200]) relation.shape==> torch.Size([548, 200]) pe.shape==> torch.Size([548, 3])
+node.shape==> torch.Size([268, 200]) relation.shape==> torch.Size([268, 200]) pe.shape==> torch.Size([268, 3])
+node.shape==> torch.Size([268, 200]) relation.shape==> torch.Size([268, 200]) pe.shape==> torch.Size([268, 3])
+node.shape==> torch.Size([226, 200]) relation.shape==> torch.Size([226, 200]) pe.shape==> torch.Size([226, 3])
+node.shape==> torch.Size([226, 200]) relation.shape==> torch.Size([226, 200]) pe.shape==> torch.Size([226, 3])
+node.shape==> torch.Size([642, 200]) relation.shape==> torch.Size([642, 200]) pe.shape==> torch.Size([642, 3])
+node.shape==> torch.Size([642, 200]) relation.shape==> torch.Size([642, 200]) pe.shape==> torch.Size([642, 3])
+node.shape==> torch.Size([554, 200]) relation.shape==> torch.Size([554, 200]) pe.shape==> torch.Size([554, 3])
+node.shape==> torch.Size([554, 200]) relation.shape==> torch.Size([554, 200]) pe.shape==> torch.Size([554, 3])
+node.shape==> torch.Size([466, 200]) relation.shape==> torch.Size([466, 200]) pe.shape==> torch.Size([466, 3])
+node.shape==> torch.Size([466, 200]) relation.shape==> torch.Size([466, 200]) pe.shape==> torch.Size([466, 3])
+--------------> 'p'
+--------------> 'p'
+node.shape==> torch.Size([246, 200]) relation.shape==> torch.Size([246, 200]) pe.shape==> torch.Size([246, 3])
+node.shape==> torch.Size([246, 200]) relation.shape==> torch.Size([246, 200]) pe.shape==> torch.Size([246, 3])
+node.shape==> torch.Size([250, 200]) relation.shape==> torch.Size([250, 200]) pe.shape==> torch.Size([250, 3])
+node.shape==> torch.Size([250, 200]) relation.shape==> torch.Size([250, 200]) pe.shape==> torch.Size([250, 3])
+node.shape==> torch.Size([420, 200]) relation.shape==> torch.Size([420, 200]) pe.shape==> torch.Size([420, 3])
+node.shape==> torch.Size([420, 200]) relation.shape==> torch.Size([420, 200]) pe.shape==> torch.Size([420, 3])
+node.shape==> torch.Size([422, 200]) relation.shape==> torch.Size([422, 200]) pe.shape==> torch.Size([422, 3])
+node.shape==> torch.Size([422, 200]) relation.shape==> torch.Size([422, 200]) pe.shape==> torch.Size([422, 3])
+node.shape==> torch.Size([436, 200]) relation.shape==> torch.Size([436, 200]) pe.shape==> torch.Size([436, 3])
+node.shape==> torch.Size([436, 200]) relation.shape==> torch.Size([436, 200]) pe.shape==> torch.Size([436, 3])
+node.shape==> torch.Size([512, 200]) relation.shape==> torch.Size([512, 200]) pe.shape==> torch.Size([512, 3])
+node.shape==> torch.Size([512, 200]) relation.shape==> torch.Size([512, 200]) pe.shape==> torch.Size([512, 3])
+node.shape==> torch.Size([514, 200]) relation.shape==> torch.Size([514, 200]) pe.shape==> torch.Size([514, 3])
+node.shape==> torch.Size([514, 200]) relation.shape==> torch.Size([514, 200]) pe.shape==> torch.Size([514, 3])
+node.shape==> torch.Size([266, 200]) relation.shape==> torch.Size([266, 200]) pe.shape==> torch.Size([266, 3])
+node.shape==> torch.Size([266, 200]) relation.shape==> torch.Size([266, 200]) pe.shape==> torch.Size([266, 3])
+node.shape==> torch.Size([266, 200]) relation.shape==> torch.Size([266, 200]) pe.shape==> torch.Size([266, 3])
+node.shape==> torch.Size([266, 200]) relation.shape==> torch.Size([266, 200]) pe.shape==> torch.Size([266, 3])
+node.shape==> torch.Size([514, 200]) relation.shape==> torch.Size([514, 200]) pe.shape==> torch.Size([514, 3])
+node.shape==> torch.Size([514, 200]) relation.shape==> torch.Size([514, 200]) pe.shape==> torch.Size([514, 3])
+node.shape==> torch.Size([512, 200]) relation.shape==> torch.Size([512, 200]) pe.shape==> torch.Size([512, 3])
+node.shape==> torch.Size([512, 200]) relation.shape==> torch.Size([512, 200]) pe.shape==> torch.Size([512, 3])
+node.shape==> torch.Size([436, 200]) relation.shape==> torch.Size([436, 200]) pe.shape==> torch.Size([436, 3])
+node.shape==> torch.Size([436, 200]) relation.shape==> torch.Size([436, 200]) pe.shape==> torch.Size([436, 3])
+node.shape==> torch.Size([422, 200]) relation.shape==> torch.Size([422, 200]) pe.shape==> torch.Size([422, 3])
+node.shape==> torch.Size([422, 200]) relation.shape==> torch.Size([422, 200]) pe.shape==> torch.Size([422, 3])
+node.shape==> torch.Size([420, 200]) relation.shape==> torch.Size([420, 200]) pe.shape==> torch.Size([420, 3])
+node.shape==> torch.Size([420, 200]) relation.shape==> torch.Size([420, 200]) pe.shape==> torch.Size([420, 3])
+node.shape==> torch.Size([250, 200]) relation.shape==> torch.Size([250, 200]) pe.shape==> torch.Size([250, 3])
+node.shape==> torch.Size([250, 200]) relation.shape==> torch.Size([250, 200]) pe.shape==> torch.Size([250, 3])
+node.shape==> torch.Size([246, 200]) relation.shape==> torch.Size([246, 200]) pe.shape==> torch.Size([246, 3])
+node.shape==> torch.Size([246, 200]) relation.shape==> torch.Size([246, 200]) pe.shape==> torch.Size([246, 3])
+--------------> 'p'
+--------------> 'p'
+node.shape==> torch.Size([534, 200]) relation.shape==> torch.Size([534, 200]) pe.shape==> torch.Size([534, 3])
+node.shape==> torch.Size([534, 200]) relation.shape==> torch.Size([534, 200]) pe.shape==> torch.Size([534, 3])
+node.shape==> torch.Size([540, 200]) relation.shape==> torch.Size([540, 200]) pe.shape==> torch.Size([540, 3])
+node.shape==> torch.Size([540, 200]) relation.shape==> torch.Size([540, 200]) pe.shape==> torch.Size([540, 3])
+node.shape==> torch.Size([520, 200]) relation.shape==> torch.Size([520, 200]) pe.shape==> torch.Size([520, 3])
+node.shape==> torch.Size([520, 200]) relation.shape==> torch.Size([520, 200]) pe.shape==> torch.Size([520, 3])
+node.shape==> torch.Size([544, 200]) relation.shape==> torch.Size([544, 200]) pe.shape==> torch.Size([544, 3])
+node.shape==> torch.Size([544, 200]) relation.shape==> torch.Size([544, 200]) pe.shape==> torch.Size([544, 3])
+node.shape==> torch.Size([550, 200]) relation.shape==> torch.Size([550, 200]) pe.shape==> torch.Size([550, 3])
+node.shape==> torch.Size([550, 200]) relation.shape==> torch.Size([550, 200]) pe.shape==> torch.Size([550, 3])
+node.shape==> torch.Size([264, 200]) relation.shape==> torch.Size([264, 200]) pe.shape==> torch.Size([264, 3])
+node.shape==> torch.Size([264, 200]) relation.shape==> torch.Size([264, 200]) pe.shape==> torch.Size([264, 3])
+node.shape==> torch.Size([348, 200]) relation.shape==> torch.Size([348, 200]) pe.shape==> torch.Size([348, 3])
+node.shape==> torch.Size([348, 200]) relation.shape==> torch.Size([348, 200]) pe.shape==> torch.Size([348, 3])
+node.shape==> torch.Size([662, 200]) relation.shape==> torch.Size([662, 200]) pe.shape==> torch.Size([662, 3])
+node.shape==> torch.Size([662, 200]) relation.shape==> torch.Size([662, 200]) pe.shape==> torch.Size([662, 3])
+node.shape==> torch.Size([662, 200]) relation.shape==> torch.Size([662, 200]) pe.shape==> torch.Size([662, 3])
+node.shape==> torch.Size([662, 200]) relation.shape==> torch.Size([662, 200]) pe.shape==> torch.Size([662, 3])
+node.shape==> torch.Size([348, 200]) relation.shape==> torch.Size([348, 200]) pe.shape==> torch.Size([348, 3])
+node.shape==> torch.Size([348, 200]) relation.shape==> torch.Size([348, 200]) pe.shape==> torch.Size([348, 3])
+node.shape==> torch.Size([264, 200]) relation.shape==> torch.Size([264, 200]) pe.shape==> torch.Size([264, 3])
+node.shape==> torch.Size([264, 200]) relation.shape==> torch.Size([264, 200]) pe.shape==> torch.Size([264, 3])
+node.shape==> torch.Size([550, 200]) relation.shape==> torch.Size([550, 200]) pe.shape==> torch.Size([550, 3])
+node.shape==> torch.Size([550, 200]) relation.shape==> torch.Size([550, 200]) pe.shape==> torch.Size([550, 3])
+node.shape==> torch.Size([544, 200]) relation.shape==> torch.Size([544, 200]) pe.shape==> torch.Size([544, 3])
+node.shape==> torch.Size([544, 200]) relation.shape==> torch.Size([544, 200]) pe.shape==> torch.Size([544, 3])
+node.shape==> torch.Size([520, 200]) relation.shape==> torch.Size([520, 200]) pe.shape==> torch.Size([520, 3])
+node.shape==> torch.Size([520, 200]) relation.shape==> torch.Size([520, 200]) pe.shape==> torch.Size([520, 3])
+node.shape==> torch.Size([540, 200]) relation.shape==> torch.Size([540, 200]) pe.shape==> torch.Size([540, 3])
+node.shape==> torch.Size([540, 200]) relation.shape==> torch.Size([540, 200]) pe.shape==> torch.Size([540, 3])
+node.shape==> torch.Size([534, 200]) relation.shape==> torch.Size([534, 200]) pe.shape==> torch.Size([534, 3])
+node.shape==> torch.Size([534, 200]) relation.shape==> torch.Size([534, 200]) pe.shape==> torch.Size([534, 3])
+--------------> 'p'
+--------------> 'p'
+node.shape==> torch.Size([552, 200]) relation.shape==> torch.Size([552, 200]) pe.shape==> torch.Size([552, 3])
+node.shape==> torch.Size([552, 200]) relation.shape==> torch.Size([552, 200]) pe.shape==> torch.Size([552, 3])
+node.shape==> torch.Size([534, 200]) relation.shape==> torch.Size([534, 200]) pe.shape==> torch.Size([534, 3])
+node.shape==> torch.Size([534, 200]) relation.shape==> torch.Size([534, 200]) pe.shape==> torch.Size([534, 3])
+node.shape==> torch.Size([554, 200]) relation.shape==> torch.Size([554, 200]) pe.shape==> torch.Size([554, 3])
+node.shape==> torch.Size([554, 200]) relation.shape==> torch.Size([554, 200]) pe.shape==> torch.Size([554, 3])
+node.shape==> torch.Size([602, 200]) relation.shape==> torch.Size([602, 200]) pe.shape==> torch.Size([602, 3])
+node.shape==> torch.Size([602, 200]) relation.shape==> torch.Size([602, 200]) pe.shape==> torch.Size([602, 3])
+node.shape==> torch.Size([316, 200]) relation.shape==> torch.Size([316, 200]) pe.shape==> torch.Size([316, 3])
+node.shape==> torch.Size([316, 200]) relation.shape==> torch.Size([316, 200]) pe.shape==> torch.Size([316, 3])
+node.shape==> torch.Size([304, 200]) relation.shape==> torch.Size([304, 200]) pe.shape==> torch.Size([304, 3])
+node.shape==> torch.Size([304, 200]) relation.shape==> torch.Size([304, 200]) pe.shape==> torch.Size([304, 3])
+node.shape==> torch.Size([554, 200]) relation.shape==> torch.Size([554, 200]) pe.shape==> torch.Size([554, 3])
+node.shape==> torch.Size([554, 200]) relation.shape==> torch.Size([554, 200]) pe.shape==> torch.Size([554, 3])
+node.shape==> torch.Size([630, 200]) relation.shape==> torch.Size([630, 200]) pe.shape==> torch.Size([630, 3])
+node.shape==> torch.Size([630, 200]) relation.shape==> torch.Size([630, 200]) pe.shape==> torch.Size([630, 3])
+node.shape==> torch.Size([630, 200]) relation.shape==> torch.Size([630, 200]) pe.shape==> torch.Size([630, 3])
+node.shape==> torch.Size([630, 200]) relation.shape==> torch.Size([630, 200]) pe.shape==> torch.Size([630, 3])
+node.shape==> torch.Size([554, 200]) relation.shape==> torch.Size([554, 200]) pe.shape==> torch.Size([554, 3])
+node.shape==> torch.Size([554, 200]) relation.shape==> torch.Size([554, 200]) pe.shape==> torch.Size([554, 3])
+node.shape==> torch.Size([304, 200]) relation.shape==> torch.Size([304, 200]) pe.shape==> torch.Size([304, 3])
+node.shape==> torch.Size([304, 200]) relation.shape==> torch.Size([304, 200]) pe.shape==> torch.Size([304, 3])
+node.shape==> torch.Size([316, 200]) relation.shape==> torch.Size([316, 200]) pe.shape==> torch.Size([316, 3])
+node.shape==> torch.Size([316, 200]) relation.shape==> torch.Size([316, 200]) pe.shape==> torch.Size([316, 3])
+node.shape==> torch.Size([602, 200]) relation.shape==> torch.Size([602, 200]) pe.shape==> torch.Size([602, 3])
+node.shape==> torch.Size([602, 200]) relation.shape==> torch.Size([602, 200]) pe.shape==> torch.Size([602, 3])
+node.shape==> torch.Size([554, 200]) relation.shape==> torch.Size([554, 200]) pe.shape==> torch.Size([554, 3])
+node.shape==> torch.Size([554, 200]) relation.shape==> torch.Size([554, 200]) pe.shape==> torch.Size([554, 3])
+node.shape==> torch.Size([534, 200]) relation.shape==> torch.Size([534, 200]) pe.shape==> torch.Size([534, 3])
+node.shape==> torch.Size([534, 200]) relation.shape==> torch.Size([534, 200]) pe.shape==> torch.Size([534, 3])
+node.shape==> torch.Size([552, 200]) relation.shape==> torch.Size([552, 200]) pe.shape==> torch.Size([552, 3])
+node.shape==> torch.Size([552, 200]) relation.shape==> torch.Size([552, 200]) pe.shape==> torch.Size([552, 3])
+--------------> 'p'
+--------------> 'p'
+node.shape==> torch.Size([564, 200]) relation.shape==> torch.Size([564, 200]) pe.shape==> torch.Size([564, 3])
+node.shape==> torch.Size([564, 200]) relation.shape==> torch.Size([564, 200]) pe.shape==> torch.Size([564, 3])
+node.shape==> torch.Size([574, 200]) relation.shape==> torch.Size([574, 200]) pe.shape==> torch.Size([574, 3])
+node.shape==> torch.Size([574, 200]) relation.shape==> torch.Size([574, 200]) pe.shape==> torch.Size([574, 3])
+node.shape==> torch.Size([526, 200]) relation.shape==> torch.Size([526, 200]) pe.shape==> torch.Size([526, 3])
+node.shape==> torch.Size([526, 200]) relation.shape==> torch.Size([526, 200]) pe.shape==> torch.Size([526, 3])
+node.shape==> torch.Size([576, 200]) relation.shape==> torch.Size([576, 200]) pe.shape==> torch.Size([576, 3])
+node.shape==> torch.Size([576, 200]) relation.shape==> torch.Size([576, 200]) pe.shape==> torch.Size([576, 3])
+node.shape==> torch.Size([186, 200]) relation.shape==> torch.Size([186, 200]) pe.shape==> torch.Size([186, 3])
+node.shape==> torch.Size([186, 200]) relation.shape==> torch.Size([186, 200]) pe.shape==> torch.Size([186, 3])
+node.shape==> torch.Size([274, 200]) relation.shape==> torch.Size([274, 200]) pe.shape==> torch.Size([274, 3])
+node.shape==> torch.Size([274, 200]) relation.shape==> torch.Size([274, 200]) pe.shape==> torch.Size([274, 3])
+node.shape==> torch.Size([430, 200]) relation.shape==> torch.Size([430, 200]) pe.shape==> torch.Size([430, 3])
+node.shape==> torch.Size([430, 200]) relation.shape==> torch.Size([430, 200]) pe.shape==> torch.Size([430, 3])
+node.shape==> torch.Size([558, 200]) relation.shape==> torch.Size([558, 200]) pe.shape==> torch.Size([558, 3])
+node.shape==> torch.Size([558, 200]) relation.shape==> torch.Size([558, 200]) pe.shape==> torch.Size([558, 3])
+node.shape==> torch.Size([558, 200]) relation.shape==> torch.Size([558, 200]) pe.shape==> torch.Size([558, 3])
+node.shape==> torch.Size([558, 200]) relation.shape==> torch.Size([558, 200]) pe.shape==> torch.Size([558, 3])
+node.shape==> torch.Size([430, 200]) relation.shape==> torch.Size([430, 200]) pe.shape==> torch.Size([430, 3])
+node.shape==> torch.Size([430, 200]) relation.shape==> torch.Size([430, 200]) pe.shape==> torch.Size([430, 3])
+node.shape==> torch.Size([274, 200]) relation.shape==> torch.Size([274, 200]) pe.shape==> torch.Size([274, 3])
+node.shape==> torch.Size([274, 200]) relation.shape==> torch.Size([274, 200]) pe.shape==> torch.Size([274, 3])
+node.shape==> torch.Size([186, 200]) relation.shape==> torch.Size([186, 200]) pe.shape==> torch.Size([186, 3])
+node.shape==> torch.Size([186, 200]) relation.shape==> torch.Size([186, 200]) pe.shape==> torch.Size([186, 3])
+node.shape==> torch.Size([576, 200]) relation.shape==> torch.Size([576, 200]) pe.shape==> torch.Size([576, 3])
+node.shape==> torch.Size([576, 200]) relation.shape==> torch.Size([576, 200]) pe.shape==> torch.Size([576, 3])
+node.shape==> torch.Size([526, 200]) relation.shape==> torch.Size([526, 200]) pe.shape==> torch.Size([526, 3])
+node.shape==> torch.Size([526, 200]) relation.shape==> torch.Size([526, 200]) pe.shape==> torch.Size([526, 3])
+node.shape==> torch.Size([574, 200]) relation.shape==> torch.Size([574, 200]) pe.shape==> torch.Size([574, 3])
+node.shape==> torch.Size([574, 200]) relation.shape==> torch.Size([574, 200]) pe.shape==> torch.Size([574, 3])
+node.shape==> torch.Size([564, 200]) relation.shape==> torch.Size([564, 200]) pe.shape==> torch.Size([564, 3])
+node.shape==> torch.Size([564, 200]) relation.shape==> torch.Size([564, 200]) pe.shape==> torch.Size([564, 3])
+--------------> 'p'
+--------------> 'p'
+node.shape==> torch.Size([292, 200]) relation.shape==> torch.Size([292, 200]) pe.shape==> torch.Size([292, 3])
+node.shape==> torch.Size([292, 200]) relation.shape==> torch.Size([292, 200]) pe.shape==> torch.Size([292, 3])
+node.shape==> torch.Size([252, 200]) relation.shape==> torch.Size([252, 200]) pe.shape==> torch.Size([252, 3])
+node.shape==> torch.Size([252, 200]) relation.shape==> torch.Size([252, 200]) pe.shape==> torch.Size([252, 3])
+node.shape==> torch.Size([530, 200]) relation.shape==> torch.Size([530, 200]) pe.shape==> torch.Size([530, 3])
+node.shape==> torch.Size([530, 200]) relation.shape==> torch.Size([530, 200]) pe.shape==> torch.Size([530, 3])
+node.shape==> torch.Size([536, 200]) relation.shape==> torch.Size([536, 200]) pe.shape==> torch.Size([536, 3])
+node.shape==> torch.Size([536, 200]) relation.shape==> torch.Size([536, 200]) pe.shape==> torch.Size([536, 3])
+node.shape==> torch.Size([586, 200]) relation.shape==> torch.Size([586, 200]) pe.shape==> torch.Size([586, 3])
+node.shape==> torch.Size([586, 200]) relation.shape==> torch.Size([586, 200]) pe.shape==> torch.Size([586, 3])
+node.shape==> torch.Size([504, 200]) relation.shape==> torch.Size([504, 200]) pe.shape==> torch.Size([504, 3])
+node.shape==> torch.Size([504, 200]) relation.shape==> torch.Size([504, 200]) pe.shape==> torch.Size([504, 3])
+node.shape==> torch.Size([536, 200]) relation.shape==> torch.Size([536, 200]) pe.shape==> torch.Size([536, 3])
+node.shape==> torch.Size([536, 200]) relation.shape==> torch.Size([536, 200]) pe.shape==> torch.Size([536, 3])
+node.shape==> torch.Size([308, 200]) relation.shape==> torch.Size([308, 200]) pe.shape==> torch.Size([308, 3])
+node.shape==> torch.Size([308, 200]) relation.shape==> torch.Size([308, 200]) pe.shape==> torch.Size([308, 3])
+node.shape==> torch.Size([308, 200]) relation.shape==> torch.Size([308, 200]) pe.shape==> torch.Size([308, 3])
+node.shape==> torch.Size([308, 200]) relation.shape==> torch.Size([308, 200]) pe.shape==> torch.Size([308, 3])
+node.shape==> torch.Size([536, 200]) relation.shape==> torch.Size([536, 200]) pe.shape==> torch.Size([536, 3])
+node.shape==> torch.Size([536, 200]) relation.shape==> torch.Size([536, 200]) pe.shape==> torch.Size([536, 3])
+node.shape==> torch.Size([504, 200]) relation.shape==> torch.Size([504, 200]) pe.shape==> torch.Size([504, 3])
+node.shape==> torch.Size([504, 200]) relation.shape==> torch.Size([504, 200]) pe.shape==> torch.Size([504, 3])
+node.shape==> torch.Size([586, 200]) relation.shape==> torch.Size([586, 200]) pe.shape==> torch.Size([586, 3])
+node.shape==> torch.Size([586, 200]) relation.shape==> torch.Size([586, 200]) pe.shape==> torch.Size([586, 3])
+node.shape==> torch.Size([536, 200]) relation.shape==> torch.Size([536, 200]) pe.shape==> torch.Size([536, 3])
+node.shape==> torch.Size([536, 200]) relation.shape==> torch.Size([536, 200]) pe.shape==> torch.Size([536, 3])
+node.shape==> torch.Size([530, 200]) relation.shape==> torch.Size([530, 200]) pe.shape==> torch.Size([530, 3])
+node.shape==> torch.Size([530, 200]) relation.shape==> torch.Size([530, 200]) pe.shape==> torch.Size([530, 3])
+node.shape==> torch.Size([252, 200]) relation.shape==> torch.Size([252, 200]) pe.shape==> torch.Size([252, 3])
+node.shape==> torch.Size([252, 200]) relation.shape==> torch.Size([252, 200]) pe.shape==> torch.Size([252, 3])
+node.shape==> torch.Size([292, 200]) relation.shape==> torch.Size([292, 200]) pe.shape==> torch.Size([292, 3])
+node.shape==> torch.Size([292, 200]) relation.shape==> torch.Size([292, 200]) pe.shape==> torch.Size([292, 3])
+--------------> 'p'
+--------------> 'p'
+node.shape==> torch.Size([368, 200]) relation.shape==> torch.Size([368, 200]) pe.shape==> torch.Size([368, 3])
+node.shape==> torch.Size([368, 200]) relation.shape==> torch.Size([368, 200]) pe.shape==> torch.Size([368, 3])
+node.shape==> torch.Size([400, 200]) relation.shape==> torch.Size([400, 200]) pe.shape==> torch.Size([400, 3])
+node.shape==> torch.Size([400, 200]) relation.shape==> torch.Size([400, 200]) pe.shape==> torch.Size([400, 3])
+node.shape==> torch.Size([644, 200]) relation.shape==> torch.Size([644, 200]) pe.shape==> torch.Size([644, 3])
+node.shape==> torch.Size([644, 200]) relation.shape==> torch.Size([644, 200]) pe.shape==> torch.Size([644, 3])
+node.shape==> torch.Size([620, 200]) relation.shape==> torch.Size([620, 200]) pe.shape==> torch.Size([620, 3])
+node.shape==> torch.Size([620, 200]) relation.shape==> torch.Size([620, 200]) pe.shape==> torch.Size([620, 3])
+node.shape==> torch.Size([702, 200]) relation.shape==> torch.Size([702, 200]) pe.shape==> torch.Size([702, 3])
+node.shape==> torch.Size([702, 200]) relation.shape==> torch.Size([702, 200]) pe.shape==> torch.Size([702, 3])
+node.shape==> torch.Size([680, 200]) relation.shape==> torch.Size([680, 200]) pe.shape==> torch.Size([680, 3])
+node.shape==> torch.Size([680, 200]) relation.shape==> torch.Size([680, 200]) pe.shape==> torch.Size([680, 3])
+node.shape==> torch.Size([592, 200]) relation.shape==> torch.Size([592, 200]) pe.shape==> torch.Size([592, 3])
+node.shape==> torch.Size([592, 200]) relation.shape==> torch.Size([592, 200]) pe.shape==> torch.Size([592, 3])
+node.shape==> torch.Size([264, 200]) relation.shape==> torch.Size([264, 200]) pe.shape==> torch.Size([264, 3])
+node.shape==> torch.Size([264, 200]) relation.shape==> torch.Size([264, 200]) pe.shape==> torch.Size([264, 3])
+node.shape==> torch.Size([264, 200]) relation.shape==> torch.Size([264, 200]) pe.shape==> torch.Size([264, 3])
+node.shape==> torch.Size([264, 200]) relation.shape==> torch.Size([264, 200]) pe.shape==> torch.Size([264, 3])
+node.shape==> torch.Size([592, 200]) relation.shape==> torch.Size([592, 200]) pe.shape==> torch.Size([592, 3])
+node.shape==> torch.Size([592, 200]) relation.shape==> torch.Size([592, 200]) pe.shape==> torch.Size([592, 3])
+node.shape==> torch.Size([680, 200]) relation.shape==> torch.Size([680, 200]) pe.shape==> torch.Size([680, 3])
+node.shape==> torch.Size([680, 200]) relation.shape==> torch.Size([680, 200]) pe.shape==> torch.Size([680, 3])
+node.shape==> torch.Size([702, 200]) relation.shape==> torch.Size([702, 200]) pe.shape==> torch.Size([702, 3])
+node.shape==> torch.Size([702, 200]) relation.shape==> torch.Size([702, 200]) pe.shape==> torch.Size([702, 3])
+node.shape==> torch.Size([620, 200]) relation.shape==> torch.Size([620, 200]) pe.shape==> torch.Size([620, 3])
+node.shape==> torch.Size([620, 200]) relation.shape==> torch.Size([620, 200]) pe.shape==> torch.Size([620, 3])
+node.shape==> torch.Size([644, 200]) relation.shape==> torch.Size([644, 200]) pe.shape==> torch.Size([644, 3])
+node.shape==> torch.Size([644, 200]) relation.shape==> torch.Size([644, 200]) pe.shape==> torch.Size([644, 3])
+node.shape==> torch.Size([400, 200]) relation.shape==> torch.Size([400, 200]) pe.shape==> torch.Size([400, 3])
+node.shape==> torch.Size([400, 200]) relation.shape==> torch.Size([400, 200]) pe.shape==> torch.Size([400, 3])
+node.shape==> torch.Size([368, 200]) relation.shape==> torch.Size([368, 200]) pe.shape==> torch.Size([368, 3])
+node.shape==> torch.Size([368, 200]) relation.shape==> torch.Size([368, 200]) pe.shape==> torch.Size([368, 3])
+--------------> 'p'
+--------------> 'p'
+node.shape==> torch.Size([436, 200]) relation.shape==> torch.Size([436, 200]) pe.shape==> torch.Size([436, 3])
+node.shape==> torch.Size([436, 200]) relation.shape==> torch.Size([436, 200]) pe.shape==> torch.Size([436, 3])
+node.shape==> torch.Size([512, 200]) relation.shape==> torch.Size([512, 200]) pe.shape==> torch.Size([512, 3])
+node.shape==> torch.Size([512, 200]) relation.shape==> torch.Size([512, 200]) pe.shape==> torch.Size([512, 3])
+node.shape==> torch.Size([514, 200]) relation.shape==> torch.Size([514, 200]) pe.shape==> torch.Size([514, 3])
+node.shape==> torch.Size([514, 200]) relation.shape==> torch.Size([514, 200]) pe.shape==> torch.Size([514, 3])
+node.shape==> torch.Size([266, 200]) relation.shape==> torch.Size([266, 200]) pe.shape==> torch.Size([266, 3])
+node.shape==> torch.Size([266, 200]) relation.shape==> torch.Size([266, 200]) pe.shape==> torch.Size([266, 3])
+node.shape==> torch.Size([224, 200]) relation.shape==> torch.Size([224, 200]) pe.shape==> torch.Size([224, 3])
+node.shape==> torch.Size([224, 200]) relation.shape==> torch.Size([224, 200]) pe.shape==> torch.Size([224, 3])
+node.shape==> torch.Size([466, 200]) relation.shape==> torch.Size([466, 200]) pe.shape==> torch.Size([466, 3])
+node.shape==> torch.Size([466, 200]) relation.shape==> torch.Size([466, 200]) pe.shape==> torch.Size([466, 3])
+node.shape==> torch.Size([482, 200]) relation.shape==> torch.Size([482, 200]) pe.shape==> torch.Size([482, 3])
+node.shape==> torch.Size([482, 200]) relation.shape==> torch.Size([482, 200]) pe.shape==> torch.Size([482, 3])
+node.shape==> torch.Size([544, 200]) relation.shape==> torch.Size([544, 200]) pe.shape==> torch.Size([544, 3])
+node.shape==> torch.Size([544, 200]) relation.shape==> torch.Size([544, 200]) pe.shape==> torch.Size([544, 3])
+node.shape==> torch.Size([544, 200]) relation.shape==> torch.Size([544, 200]) pe.shape==> torch.Size([544, 3])
+node.shape==> torch.Size([544, 200]) relation.shape==> torch.Size([544, 200]) pe.shape==> torch.Size([544, 3])
+node.shape==> torch.Size([482, 200]) relation.shape==> torch.Size([482, 200]) pe.shape==> torch.Size([482, 3])
+node.shape==> torch.Size([482, 200]) relation.shape==> torch.Size([482, 200]) pe.shape==> torch.Size([482, 3])
+node.shape==> torch.Size([466, 200]) relation.shape==> torch.Size([466, 200]) pe.shape==> torch.Size([466, 3])
+node.shape==> torch.Size([466, 200]) relation.shape==> torch.Size([466, 200]) pe.shape==> torch.Size([466, 3])
+node.shape==> torch.Size([224, 200]) relation.shape==> torch.Size([224, 200]) pe.shape==> torch.Size([224, 3])
+node.shape==> torch.Size([224, 200]) relation.shape==> torch.Size([224, 200]) pe.shape==> torch.Size([224, 3])
+node.shape==> torch.Size([266, 200]) relation.shape==> torch.Size([266, 200]) pe.shape==> torch.Size([266, 3])
+node.shape==> torch.Size([266, 200]) relation.shape==> torch.Size([266, 200]) pe.shape==> torch.Size([266, 3])
+node.shape==> torch.Size([514, 200]) relation.shape==> torch.Size([514, 200]) pe.shape==> torch.Size([514, 3])
+node.shape==> torch.Size([514, 200]) relation.shape==> torch.Size([514, 200]) pe.shape==> torch.Size([514, 3])
+node.shape==> torch.Size([512, 200]) relation.shape==> torch.Size([512, 200]) pe.shape==> torch.Size([512, 3])
+node.shape==> torch.Size([512, 200]) relation.shape==> torch.Size([512, 200]) pe.shape==> torch.Size([512, 3])
+node.shape==> torch.Size([436, 200]) relation.shape==> torch.Size([436, 200]) pe.shape==> torch.Size([436, 3])
+node.shape==> torch.Size([436, 200]) relation.shape==> torch.Size([436, 200]) pe.shape==> torch.Size([436, 3])
+--------------> 'p'
+--------------> 'p'
+node.shape==> torch.Size([502, 200]) relation.shape==> torch.Size([502, 200]) pe.shape==> torch.Size([502, 3])
+node.shape==> torch.Size([502, 200]) relation.shape==> torch.Size([502, 200]) pe.shape==> torch.Size([502, 3])
+node.shape==> torch.Size([402, 200]) relation.shape==> torch.Size([402, 200]) pe.shape==> torch.Size([402, 3])
+node.shape==> torch.Size([402, 200]) relation.shape==> torch.Size([402, 200]) pe.shape==> torch.Size([402, 3])
+node.shape==> torch.Size([614, 200]) relation.shape==> torch.Size([614, 200]) pe.shape==> torch.Size([614, 3])
+node.shape==> torch.Size([614, 200]) relation.shape==> torch.Size([614, 200]) pe.shape==> torch.Size([614, 3])
+node.shape==> torch.Size([556, 200]) relation.shape==> torch.Size([556, 200]) pe.shape==> torch.Size([556, 3])
+node.shape==> torch.Size([556, 200]) relation.shape==> torch.Size([556, 200]) pe.shape==> torch.Size([556, 3])
+node.shape==> torch.Size([446, 200]) relation.shape==> torch.Size([446, 200]) pe.shape==> torch.Size([446, 3])
+node.shape==> torch.Size([446, 200]) relation.shape==> torch.Size([446, 200]) pe.shape==> torch.Size([446, 3])
+node.shape==> torch.Size([312, 200]) relation.shape==> torch.Size([312, 200]) pe.shape==> torch.Size([312, 3])
+node.shape==> torch.Size([312, 200]) relation.shape==> torch.Size([312, 200]) pe.shape==> torch.Size([312, 3])
+node.shape==> torch.Size([330, 200]) relation.shape==> torch.Size([330, 200]) pe.shape==> torch.Size([330, 3])
+node.shape==> torch.Size([330, 200]) relation.shape==> torch.Size([330, 200]) pe.shape==> torch.Size([330, 3])
+node.shape==> torch.Size([562, 200]) relation.shape==> torch.Size([562, 200]) pe.shape==> torch.Size([562, 3])
+node.shape==> torch.Size([562, 200]) relation.shape==> torch.Size([562, 200]) pe.shape==> torch.Size([562, 3])
+node.shape==> torch.Size([562, 200]) relation.shape==> torch.Size([562, 200]) pe.shape==> torch.Size([562, 3])
+node.shape==> torch.Size([562, 200]) relation.shape==> torch.Size([562, 200]) pe.shape==> torch.Size([562, 3])
+node.shape==> torch.Size([330, 200]) relation.shape==> torch.Size([330, 200]) pe.shape==> torch.Size([330, 3])
+node.shape==> torch.Size([330, 200]) relation.shape==> torch.Size([330, 200]) pe.shape==> torch.Size([330, 3])
+node.shape==> torch.Size([312, 200]) relation.shape==> torch.Size([312, 200]) pe.shape==> torch.Size([312, 3])
+node.shape==> torch.Size([312, 200]) relation.shape==> torch.Size([312, 200]) pe.shape==> torch.Size([312, 3])
+node.shape==> torch.Size([446, 200]) relation.shape==> torch.Size([446, 200]) pe.shape==> torch.Size([446, 3])
+node.shape==> torch.Size([446, 200]) relation.shape==> torch.Size([446, 200]) pe.shape==> torch.Size([446, 3])
+node.shape==> torch.Size([556, 200]) relation.shape==> torch.Size([556, 200]) pe.shape==> torch.Size([556, 3])
+node.shape==> torch.Size([556, 200]) relation.shape==> torch.Size([556, 200]) pe.shape==> torch.Size([556, 3])
+node.shape==> torch.Size([614, 200]) relation.shape==> torch.Size([614, 200]) pe.shape==> torch.Size([614, 3])
+node.shape==> torch.Size([614, 200]) relation.shape==> torch.Size([614, 200]) pe.shape==> torch.Size([614, 3])
+node.shape==> torch.Size([402, 200]) relation.shape==> torch.Size([402, 200]) pe.shape==> torch.Size([402, 3])
+node.shape==> torch.Size([402, 200]) relation.shape==> torch.Size([402, 200]) pe.shape==> torch.Size([402, 3])
+node.shape==> torch.Size([502, 200]) relation.shape==> torch.Size([502, 200]) pe.shape==> torch.Size([502, 3])
+node.shape==> torch.Size([502, 200]) relation.shape==> torch.Size([502, 200]) pe.shape==> torch.Size([502, 3])
+--------------> 'p'
+--------------> 'p'
+node.shape==> torch.Size([700, 200]) relation.shape==> torch.Size([700, 200]) pe.shape==> torch.Size([700, 3])
+node.shape==> torch.Size([700, 200]) relation.shape==> torch.Size([700, 200]) pe.shape==> torch.Size([700, 3])
+node.shape==> torch.Size([690, 200]) relation.shape==> torch.Size([690, 200]) pe.shape==> torch.Size([690, 3])
+node.shape==> torch.Size([690, 200]) relation.shape==> torch.Size([690, 200]) pe.shape==> torch.Size([690, 3])
+node.shape==> torch.Size([690, 200]) relation.shape==> torch.Size([690, 200]) pe.shape==> torch.Size([690, 3])
+node.shape==> torch.Size([690, 200]) relation.shape==> torch.Size([690, 200]) pe.shape==> torch.Size([690, 3])
+node.shape==> torch.Size([648, 200]) relation.shape==> torch.Size([648, 200]) pe.shape==> torch.Size([648, 3])
+node.shape==> torch.Size([648, 200]) relation.shape==> torch.Size([648, 200]) pe.shape==> torch.Size([648, 3])
+node.shape==> torch.Size([726, 200]) relation.shape==> torch.Size([726, 200]) pe.shape==> torch.Size([726, 3])
+node.shape==> torch.Size([726, 200]) relation.shape==> torch.Size([726, 200]) pe.shape==> torch.Size([726, 3])
+node.shape==> torch.Size([292, 200]) relation.shape==> torch.Size([292, 200]) pe.shape==> torch.Size([292, 3])
+node.shape==> torch.Size([292, 200]) relation.shape==> torch.Size([292, 200]) pe.shape==> torch.Size([292, 3])
+node.shape==> torch.Size([278, 200]) relation.shape==> torch.Size([278, 200]) pe.shape==> torch.Size([278, 3])
+node.shape==> torch.Size([278, 200]) relation.shape==> torch.Size([278, 200]) pe.shape==> torch.Size([278, 3])
+node.shape==> torch.Size([582, 200]) relation.shape==> torch.Size([582, 200]) pe.shape==> torch.Size([582, 3])
+node.shape==> torch.Size([582, 200]) relation.shape==> torch.Size([582, 200]) pe.shape==> torch.Size([582, 3])
+node.shape==> torch.Size([582, 200]) relation.shape==> torch.Size([582, 200]) pe.shape==> torch.Size([582, 3])
+node.shape==> torch.Size([582, 200]) relation.shape==> torch.Size([582, 200]) pe.shape==> torch.Size([582, 3])
+node.shape==> torch.Size([278, 200]) relation.shape==> torch.Size([278, 200]) pe.shape==> torch.Size([278, 3])
+node.shape==> torch.Size([278, 200]) relation.shape==> torch.Size([278, 200]) pe.shape==> torch.Size([278, 3])
+node.shape==> torch.Size([292, 200]) relation.shape==> torch.Size([292, 200]) pe.shape==> torch.Size([292, 3])
+node.shape==> torch.Size([292, 200]) relation.shape==> torch.Size([292, 200]) pe.shape==> torch.Size([292, 3])
+node.shape==> torch.Size([726, 200]) relation.shape==> torch.Size([726, 200]) pe.shape==> torch.Size([726, 3])
+node.shape==> torch.Size([726, 200]) relation.shape==> torch.Size([726, 200]) pe.shape==> torch.Size([726, 3])
+node.shape==> torch.Size([648, 200]) relation.shape==> torch.Size([648, 200]) pe.shape==> torch.Size([648, 3])
+node.shape==> torch.Size([648, 200]) relation.shape==> torch.Size([648, 200]) pe.shape==> torch.Size([648, 3])
+node.shape==> torch.Size([690, 200]) relation.shape==> torch.Size([690, 200]) pe.shape==> torch.Size([690, 3])
+node.shape==> torch.Size([690, 200]) relation.shape==> torch.Size([690, 200]) pe.shape==> torch.Size([690, 3])
+node.shape==> torch.Size([690, 200]) relation.shape==> torch.Size([690, 200]) pe.shape==> torch.Size([690, 3])
+node.shape==> torch.Size([690, 200]) relation.shape==> torch.Size([690, 200]) pe.shape==> torch.Size([690, 3])
+node.shape==> torch.Size([700, 200]) relation.shape==> torch.Size([700, 200]) pe.shape==> torch.Size([700, 3])
+node.shape==> torch.Size([700, 200]) relation.shape==> torch.Size([700, 200]) pe.shape==> torch.Size([700, 3])
+--------------> 'p'
+--------------> 'p'
+node.shape==> torch.Size([234, 200]) relation.shape==> torch.Size([234, 200]) pe.shape==> torch.Size([234, 3])
+node.shape==> torch.Size([234, 200]) relation.shape==> torch.Size([234, 200]) pe.shape==> torch.Size([234, 3])
+node.shape==> torch.Size([376, 200]) relation.shape==> torch.Size([376, 200]) pe.shape==> torch.Size([376, 3])
+node.shape==> torch.Size([376, 200]) relation.shape==> torch.Size([376, 200]) pe.shape==> torch.Size([376, 3])
+node.shape==> torch.Size([632, 200]) relation.shape==> torch.Size([632, 200]) pe.shape==> torch.Size([632, 3])
+node.shape==> torch.Size([632, 200]) relation.shape==> torch.Size([632, 200]) pe.shape==> torch.Size([632, 3])
+node.shape==> torch.Size([564, 200]) relation.shape==> torch.Size([564, 200]) pe.shape==> torch.Size([564, 3])
+node.shape==> torch.Size([564, 200]) relation.shape==> torch.Size([564, 200]) pe.shape==> torch.Size([564, 3])
+node.shape==> torch.Size([574, 200]) relation.shape==> torch.Size([574, 200]) pe.shape==> torch.Size([574, 3])
+node.shape==> torch.Size([574, 200]) relation.shape==> torch.Size([574, 200]) pe.shape==> torch.Size([574, 3])
+node.shape==> torch.Size([526, 200]) relation.shape==> torch.Size([526, 200]) pe.shape==> torch.Size([526, 3])
+node.shape==> torch.Size([526, 200]) relation.shape==> torch.Size([526, 200]) pe.shape==> torch.Size([526, 3])
+node.shape==> torch.Size([576, 200]) relation.shape==> torch.Size([576, 200]) pe.shape==> torch.Size([576, 3])
+node.shape==> torch.Size([576, 200]) relation.shape==> torch.Size([576, 200]) pe.shape==> torch.Size([576, 3])
+node.shape==> torch.Size([186, 200]) relation.shape==> torch.Size([186, 200]) pe.shape==> torch.Size([186, 3])
+node.shape==> torch.Size([186, 200]) relation.shape==> torch.Size([186, 200]) pe.shape==> torch.Size([186, 3])
+node.shape==> torch.Size([186, 200]) relation.shape==> torch.Size([186, 200]) pe.shape==> torch.Size([186, 3])
+node.shape==> torch.Size([186, 200]) relation.shape==> torch.Size([186, 200]) pe.shape==> torch.Size([186, 3])
+node.shape==> torch.Size([576, 200]) relation.shape==> torch.Size([576, 200]) pe.shape==> torch.Size([576, 3])
+node.shape==> torch.Size([576, 200]) relation.shape==> torch.Size([576, 200]) pe.shape==> torch.Size([576, 3])
+node.shape==> torch.Size([526, 200]) relation.shape==> torch.Size([526, 200]) pe.shape==> torch.Size([526, 3])
+node.shape==> torch.Size([526, 200]) relation.shape==> torch.Size([526, 200]) pe.shape==> torch.Size([526, 3])
+node.shape==> torch.Size([574, 200]) relation.shape==> torch.Size([574, 200]) pe.shape==> torch.Size([574, 3])
+node.shape==> torch.Size([574, 200]) relation.shape==> torch.Size([574, 200]) pe.shape==> torch.Size([574, 3])
+node.shape==> torch.Size([564, 200]) relation.shape==> torch.Size([564, 200]) pe.shape==> torch.Size([564, 3])
+node.shape==> torch.Size([564, 200]) relation.shape==> torch.Size([564, 200]) pe.shape==> torch.Size([564, 3])
+node.shape==> torch.Size([632, 200]) relation.shape==> torch.Size([632, 200]) pe.shape==> torch.Size([632, 3])
+node.shape==> torch.Size([632, 200]) relation.shape==> torch.Size([632, 200]) pe.shape==> torch.Size([632, 3])
+node.shape==> torch.Size([376, 200]) relation.shape==> torch.Size([376, 200]) pe.shape==> torch.Size([376, 3])
+node.shape==> torch.Size([376, 200]) relation.shape==> torch.Size([376, 200]) pe.shape==> torch.Size([376, 3])
+node.shape==> torch.Size([234, 200]) relation.shape==> torch.Size([234, 200]) pe.shape==> torch.Size([234, 3])
+node.shape==> torch.Size([234, 200]) relation.shape==> torch.Size([234, 200]) pe.shape==> torch.Size([234, 3])
+--------------> 'p'
+--------------> 'p'
+node.shape==> torch.Size([642, 200]) relation.shape==> torch.Size([642, 200]) pe.shape==> torch.Size([642, 3])
+node.shape==> torch.Size([642, 200]) relation.shape==> torch.Size([642, 200]) pe.shape==> torch.Size([642, 3])
+node.shape==> torch.Size([278, 200]) relation.shape==> torch.Size([278, 200]) pe.shape==> torch.Size([278, 3])
+node.shape==> torch.Size([278, 200]) relation.shape==> torch.Size([278, 200]) pe.shape==> torch.Size([278, 3])
+node.shape==> torch.Size([206, 200]) relation.shape==> torch.Size([206, 200]) pe.shape==> torch.Size([206, 3])
+node.shape==> torch.Size([206, 200]) relation.shape==> torch.Size([206, 200]) pe.shape==> torch.Size([206, 3])
+node.shape==> torch.Size([406, 200]) relation.shape==> torch.Size([406, 200]) pe.shape==> torch.Size([406, 3])
+node.shape==> torch.Size([406, 200]) relation.shape==> torch.Size([406, 200]) pe.shape==> torch.Size([406, 3])
+node.shape==> torch.Size([494, 200]) relation.shape==> torch.Size([494, 200]) pe.shape==> torch.Size([494, 3])
+node.shape==> torch.Size([494, 200]) relation.shape==> torch.Size([494, 200]) pe.shape==> torch.Size([494, 3])
+node.shape==> torch.Size([468, 200]) relation.shape==> torch.Size([468, 200]) pe.shape==> torch.Size([468, 3])
+node.shape==> torch.Size([468, 200]) relation.shape==> torch.Size([468, 200]) pe.shape==> torch.Size([468, 3])
+node.shape==> torch.Size([554, 200]) relation.shape==> torch.Size([554, 200]) pe.shape==> torch.Size([554, 3])
+node.shape==> torch.Size([554, 200]) relation.shape==> torch.Size([554, 200]) pe.shape==> torch.Size([554, 3])
+node.shape==> torch.Size([554, 200]) relation.shape==> torch.Size([554, 200]) pe.shape==> torch.Size([554, 3])
+node.shape==> torch.Size([554, 200]) relation.shape==> torch.Size([554, 200]) pe.shape==> torch.Size([554, 3])
+node.shape==> torch.Size([554, 200]) relation.shape==> torch.Size([554, 200]) pe.shape==> torch.Size([554, 3])
+node.shape==> torch.Size([554, 200]) relation.shape==> torch.Size([554, 200]) pe.shape==> torch.Size([554, 3])
+node.shape==> torch.Size([554, 200]) relation.shape==> torch.Size([554, 200]) pe.shape==> torch.Size([554, 3])
+node.shape==> torch.Size([554, 200]) relation.shape==> torch.Size([554, 200]) pe.shape==> torch.Size([554, 3])
+node.shape==> torch.Size([468, 200]) relation.shape==> torch.Size([468, 200]) pe.shape==> torch.Size([468, 3])
+node.shape==> torch.Size([468, 200]) relation.shape==> torch.Size([468, 200]) pe.shape==> torch.Size([468, 3])
+node.shape==> torch.Size([494, 200]) relation.shape==> torch.Size([494, 200]) pe.shape==> torch.Size([494, 3])
+node.shape==> torch.Size([494, 200]) relation.shape==> torch.Size([494, 200]) pe.shape==> torch.Size([494, 3])
+node.shape==> torch.Size([406, 200]) relation.shape==> torch.Size([406, 200]) pe.shape==> torch.Size([406, 3])
+node.shape==> torch.Size([406, 200]) relation.shape==> torch.Size([406, 200]) pe.shape==> torch.Size([406, 3])
+node.shape==> torch.Size([206, 200]) relation.shape==> torch.Size([206, 200]) pe.shape==> torch.Size([206, 3])
+node.shape==> torch.Size([206, 200]) relation.shape==> torch.Size([206, 200]) pe.shape==> torch.Size([206, 3])
+node.shape==> torch.Size([278, 200]) relation.shape==> torch.Size([278, 200]) pe.shape==> torch.Size([278, 3])
+node.shape==> torch.Size([278, 200]) relation.shape==> torch.Size([278, 200]) pe.shape==> torch.Size([278, 3])
+node.shape==> torch.Size([642, 200]) relation.shape==> torch.Size([642, 200]) pe.shape==> torch.Size([642, 3])
+node.shape==> torch.Size([642, 200]) relation.shape==> torch.Size([642, 200]) pe.shape==> torch.Size([642, 3])
+--------------> 'p'
+--------------> 'p'
+node.shape==> torch.Size([256, 200]) relation.shape==> torch.Size([256, 200]) pe.shape==> torch.Size([256, 3])
+node.shape==> torch.Size([256, 200]) relation.shape==> torch.Size([256, 200]) pe.shape==> torch.Size([256, 3])
+node.shape==> torch.Size([266, 200]) relation.shape==> torch.Size([266, 200]) pe.shape==> torch.Size([266, 3])
+node.shape==> torch.Size([266, 200]) relation.shape==> torch.Size([266, 200]) pe.shape==> torch.Size([266, 3])
+node.shape==> torch.Size([534, 200]) relation.shape==> torch.Size([534, 200]) pe.shape==> torch.Size([534, 3])
+node.shape==> torch.Size([534, 200]) relation.shape==> torch.Size([534, 200]) pe.shape==> torch.Size([534, 3])
+node.shape==> torch.Size([540, 200]) relation.shape==> torch.Size([540, 200]) pe.shape==> torch.Size([540, 3])
+node.shape==> torch.Size([540, 200]) relation.shape==> torch.Size([540, 200]) pe.shape==> torch.Size([540, 3])
+node.shape==> torch.Size([520, 200]) relation.shape==> torch.Size([520, 200]) pe.shape==> torch.Size([520, 3])
+node.shape==> torch.Size([520, 200]) relation.shape==> torch.Size([520, 200]) pe.shape==> torch.Size([520, 3])
+node.shape==> torch.Size([544, 200]) relation.shape==> torch.Size([544, 200]) pe.shape==> torch.Size([544, 3])
+node.shape==> torch.Size([544, 200]) relation.shape==> torch.Size([544, 200]) pe.shape==> torch.Size([544, 3])
+node.shape==> torch.Size([550, 200]) relation.shape==> torch.Size([550, 200]) pe.shape==> torch.Size([550, 3])
+node.shape==> torch.Size([550, 200]) relation.shape==> torch.Size([550, 200]) pe.shape==> torch.Size([550, 3])
+node.shape==> torch.Size([264, 200]) relation.shape==> torch.Size([264, 200]) pe.shape==> torch.Size([264, 3])
+node.shape==> torch.Size([264, 200]) relation.shape==> torch.Size([264, 200]) pe.shape==> torch.Size([264, 3])
+node.shape==> torch.Size([264, 200]) relation.shape==> torch.Size([264, 200]) pe.shape==> torch.Size([264, 3])
+node.shape==> torch.Size([264, 200]) relation.shape==> torch.Size([264, 200]) pe.shape==> torch.Size([264, 3])
+node.shape==> torch.Size([550, 200]) relation.shape==> torch.Size([550, 200]) pe.shape==> torch.Size([550, 3])
+node.shape==> torch.Size([550, 200]) relation.shape==> torch.Size([550, 200]) pe.shape==> torch.Size([550, 3])
+node.shape==> torch.Size([544, 200]) relation.shape==> torch.Size([544, 200]) pe.shape==> torch.Size([544, 3])
+node.shape==> torch.Size([544, 200]) relation.shape==> torch.Size([544, 200]) pe.shape==> torch.Size([544, 3])
+node.shape==> torch.Size([520, 200]) relation.shape==> torch.Size([520, 200]) pe.shape==> torch.Size([520, 3])
+node.shape==> torch.Size([520, 200]) relation.shape==> torch.Size([520, 200]) pe.shape==> torch.Size([520, 3])
+node.shape==> torch.Size([540, 200]) relation.shape==> torch.Size([540, 200]) pe.shape==> torch.Size([540, 3])
+node.shape==> torch.Size([540, 200]) relation.shape==> torch.Size([540, 200]) pe.shape==> torch.Size([540, 3])
+node.shape==> torch.Size([534, 200]) relation.shape==> torch.Size([534, 200]) pe.shape==> torch.Size([534, 3])
+node.shape==> torch.Size([534, 200]) relation.shape==> torch.Size([534, 200]) pe.shape==> torch.Size([534, 3])
+node.shape==> torch.Size([266, 200]) relation.shape==> torch.Size([266, 200]) pe.shape==> torch.Size([266, 3])
+node.shape==> torch.Size([266, 200]) relation.shape==> torch.Size([266, 200]) pe.shape==> torch.Size([266, 3])
+node.shape==> torch.Size([256, 200]) relation.shape==> torch.Size([256, 200]) pe.shape==> torch.Size([256, 3])
+node.shape==> torch.Size([256, 200]) relation.shape==> torch.Size([256, 200]) pe.shape==> torch.Size([256, 3])
+--------------> 'p'
+--------------> 'p'
+node.shape==> torch.Size([524, 200]) relation.shape==> torch.Size([524, 200]) pe.shape==> torch.Size([524, 3])
+node.shape==> torch.Size([524, 200]) relation.shape==> torch.Size([524, 200]) pe.shape==> torch.Size([524, 3])
+node.shape==> torch.Size([288, 200]) relation.shape==> torch.Size([288, 200]) pe.shape==> torch.Size([288, 3])
+node.shape==> torch.Size([288, 200]) relation.shape==> torch.Size([288, 200]) pe.shape==> torch.Size([288, 3])
+node.shape==> torch.Size([334, 200]) relation.shape==> torch.Size([334, 200]) pe.shape==> torch.Size([334, 3])
+node.shape==> torch.Size([334, 200]) relation.shape==> torch.Size([334, 200]) pe.shape==> torch.Size([334, 3])
+node.shape==> torch.Size([542, 200]) relation.shape==> torch.Size([542, 200]) pe.shape==> torch.Size([542, 3])
+node.shape==> torch.Size([542, 200]) relation.shape==> torch.Size([542, 200]) pe.shape==> torch.Size([542, 3])
+node.shape==> torch.Size([654, 200]) relation.shape==> torch.Size([654, 200]) pe.shape==> torch.Size([654, 3])
+node.shape==> torch.Size([654, 200]) relation.shape==> torch.Size([654, 200]) pe.shape==> torch.Size([654, 3])
+node.shape==> torch.Size([626, 200]) relation.shape==> torch.Size([626, 200]) pe.shape==> torch.Size([626, 3])
+node.shape==> torch.Size([626, 200]) relation.shape==> torch.Size([626, 200]) pe.shape==> torch.Size([626, 3])
+node.shape==> torch.Size([502, 200]) relation.shape==> torch.Size([502, 200]) pe.shape==> torch.Size([502, 3])
+node.shape==> torch.Size([502, 200]) relation.shape==> torch.Size([502, 200]) pe.shape==> torch.Size([502, 3])
+node.shape==> torch.Size([518, 200]) relation.shape==> torch.Size([518, 200]) pe.shape==> torch.Size([518, 3])
+node.shape==> torch.Size([518, 200]) relation.shape==> torch.Size([518, 200]) pe.shape==> torch.Size([518, 3])
+node.shape==> torch.Size([518, 200]) relation.shape==> torch.Size([518, 200]) pe.shape==> torch.Size([518, 3])
+node.shape==> torch.Size([518, 200]) relation.shape==> torch.Size([518, 200]) pe.shape==> torch.Size([518, 3])
+node.shape==> torch.Size([502, 200]) relation.shape==> torch.Size([502, 200]) pe.shape==> torch.Size([502, 3])
+node.shape==> torch.Size([502, 200]) relation.shape==> torch.Size([502, 200]) pe.shape==> torch.Size([502, 3])
+node.shape==> torch.Size([626, 200]) relation.shape==> torch.Size([626, 200]) pe.shape==> torch.Size([626, 3])
+node.shape==> torch.Size([626, 200]) relation.shape==> torch.Size([626, 200]) pe.shape==> torch.Size([626, 3])
+node.shape==> torch.Size([654, 200]) relation.shape==> torch.Size([654, 200]) pe.shape==> torch.Size([654, 3])
+node.shape==> torch.Size([654, 200]) relation.shape==> torch.Size([654, 200]) pe.shape==> torch.Size([654, 3])
+node.shape==> torch.Size([542, 200]) relation.shape==> torch.Size([542, 200]) pe.shape==> torch.Size([542, 3])
+node.shape==> torch.Size([542, 200]) relation.shape==> torch.Size([542, 200]) pe.shape==> torch.Size([542, 3])
+node.shape==> torch.Size([334, 200]) relation.shape==> torch.Size([334, 200]) pe.shape==> torch.Size([334, 3])
+node.shape==> torch.Size([334, 200]) relation.shape==> torch.Size([334, 200]) pe.shape==> torch.Size([334, 3])
+node.shape==> torch.Size([288, 200]) relation.shape==> torch.Size([288, 200]) pe.shape==> torch.Size([288, 3])
+node.shape==> torch.Size([288, 200]) relation.shape==> torch.Size([288, 200]) pe.shape==> torch.Size([288, 3])
+node.shape==> torch.Size([524, 200]) relation.shape==> torch.Size([524, 200]) pe.shape==> torch.Size([524, 3])
+node.shape==> torch.Size([524, 200]) relation.shape==> torch.Size([524, 200]) pe.shape==> torch.Size([524, 3])
+--------------> 'p'
+--------------> 'p'
+Logging to results/g_0_ICEWS14s_short_True_short-model_biregcn_long_True_f_gate_fr_gate_ta_0.7_gnn1_regcn_2_gnn2_rgat_r1_3_seq_rnn_8_max_length_10_fil_False_ori_Falselast_True
+use layer :uvrgcn
+activate function: <function rrelu at 0x7b6631385440>
+activate function: <function rrelu at 0x7b6631385440>
+use layer :uvrgcn
+activate function: <function rrelu at 0x7b6631385440>
+activate function: <function rrelu at 0x7b6631385440>
+Epoch 0 _ Start training:  2024-10-21 07:50:31.787291 =============================================
+Epoch 0, loss 4.7220 2024-10-21 07:52:23.580585
+	Start validating:  2024-10-21 07:52:23.580656
+	train_loss:4.7220	val_loss:4.0791	val_Mrr_raw:0.2867	val_Hits(raw)@1:0.1825	val_Hits(raw)@3:0.3195	val_Hits(raw)@10:0.4930	val_Mrr_filter:0.2965	val_Hits(filter)@1:0.1946	val_Hits(filter)@3:0.3293	val_Hits(filter)@10:0.4972
+	Start testing:  2024-10-21 07:52:35.353664
+	val_loss:4.0982	val_Mrr_raw:0.2758	val_Hits(raw)@1:0.1738	val_Hits(raw)@3:0.3035	val_Hits(raw)@10:0.4792	val_Mrr_filter:0.2813	val_Hits(filter)@1:0.1811	val_Hits(filter)@3:0.3073	val_Hits(filter)@10:0.4820
+Epoch 1 _ Start training:  2024-10-21 07:52:47.222703 =============================================
+Epoch 1, loss 4.0264 2024-10-21 07:54:39.745675
+	Start validating:  2024-10-21 07:54:39.745826
+	train_loss:4.0264	val_loss:3.6424	val_Mrr_raw:0.3609	val_Hits(raw)@1:0.2492	val_Hits(raw)@3:0.4024	val_Hits(raw)@10:0.5851	val_Mrr_filter:0.3736	val_Hits(filter)@1:0.2661	val_Hits(filter)@3:0.4120	val_Hits(filter)@10:0.5901
+	Start testing:  2024-10-21 07:54:51.643101
+	val_loss:3.6310	val_Mrr_raw:0.3539	val_Hits(raw)@1:0.2440	val_Hits(raw)@3:0.3903	val_Hits(raw)@10:0.5763	val_Mrr_filter:0.3625	val_Hits(filter)@1:0.2551	val_Hits(filter)@3:0.3983	val_Hits(filter)@10:0.5796
+Epoch 2 _ Start training:  2024-10-21 07:55:03.358087 =============================================
+Epoch 2, loss 3.6815 2024-10-21 07:56:55.580235
+	Start validating:  2024-10-21 07:56:55.580288
+	train_loss:3.6815	val_loss:3.4784	val_Mrr_raw:0.4016	val_Hits(raw)@1:0.2814	val_Hits(raw)@3:0.4536	val_Hits(raw)@10:0.6404	val_Mrr_filter:0.4174	val_Hits(filter)@1:0.3036	val_Hits(filter)@3:0.4641	val_Hits(filter)@10:0.6451
+	Start testing:  2024-10-21 07:57:07.432063
+	val_loss:3.4661	val_Mrr_raw:0.3953	val_Hits(raw)@1:0.2776	val_Hits(raw)@3:0.4425	val_Hits(raw)@10:0.6332	val_Mrr_filter:0.4057	val_Hits(filter)@1:0.2912	val_Hits(filter)@3:0.4527	val_Hits(filter)@10:0.6373
+Epoch 3 _ Start training:  2024-10-21 07:57:19.192482 =============================================
+Epoch 3, loss 3.4429 2024-10-21 07:59:11.507562
+	Start validating:  2024-10-21 07:59:11.507676
+	train_loss:3.4429	val_loss:3.3199	val_Mrr_raw:0.4279	val_Hits(raw)@1:0.3057	val_Hits(raw)@3:0.4868	val_Hits(raw)@10:0.6689	val_Mrr_filter:0.4454	val_Hits(filter)@1:0.3299	val_Hits(filter)@3:0.4986	val_Hits(filter)@10:0.6744
+	Start testing:  2024-10-21 07:59:23.276205
+	val_loss:3.2723	val_Mrr_raw:0.4281	val_Hits(raw)@1:0.3074	val_Hits(raw)@3:0.4799	val_Hits(raw)@10:0.6729	val_Mrr_filter:0.4402	val_Hits(filter)@1:0.3238	val_Hits(filter)@3:0.4892	val_Hits(filter)@10:0.6764
+Epoch 4 _ Start training:  2024-10-21 07:59:35.134628 =============================================
+Epoch 4, loss 3.2464 2024-10-21 08:01:27.992884
+	Start validating:  2024-10-21 08:01:27.992940
+	train_loss:3.2464	val_loss:3.2825	val_Mrr_raw:0.4426	val_Hits(raw)@1:0.3188	val_Hits(raw)@3:0.5055	val_Hits(raw)@10:0.6864	val_Mrr_filter:0.4612	val_Hits(filter)@1:0.3447	val_Hits(filter)@3:0.5185	val_Hits(filter)@10:0.6912
+	Start testing:  2024-10-21 08:01:39.971954
+	val_loss:3.2330	val_Mrr_raw:0.4454	val_Hits(raw)@1:0.3235	val_Hits(raw)@3:0.5068	val_Hits(raw)@10:0.6890	val_Mrr_filter:0.4582	val_Hits(filter)@1:0.3403	val_Hits(filter)@3:0.5174	val_Hits(filter)@10:0.6922
+Epoch 5 _ Start training:  2024-10-21 08:01:51.708149 =============================================
+Epoch 5, loss 3.0772 2024-10-21 08:03:44.704333
+	Start validating:  2024-10-21 08:03:44.704388
+	train_loss:3.0772	val_loss:3.1928	val_Mrr_raw:0.4566	val_Hits(raw)@1:0.3302	val_Hits(raw)@3:0.5253	val_Hits(raw)@10:0.7043	val_Mrr_filter:0.4754	val_Hits(filter)@1:0.3563	val_Hits(filter)@3:0.5393	val_Hits(filter)@10:0.7092
+	Start testing:  2024-10-21 08:03:56.632189
+	val_loss:3.1293	val_Mrr_raw:0.4610	val_Hits(raw)@1:0.3362	val_Hits(raw)@3:0.5233	val_Hits(raw)@10:0.7061	val_Mrr_filter:0.4746	val_Hits(filter)@1:0.3546	val_Hits(filter)@3:0.5337	val_Hits(filter)@10:0.7093
+Epoch 6 _ Start training:  2024-10-21 08:04:08.368711 =============================================
+Epoch 6, loss 2.9237 2024-10-21 08:06:01.383337
+	Start validating:  2024-10-21 08:06:01.383443
+	train_loss:2.9237	val_loss:3.1867	val_Mrr_raw:0.4585	val_Hits(raw)@1:0.3314	val_Hits(raw)@3:0.5259	val_Hits(raw)@10:0.7062	val_Mrr_filter:0.4767	val_Hits(filter)@1:0.3561	val_Hits(filter)@3:0.5393	val_Hits(filter)@10:0.7108
+	Start testing:  2024-10-21 08:06:13.226128
+	val_loss:3.1340	val_Mrr_raw:0.4649	val_Hits(raw)@1:0.3417	val_Hits(raw)@3:0.5269	val_Hits(raw)@10:0.7063	val_Mrr_filter:0.4787	val_Hits(filter)@1:0.3613	val_Hits(filter)@3:0.5370	val_Hits(filter)@10:0.7107
+Epoch 7 _ Start training:  2024-10-21 08:06:24.986403 =============================================
+Epoch 7, loss 2.7922 2024-10-21 08:08:17.860063
+	Start validating:  2024-10-21 08:08:17.860332
+	train_loss:2.7922	val_loss:3.1578	val_Mrr_raw:0.4689	val_Hits(raw)@1:0.3422	val_Hits(raw)@3:0.5372	val_Hits(raw)@10:0.7163	val_Mrr_filter:0.4881	val_Hits(filter)@1:0.3688	val_Hits(filter)@3:0.5507	val_Hits(filter)@10:0.7216
+	Start testing:  2024-10-21 08:08:29.661893
+	val_loss:3.1139	val_Mrr_raw:0.4721	val_Hits(raw)@1:0.3476	val_Hits(raw)@3:0.5370	val_Hits(raw)@10:0.7173	val_Mrr_filter:0.4859	val_Hits(filter)@1:0.3662	val_Hits(filter)@3:0.5482	val_Hits(filter)@10:0.7205
+Epoch 8 _ Start training:  2024-10-21 08:08:41.368841 =============================================
+Epoch 8, loss 2.6662 2024-10-21 08:10:33.940166
+	Start validating:  2024-10-21 08:10:33.940221
+	train_loss:2.6662	val_loss:3.1707	val_Mrr_raw:0.4733	val_Hits(raw)@1:0.3475	val_Hits(raw)@3:0.5438	val_Hits(raw)@10:0.7171	val_Mrr_filter:0.4929	val_Hits(filter)@1:0.3754	val_Hits(filter)@3:0.5571	val_Hits(filter)@10:0.7216
+	Start testing:  2024-10-21 08:10:45.693611
+	val_loss:3.1193	val_Mrr_raw:0.4759	val_Hits(raw)@1:0.3513	val_Hits(raw)@3:0.5436	val_Hits(raw)@10:0.7157	val_Mrr_filter:0.4897	val_Hits(filter)@1:0.3701	val_Hits(filter)@3:0.5549	val_Hits(filter)@10:0.7201
+Epoch 9 _ Start training:  2024-10-21 08:10:57.444986 =============================================
+Epoch 9, loss 2.5579 2024-10-21 08:12:49.965650
+	Start validating:  2024-10-21 08:12:49.966038
+	train_loss:2.5579	val_loss:3.2358	val_Mrr_raw:0.4684	val_Hits(raw)@1:0.3410	val_Hits(raw)@3:0.5401	val_Hits(raw)@10:0.7145	val_Mrr_filter:0.4884	val_Hits(filter)@1:0.3690	val_Hits(filter)@3:0.5534	val_Hits(filter)@10:0.7190
+	Start testing:  2024-10-21 08:13:01.649691
+	val_loss:3.1857	val_Mrr_raw:0.4734	val_Hits(raw)@1:0.3497	val_Hits(raw)@3:0.5406	val_Hits(raw)@10:0.7139	val_Mrr_filter:0.4875	val_Hits(filter)@1:0.3688	val_Hits(filter)@3:0.5505	val_Hits(filter)@10:0.7174
+Epoch 10 _ Start training:  2024-10-21 08:13:13.365253 =============================================
+Epoch 10, loss 2.4559 2024-10-21 08:15:05.827877
+	Start validating:  2024-10-21 08:15:05.827933
+	train_loss:2.4559	val_loss:3.2020	val_Mrr_raw:0.4758	val_Hits(raw)@1:0.3508	val_Hits(raw)@3:0.5435	val_Hits(raw)@10:0.7178	val_Mrr_filter:0.4957	val_Hits(filter)@1:0.3790	val_Hits(filter)@3:0.5573	val_Hits(filter)@10:0.7219
+	Start testing:  2024-10-21 08:15:17.657393
+	val_loss:3.1498	val_Mrr_raw:0.4775	val_Hits(raw)@1:0.3535	val_Hits(raw)@3:0.5440	val_Hits(raw)@10:0.7183	val_Mrr_filter:0.4913	val_Hits(filter)@1:0.3726	val_Hits(filter)@3:0.5544	val_Hits(filter)@10:0.7228
+Epoch 11 _ Start training:  2024-10-21 08:15:29.379173 =============================================
+Epoch 11, loss 2.3603 2024-10-21 08:17:21.958085
+	Start validating:  2024-10-21 08:17:21.958138
+	train_loss:2.3603	val_loss:3.1893	val_Mrr_raw:0.4838	val_Hits(raw)@1:0.3592	val_Hits(raw)@3:0.5558	val_Hits(raw)@10:0.7243	val_Mrr_filter:0.5037	val_Hits(filter)@1:0.3869	val_Hits(filter)@3:0.5699	val_Hits(filter)@10:0.7284
+	Start testing:  2024-10-21 08:17:33.702294
+	val_loss:3.1566	val_Mrr_raw:0.4796	val_Hits(raw)@1:0.3550	val_Hits(raw)@3:0.5495	val_Hits(raw)@10:0.7194	val_Mrr_filter:0.4934	val_Hits(filter)@1:0.3738	val_Hits(filter)@3:0.5595	val_Hits(filter)@10:0.7229
+Epoch 12 _ Start training:  2024-10-21 08:17:45.434660 =============================================
+Epoch 12, loss 2.2781 2024-10-21 08:19:38.134208
+	Start validating:  2024-10-21 08:19:38.134262
+	train_loss:2.2781	val_loss:3.2335	val_Mrr_raw:0.4765	val_Hits(raw)@1:0.3505	val_Hits(raw)@3:0.5466	val_Hits(raw)@10:0.7181	val_Mrr_filter:0.4958	val_Hits(filter)@1:0.3770	val_Hits(filter)@3:0.5611	val_Hits(filter)@10:0.7226
+	Start testing:  2024-10-21 08:19:49.966676
+	val_loss:3.1899	val_Mrr_raw:0.4779	val_Hits(raw)@1:0.3522	val_Hits(raw)@3:0.5505	val_Hits(raw)@10:0.7169	val_Mrr_filter:0.4922	val_Hits(filter)@1:0.3720	val_Hits(filter)@3:0.5603	val_Hits(filter)@10:0.7201
+Epoch 13 _ Start training:  2024-10-21 08:20:01.695994 =============================================
+Epoch 13, loss 2.2012 2024-10-21 08:21:54.493318
+	Start validating:  2024-10-21 08:21:54.493470
+	train_loss:2.2012	val_loss:3.2437	val_Mrr_raw:0.4773	val_Hits(raw)@1:0.3525	val_Hits(raw)@3:0.5461	val_Hits(raw)@10:0.7156	val_Mrr_filter:0.4965	val_Hits(filter)@1:0.3792	val_Hits(filter)@3:0.5598	val_Hits(filter)@10:0.7202
+	Start testing:  2024-10-21 08:22:06.363065
+	val_loss:3.1885	val_Mrr_raw:0.4806	val_Hits(raw)@1:0.3580	val_Hits(raw)@3:0.5452	val_Hits(raw)@10:0.7156	val_Mrr_filter:0.4939	val_Hits(filter)@1:0.3765	val_Hits(filter)@3:0.5558	val_Hits(filter)@10:0.7197
+Epoch 14 _ Start training:  2024-10-21 08:22:18.089234 =============================================
+Epoch 14, loss 2.1307 2024-10-21 08:24:10.358243
+	Start validating:  2024-10-21 08:24:10.358544
+	train_loss:2.1307	val_loss:3.2891	val_Mrr_raw:0.4778	val_Hits(raw)@1:0.3519	val_Hits(raw)@3:0.5487	val_Hits(raw)@10:0.7170	val_Mrr_filter:0.4977	val_Hits(filter)@1:0.3800	val_Hits(filter)@3:0.5634	val_Hits(filter)@10:0.7219
+	Start testing:  2024-10-21 08:24:22.161375
+	val_loss:3.2486	val_Mrr_raw:0.4762	val_Hits(raw)@1:0.3542	val_Hits(raw)@3:0.5460	val_Hits(raw)@10:0.7101	val_Mrr_filter:0.4896	val_Hits(filter)@1:0.3721	val_Hits(filter)@3:0.5565	val_Hits(filter)@10:0.7135
+Epoch 15 _ Start training:  2024-10-21 08:24:34.026802 =============================================
+Epoch 15, loss 2.0661 2024-10-21 08:26:26.338725
+	Start validating:  2024-10-21 08:26:26.338779
+	train_loss:2.0661	val_loss:3.3123	val_Mrr_raw:0.4766	val_Hits(raw)@1:0.3526	val_Hits(raw)@3:0.5470	val_Hits(raw)@10:0.7141	val_Mrr_filter:0.4966	val_Hits(filter)@1:0.3805	val_Hits(filter)@3:0.5614	val_Hits(filter)@10:0.7177
+	Start testing:  2024-10-21 08:26:38.158577
+	val_loss:3.2774	val_Mrr_raw:0.4771	val_Hits(raw)@1:0.3563	val_Hits(raw)@3:0.5415	val_Hits(raw)@10:0.7092	val_Mrr_filter:0.4909	val_Hits(filter)@1:0.3755	val_Hits(filter)@3:0.5518	val_Hits(filter)@10:0.7122
+Epoch 16 _ Start training:  2024-10-21 08:26:49.929640 =============================================
+Epoch 16, loss 2.0049 2024-10-21 08:28:42.944730
+	Start validating:  2024-10-21 08:28:42.944854
+	train_loss:2.0049	val_loss:3.3438	val_Mrr_raw:0.4753	val_Hits(raw)@1:0.3526	val_Hits(raw)@3:0.5433	val_Hits(raw)@10:0.7110	val_Mrr_filter:0.4952	val_Hits(filter)@1:0.3805	val_Hits(filter)@3:0.5572	val_Hits(filter)@10:0.7161
+	Start testing:  2024-10-21 08:28:54.795354
+	val_loss:3.2889	val_Mrr_raw:0.4761	val_Hits(raw)@1:0.3554	val_Hits(raw)@3:0.5410	val_Hits(raw)@10:0.7074	val_Mrr_filter:0.4891	val_Hits(filter)@1:0.3734	val_Hits(filter)@3:0.5520	val_Hits(filter)@10:0.7106
+Epoch 17 _ Start training:  2024-10-21 08:29:06.680265 =============================================
+Epoch 17, loss 1.9474 2024-10-21 08:30:59.276715
+	Start validating:  2024-10-21 08:30:59.276768
+	train_loss:1.9474	val_loss:3.3716	val_Mrr_raw:0.4758	val_Hits(raw)@1:0.3524	val_Hits(raw)@3:0.5418	val_Hits(raw)@10:0.7164	val_Mrr_filter:0.4952	val_Hits(filter)@1:0.3800	val_Hits(filter)@3:0.5551	val_Hits(filter)@10:0.7203
+	Start testing:  2024-10-21 08:31:11.104636
+	val_loss:3.3420	val_Mrr_raw:0.4737	val_Hits(raw)@1:0.3518	val_Hits(raw)@3:0.5393	val_Hits(raw)@10:0.7066	val_Mrr_filter:0.4870	val_Hits(filter)@1:0.3703	val_Hits(filter)@3:0.5505	val_Hits(filter)@10:0.7095
+Epoch 18 _ Start training:  2024-10-21 08:31:22.827358 =============================================
+Epoch 18, loss 1.8961 2024-10-21 08:33:15.874092
+	Start validating:  2024-10-21 08:33:15.874144
+	train_loss:1.8961	val_loss:3.4422	val_Mrr_raw:0.4682	val_Hits(raw)@1:0.3451	val_Hits(raw)@3:0.5383	val_Hits(raw)@10:0.7028	val_Mrr_filter:0.4871	val_Hits(filter)@1:0.3712	val_Hits(filter)@3:0.5516	val_Hits(filter)@10:0.7074
+	Start testing:  2024-10-21 08:33:27.693865
+	val_loss:3.3967	val_Mrr_raw:0.4677	val_Hits(raw)@1:0.3461	val_Hits(raw)@3:0.5341	val_Hits(raw)@10:0.6995	val_Mrr_filter:0.4807	val_Hits(filter)@1:0.3641	val_Hits(filter)@3:0.5435	val_Hits(filter)@10:0.7040
+Epoch 19 _ Start training:  2024-10-21 08:33:39.353676 =============================================

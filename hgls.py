@@ -7,17 +7,18 @@
 
 import torch
 import torch.nn as nn
-from rrgcn import RecurrentRGCN
+from rrgcn import RecurrentRGCN, BiRecurrentRGCN
 from hrgnn import HRGNN
 from rgcn.utils import build_sub_graph
 import torch.nn.functional as F
 from decoder import ConvTransE, ConvTransR
 from rrgcn import RGCNCell
 from hrgnn import GNN
+import math
 
 class HGLS(nn.Module):
     def __init__(self, graph, num_nodes, num_rels, h_dim, task, relation_prediction, short=True, long=True, fuse='con',
-                 r_fuse='re', short_con=None, long_con=None):
+                 r_fuse='re', short_con=None, long_con=None, short_model="regcn"):
         super(HGLS, self).__init__()
         self.g = graph
         self.num_nodes = num_nodes
@@ -32,6 +33,11 @@ class HGLS(nn.Module):
         self.r_fuse = r_fuse
         self.en_embedding = nn.Embedding(self.num_nodes, self.h_dim)
         self.rel_embedding = nn.Embedding(self.num_rels * 2 + 1, self.h_dim)
+        self.reverse_emb_rel = nn.Embedding(self.num_rels * 2 + 1, self.h_dim)
+        self.use_static = short_con["use_static"]
+        self.discount = 1
+        self.pe_init = short_con["pe_init"]
+        self.pe_dim = short_con["pe_dim"]
         torch.nn.init.normal_(self.en_embedding.weight)
         torch.nn.init.xavier_normal_(self.rel_embedding.weight)
         self.gnn = long_con['encoder']
@@ -48,15 +54,41 @@ class HGLS(nn.Module):
                                  short_con['self_loop'],
                                  short_con['skip_connect'],
                                  short_con['encoder'],
-                                 short_con['opn'])
+                                 short_con['opn'],
+                                 pe_init = short_con["pe_init"],
+                                 pe_dim = short_con["pe_dim"])   
+            self.burgcn = RGCNCell(num_nodes,
+                                h_dim,
+                                h_dim,
+                                num_rels * 2,
+                                short_con['num_bases'],
+                                short_con['num_basis'],
+                                long_con['a_layer_num'],
+                                short_con['dropout'],
+                                short_con['self_loop'],
+                                short_con['skip_connect'],
+                                short_con['encoder'],
+                                short_con['opn'],
+                                pe_init = short_con["pe_init"],
+                                pe_dim = short_con["pe_dim"])                                
+        
         elif self.gnn == 'rgat':
             self.rgcn = GNN(self.h_dim, self.h_dim, layer_num=long_con['a_layer_num'], gnn=self.gnn, attn_drop=0.0, feat_drop=0.2)
         if self.short:
-            self.model_r = RecurrentRGCN(num_ents=num_nodes, num_rels=num_rels, gnn=self.gnn, **short_con)
+            short_con.pop('short_model', None)
+            if short_model == "regcn":
+                self.model_r = RecurrentRGCN(num_ents=num_nodes, num_rels=num_rels, gnn=self.gnn, **short_con)
+            elif short_model == "biregcn":
+                self.model_r = BiRecurrentRGCN(num_ents=num_nodes, num_rels=num_rels, gnn=self.gnn, **short_con)
+                self.model_r.burgcn = self.burgcn
+                self.model_r.reverse_emb_rel = self.reverse_emb_rel.weight
+
             self.model_r.rgcn = self.rgcn
             self.model_r.dynamic_emb = self.en_embedding.weight
             self.model_r.emb_rel = self.rel_embedding.weight
-
+            # self.static_graph = short_con["static_graph"]
+            # if short_con["use_static"]:
+            #     self.model_r.static_graph = short_con["static_graph"]
         if self.long:
             self.model_t = HRGNN(graph=graph, num_nodes=num_nodes, num_rels=num_rels, **long_con)
             self.model_t.aggregator = self.rgcn
@@ -91,7 +123,8 @@ class HGLS(nn.Module):
         self.decoder_ob = ConvTransE(num_nodes, h_dim, short_con['input_dropout'], short_con['hidden_dropout'], short_con['feat_dropout'])
         self.rdecoder = ConvTransR(num_rels, h_dim, short_con['input_dropout'], short_con['hidden_dropout'], short_con['feat_dropout'])
 
-    def forward(self, total_list, data_list, node_id_new=None, time_gap=None, device=None, mode='test'):
+    def forward(self, all_list, total_list, data_list, node_id_new=None, time_gap=None, device=None, mode='test', static_graph=None):
+        # print("static_graph-----------", static_graph)
         # RE-GCN的更新
         t = data_list['t'][0].to(device)
         all_triples = data_list['triple'].to(device)
@@ -101,8 +134,8 @@ class HGLS(nn.Module):
                 input_list = total_list[0:t]
             else:
                 input_list = total_list[t-self.sequence_len: t]
-            history_glist = [build_sub_graph(self.num_nodes, self.num_rels, snap, device) for snap in input_list]
-            evolve_embs, static_emb, r_emb, _, _ = self.model_r(history_glist, device=device)
+            history_glist = [build_sub_graph(self.num_nodes, self.num_rels, snap, device, pe_init=self.pe_init, pe_dim=self.pe_dim, all_list=all_list) for snap in input_list]
+            evolve_embs, static_emb, r_emb, _, _ = self.model_r(history_glist, static_graph=static_graph, device=device)
             pre_emb = F.normalize(evolve_embs[-1])
         if self.long:
             new_embedding = F.normalize(self.model_t(data_list, node_id_new, time_gap, device, mode))
@@ -136,13 +169,43 @@ class HGLS(nn.Module):
         # 构造loss
         loss_ent = torch.zeros(1).to(device)
         loss_rel = torch.zeros(1).to(device)
+        loss_static = torch.zeros(1).to(device)
         scores_ob = self.decoder_ob.forward(pre_emb, r_emb, all_triples, mode).view(-1, self.num_nodes)
         loss_ent += self.loss_e(scores_ob, all_triples[:, 2])
 
         if self.relation_prediction:
             score_rel = self.rdecoder.forward(pre_emb, r_emb, all_triples, mode).view(-1, self.num_rels *2)
             loss_rel += self.loss_r(score_rel, all_triples[:, 1])
+        if self.use_static:
+            self.weight = 0.5
+            self.angle = 10
+            self.layer_norm =True
+            if self.discount == 1:
+                for time_step, evolve_emb in enumerate(evolve_embs):
+                    step = (self.angle * math.pi / 180) * (time_step + 1)
+                    if self.layer_norm:
+                        sim_matrix = torch.sum(static_emb * F.normalize(evolve_emb), dim=1)
+                    else:
+                        sim_matrix = torch.sum(static_emb * evolve_emb, dim=1)
+                        c = torch.norm(static_emb, p=2, dim=1) * torch.norm(evolve_emb, p=2, dim=1)
+                        sim_matrix = sim_matrix / c
+                    mask = (math.cos(step) - sim_matrix) > 0
+                    loss_static += self.weight * torch.sum(torch.masked_select(math.cos(step) - sim_matrix, mask))
+            elif self.discount == 0:
+                for time_step, evolve_emb in enumerate(evolve_embs):
+                    step = (self.angle * math.pi / 180)
+                    if self.layer_norm:
+                        sim_matrix = torch.sum(static_emb * F.normalize(evolve_emb), dim=1)
+                    else:
+                        sim_matrix = torch.sum(static_emb * evolve_emb, dim=1)
+                        c = torch.norm(static_emb, p=2, dim=1) * torch.norm(evolve_emb, p=2, dim=1)
+                        sim_matrix = sim_matrix / c
+                    mask = (math.cos(step) - sim_matrix) > 0
+                    loss_static += self.weight * torch.sum(torch.masked_select(math.cos(step) - sim_matrix, mask))
         loss = self.task * loss_ent + (1 - self.task) * loss_rel
+        if self.use_static:
+            loss = loss + loss_static
+        
         if mode == 'test':
             return scores_ob, 0, loss
         else:

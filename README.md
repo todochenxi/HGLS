@@ -52,4 +52,8 @@ Please cite our paper if you use the code:
 
 Some of our code is also referenced from RE-GCN: [https://github.com/Lee-zix/RE-GCN](https://github.com/Lee-zix/RE-GCN).
 
+0, 1, 2, 3, 4, 5
+      0, 1, 2, 3
+0, 1, 2
+
 

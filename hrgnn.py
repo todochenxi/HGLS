@@ -13,11 +13,13 @@ import torch.nn.functional as F
 from dgl.sampling import sample_neighbors
 from TKG.utils import decoder_sorce, comp_deg_norm
 import math
+from pos_encoder import lap_positional_encoding_tkg, rw_positional_encoding_tkg
+
 
 class HRGNN(nn.Module):
     def __init__(self, graph, num_nodes, num_rels, time_length, time_idx, h_dim, out_dim, max_length=10, a_layer_num=2,
                  d_layer_num=1, encoder='regcn', decoder='rgat_r1', attn_drop=0.3, feat_drop=0.3, score='mlp', last=True,
-                 ori=True, norm=False, relation_prediction=True, filter=False, low_memory=True):
+                 ori=True, norm=False, relation_prediction=True, filter=False, low_memory=True, pe_init="raw", pe_dim=6):
         super(HRGNN, self).__init__()
         self.g = graph
         self.num_nodes = num_nodes
@@ -59,12 +61,25 @@ class HRGNN(nn.Module):
         self.aggregator = None
         # 初始化global-level
         self.decoder_f = GNN(self.h_dim, self.h_dim, layer_num=self.d_layer_num, gnn=self.decoder,
-                                 attn_drop=self.attn_drop, feat_drop=self.feat_drop)
+                                 attn_drop=self.attn_drop, feat_drop=self.feat_drop, pe_init=pe_init, pe_dim=pe_dim)
+        # pos_enc
+        self.pe_init = pe_init
+        self.pe_dim = pe_dim
 
     def forward(self, data_list, node_id_new=None, time_gap=None, device=None, mode='test'):
         out_triple = data_list['triple']
         h = F.normalize(self.en_embedding(self.g.ndata['id']))
         #h = self.norm_layer(self.en_embedding(self.g.ndata['id']))
+        # compute pos_encoding
+        if self.pe_init == "rw":
+            data_list['sub_e_graph'] = rw_positional_encoding_tkg(data_list['sub_e_graph'], self.pe_dim)
+            data_list['sub_d_graph'] = rw_positional_encoding_tkg(data_list['sub_d_graph'], self.pe_dim)
+        elif self.pe_init == 'lap':
+            data_list['sub_e_graph'] = lap_positional_encoding_tkg(data_list['sub_e_graph'], self.pe_dim)
+            data_list['sub_d_graph'] = lap_positional_encoding_tkg(data_list['sub_d_graph'], self.pe_dim)
+        # print('su_graph.p.shape::')
+        # print(data_list['sub_e_graph'].ndata['p'].shape)
+        # print(data_list['sub_d_graph'].ndata['p'].shape)
         # sub_graph level
         if self.encoder == 'ori':
             pass
@@ -123,7 +138,7 @@ class HRGNN(nn.Module):
 
 class GNN(nn.Module):
     def __init__(self, in_dim, out_dim, layer_num, gnn='rgcn', num_rels=None,
-                 attn_drop=0.3, feat_drop=0.3, num_head=None, low_memory=False):
+                 attn_drop=0.3, feat_drop=0.3, num_head=None, low_memory=False, pe_init="rw", pe_dim=6):
         super(GNN, self).__init__()
         self.h_dim = in_dim
         self.out_dim = out_dim
@@ -132,6 +147,8 @@ class GNN(nn.Module):
         self.gnn = gnn
         self.attn_drop = attn_drop
         self.feat_drop = feat_drop
+        self.pe_init = pe_init
+        self.pe_dim = pe_dim
 
         if self.gnn == 'rgcn':
             self.layer = nn.ModuleList(RelGraphConv(self.h_dim, self.h_dim, num_rels=self.num_rels, regularizer='basis',
@@ -146,7 +163,7 @@ class GNN(nn.Module):
             self.layer = nn.ModuleList(GraphConv(self.h_dim, self.h_dim, norm='both', activation=F.relu)
                                        for _ in range(self.layer_num))
         elif self.gnn == 'rgat_r1':
-            self.layer = nn.ModuleList(RGATLayer(self.h_dim, self.h_dim, self.feat_drop, self.attn_drop, self.gnn) for _ in range(self.layer_num))
+            self.layer = nn.ModuleList(RGATLayer(self.h_dim, self.h_dim, self.feat_drop, self.attn_drop, self.gnn, pe_init=self.pe_init, pe_dim=self.pe_dim) for _ in range(self.layer_num))
 
     def forward(self, graph, feature, etypes=None):
         for conv in self.layer:
@@ -159,7 +176,7 @@ class GNN(nn.Module):
 
 
 class RGATLayer(nn.Module):
-    def __init__(self, in_dim, out_dim, feat_drop=0.3, attn_drop=0.3, gnn='rgat_r'):
+    def __init__(self, in_dim, out_dim, feat_drop=0.3, attn_drop=0.3, gnn='rgat_r', pe_init=None, pe_dim=6):
         super(RGATLayer, self).__init__()
         self.gnn = gnn
         if self.gnn in ['rgat', 'rgat_r','rgat1','rgat_r1']:
@@ -174,6 +191,9 @@ class RGATLayer(nn.Module):
         self.feat_drop = nn.Dropout(feat_drop)
         self.atten_drop = nn.Dropout(attn_drop)
         self.h_dim = out_dim
+        self.embedding_msg = nn.Linear(out_dim + pe_dim, out_dim)
+        self.pe_init = pe_init
+        self.pe_dim = pe_dim
 
     def reset_parameters(self):
         """Reinitialize learnable parameters."""
@@ -198,14 +218,26 @@ class RGATLayer(nn.Module):
 
     def message_func(self, edges):
         # message UDF for equation (3) & (4)
-        return {'z': edges.src['z'], 'e': edges.data['e'], 'r_h': edges.data['r_h']}
+        value = {'z': edges.src['z'], 'e': edges.data['e'], 'r_h': edges.data['r_h']}
+        if self.pe_init in ['rw', 'lap']:
+            value['p'] = edges.src['p']
+        return value
 
     def reduce_func(self, nodes):
         # reduce UDF for equation (3) & (4)
         # equation (3)
         alpha = self.atten_drop(F.softmax(nodes.mailbox['e'], dim=1))
         # equation (4)
-        h = self.feat_drop(torch.sum(alpha * (nodes.mailbox['z'] + nodes.mailbox['r_h']), dim=1) + torch.mm(nodes.data['z'], self.loop_weight))
+        # print("nodes.mailbox['z'].shape==>", nodes.mailbox['z'].shape)
+        # print("nodes.p.shape==>", nodes.data['p'].shape)
+        if self.pe_init in ["rw", "lap"]:
+            # print(nodes.mailbox['p'].shape, '----------', nodes.mailbox['z'].shape, nodes.data["p"].shape)
+            # p = nodes.mailbox['p'].unsqueeze(1).repeat(1, nodes.mailbox['z'].shape[1], 1)
+            p = nodes.mailbox['p']
+            msg = self.embedding_msg(torch.cat((nodes.mailbox['z'] + nodes.mailbox['r_h'], p), dim=-1))
+        else:
+            msg = nodes.mailbox['z'] + nodes.mailbox['r_h']
+        h = self.feat_drop(torch.sum(alpha * msg, dim=1) + torch.mm(nodes.data['z'], self.loop_weight))
         return {'h': h}
 
     def forward(self, g, h, edge_update=False):

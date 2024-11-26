@@ -1,0 +1,127 @@
+Logging to results/g_1_ICEWS14s_short_True_short-model_regcn_long_True_f_gate_fr_gate_ta_0.7_gnn1_regcn_2_gnn2_rgat_r1_3_seq_rnn_15_max_length_10_fil_False_ori_Falselast_True
+use layer :uvrgcn
+activate function: <function rrelu at 0x70189337d440>
+activate function: <function rrelu at 0x70189337d440>
+use layer :uvrgcn
+activate function: <function rrelu at 0x70189337d440>
+activate function: <function rrelu at 0x70189337d440>
+Epoch 0 _ Start training:  2024-10-19 08:16:17.129158 =============================================
+Epoch 0, loss 4.7803 2024-10-19 08:18:07.612372
+	Start validating:  2024-10-19 08:18:07.612507
+	train_loss:4.7803	val_loss:4.1710	val_Mrr_raw:0.2579	val_Hits(raw)@1:0.1495	val_Hits(raw)@3:0.2891	val_Hits(raw)@10:0.4741	val_Mrr_filter:0.2644	val_Hits(filter)@1:0.1562	val_Hits(filter)@3:0.2984	val_Hits(filter)@10:0.4779
+	Start testing:  2024-10-19 08:18:19.452750
+	val_loss:4.1864	val_Mrr_raw:0.2479	val_Hits(raw)@1:0.1432	val_Hits(raw)@3:0.2739	val_Hits(raw)@10:0.4565	val_Mrr_filter:0.2523	val_Hits(filter)@1:0.1486	val_Hits(filter)@3:0.2774	val_Hits(filter)@10:0.4591
+Epoch 1 _ Start training:  2024-10-19 08:18:31.167520 =============================================
+Epoch 1, loss 4.1393 2024-10-19 08:20:21.651019
+	Start validating:  2024-10-19 08:20:21.651223
+	train_loss:4.1393	val_loss:3.7532	val_Mrr_raw:0.3414	val_Hits(raw)@1:0.2302	val_Hits(raw)@3:0.3777	val_Hits(raw)@10:0.5672	val_Mrr_filter:0.3525	val_Hits(filter)@1:0.2445	val_Hits(filter)@3:0.3881	val_Hits(filter)@10:0.5719
+	Start testing:  2024-10-19 08:20:33.428788
+	val_loss:3.7571	val_Mrr_raw:0.3293	val_Hits(raw)@1:0.2189	val_Hits(raw)@3:0.3654	val_Hits(raw)@10:0.5542	val_Mrr_filter:0.3373	val_Hits(filter)@1:0.2296	val_Hits(filter)@3:0.3729	val_Hits(filter)@10:0.5576
+Epoch 2 _ Start training:  2024-10-19 08:20:45.041991 =============================================
+Epoch 2, loss 3.8443 2024-10-19 08:22:35.509591
+	Start validating:  2024-10-19 08:22:35.509732
+	train_loss:3.8443	val_loss:3.5753	val_Mrr_raw:0.3732	val_Hits(raw)@1:0.2540	val_Hits(raw)@3:0.4221	val_Hits(raw)@10:0.6102	val_Mrr_filter:0.3865	val_Hits(filter)@1:0.2718	val_Hits(filter)@3:0.4331	val_Hits(filter)@10:0.6149
+	Start testing:  2024-10-19 08:22:47.353948
+	val_loss:3.5577	val_Mrr_raw:0.3648	val_Hits(raw)@1:0.2460	val_Hits(raw)@3:0.4103	val_Hits(raw)@10:0.6068	val_Mrr_filter:0.3738	val_Hits(filter)@1:0.2571	val_Hits(filter)@3:0.4179	val_Hits(filter)@10:0.6098
+Epoch 3 _ Start training:  2024-10-19 08:22:59.111100 =============================================
+Epoch 3, loss 3.6316 2024-10-19 08:24:49.522336
+	Start validating:  2024-10-19 08:24:49.522485
+	train_loss:3.6316	val_loss:3.4401	val_Mrr_raw:0.3976	val_Hits(raw)@1:0.2771	val_Hits(raw)@3:0.4467	val_Hits(raw)@10:0.6424	val_Mrr_filter:0.4123	val_Hits(filter)@1:0.2975	val_Hits(filter)@3:0.4578	val_Hits(filter)@10:0.6468
+	Start testing:  2024-10-19 08:25:01.328196
+	val_loss:3.4029	val_Mrr_raw:0.3933	val_Hits(raw)@1:0.2726	val_Hits(raw)@3:0.4392	val_Hits(raw)@10:0.6408	val_Mrr_filter:0.4037	val_Hits(filter)@1:0.2864	val_Hits(filter)@3:0.4481	val_Hits(filter)@10:0.6454
+Epoch 4 _ Start training:  2024-10-19 08:25:13.050414 =============================================
+Epoch 4, loss 3.4551 2024-10-19 08:27:03.037453
+	Start validating:  2024-10-19 08:27:03.037659
+	train_loss:3.4551	val_loss:3.3722	val_Mrr_raw:0.4199	val_Hits(raw)@1:0.2979	val_Hits(raw)@3:0.4747	val_Hits(raw)@10:0.6642	val_Mrr_filter:0.4362	val_Hits(filter)@1:0.3201	val_Hits(filter)@3:0.4881	val_Hits(filter)@10:0.6690
+	Start testing:  2024-10-19 08:27:14.747927
+	val_loss:3.3311	val_Mrr_raw:0.4170	val_Hits(raw)@1:0.2953	val_Hits(raw)@3:0.4693	val_Hits(raw)@10:0.6665	val_Mrr_filter:0.4283	val_Hits(filter)@1:0.3103	val_Hits(filter)@3:0.4780	val_Hits(filter)@10:0.6699
+Epoch 5 _ Start training:  2024-10-19 08:27:26.519688 =============================================
+Epoch 5, loss 3.3002 2024-10-19 08:29:17.004168
+	Start validating:  2024-10-19 08:29:17.004306
+	train_loss:3.3002	val_loss:3.3330	val_Mrr_raw:0.4284	val_Hits(raw)@1:0.3041	val_Hits(raw)@3:0.4887	val_Hits(raw)@10:0.6735	val_Mrr_filter:0.4448	val_Hits(filter)@1:0.3267	val_Hits(filter)@3:0.5019	val_Hits(filter)@10:0.6778
+	Start testing:  2024-10-19 08:29:28.763818
+	val_loss:3.2798	val_Mrr_raw:0.4270	val_Hits(raw)@1:0.3031	val_Hits(raw)@3:0.4834	val_Hits(raw)@10:0.6783	val_Mrr_filter:0.4385	val_Hits(filter)@1:0.3180	val_Hits(filter)@3:0.4936	val_Hits(filter)@10:0.6817
+Epoch 6 _ Start training:  2024-10-19 08:29:40.499481 =============================================
+Epoch 6, loss 3.1677 2024-10-19 08:31:30.587515
+	Start validating:  2024-10-19 08:31:30.587713
+	train_loss:3.1677	val_loss:3.2769	val_Mrr_raw:0.4424	val_Hits(raw)@1:0.3185	val_Hits(raw)@3:0.5032	val_Hits(raw)@10:0.6883	val_Mrr_filter:0.4592	val_Hits(filter)@1:0.3409	val_Hits(filter)@3:0.5165	val_Hits(filter)@10:0.6922
+	Start testing:  2024-10-19 08:31:42.351194
+	val_loss:3.2234	val_Mrr_raw:0.4401	val_Hits(raw)@1:0.3143	val_Hits(raw)@3:0.5012	val_Hits(raw)@10:0.6916	val_Mrr_filter:0.4529	val_Hits(filter)@1:0.3314	val_Hits(filter)@3:0.5103	val_Hits(filter)@10:0.6953
+Epoch 7 _ Start training:  2024-10-19 08:31:53.971235 =============================================
+Epoch 7, loss 3.0378 2024-10-19 08:33:44.330790
+	Start validating:  2024-10-19 08:33:44.330966
+	train_loss:3.0378	val_loss:3.2638	val_Mrr_raw:0.4451	val_Hits(raw)@1:0.3211	val_Hits(raw)@3:0.5056	val_Hits(raw)@10:0.6921	val_Mrr_filter:0.4624	val_Hits(filter)@1:0.3446	val_Hits(filter)@3:0.5190	val_Hits(filter)@10:0.6966
+	Start testing:  2024-10-19 08:33:55.976253
+	val_loss:3.2057	val_Mrr_raw:0.4471	val_Hits(raw)@1:0.3219	val_Hits(raw)@3:0.5093	val_Hits(raw)@10:0.6939	val_Mrr_filter:0.4595	val_Hits(filter)@1:0.3388	val_Hits(filter)@3:0.5185	val_Hits(filter)@10:0.6975
+Epoch 8 _ Start training:  2024-10-19 08:34:07.575085 =============================================
+Epoch 8, loss 2.9275 2024-10-19 08:35:57.951837
+	Start validating:  2024-10-19 08:35:57.951976
+	train_loss:2.9275	val_loss:3.2530	val_Mrr_raw:0.4532	val_Hits(raw)@1:0.3277	val_Hits(raw)@3:0.5163	val_Hits(raw)@10:0.7009	val_Mrr_filter:0.4706	val_Hits(filter)@1:0.3514	val_Hits(filter)@3:0.5305	val_Hits(filter)@10:0.7051
+	Start testing:  2024-10-19 08:36:09.702808
+	val_loss:3.1876	val_Mrr_raw:0.4524	val_Hits(raw)@1:0.3253	val_Hits(raw)@3:0.5170	val_Hits(raw)@10:0.7041	val_Mrr_filter:0.4652	val_Hits(filter)@1:0.3422	val_Hits(filter)@3:0.5272	val_Hits(filter)@10:0.7082
+Epoch 9 _ Start training:  2024-10-19 08:36:21.449349 =============================================
+Epoch 9, loss 2.8273 2024-10-19 08:38:11.936408
+	Start validating:  2024-10-19 08:38:11.936583
+	train_loss:2.8273	val_loss:3.2818	val_Mrr_raw:0.4544	val_Hits(raw)@1:0.3302	val_Hits(raw)@3:0.5176	val_Hits(raw)@10:0.7011	val_Mrr_filter:0.4726	val_Hits(filter)@1:0.3558	val_Hits(filter)@3:0.5288	val_Hits(filter)@10:0.7050
+	Start testing:  2024-10-19 08:38:23.831274
+	val_loss:3.2202	val_Mrr_raw:0.4541	val_Hits(raw)@1:0.3280	val_Hits(raw)@3:0.5182	val_Hits(raw)@10:0.7072	val_Mrr_filter:0.4670	val_Hits(filter)@1:0.3453	val_Hits(filter)@3:0.5287	val_Hits(filter)@10:0.7101
+Epoch 10 _ Start training:  2024-10-19 08:38:35.573345 =============================================
+Epoch 10, loss 2.7387 2024-10-19 08:40:25.597148
+	Start validating:  2024-10-19 08:40:25.597285
+	train_loss:2.7387	val_loss:3.3146	val_Mrr_raw:0.4540	val_Hits(raw)@1:0.3285	val_Hits(raw)@3:0.5196	val_Hits(raw)@10:0.6995	val_Mrr_filter:0.4715	val_Hits(filter)@1:0.3517	val_Hits(filter)@3:0.5332	val_Hits(filter)@10:0.7028
+	Start testing:  2024-10-19 08:40:37.249575
+	val_loss:3.2464	val_Mrr_raw:0.4594	val_Hits(raw)@1:0.3350	val_Hits(raw)@3:0.5238	val_Hits(raw)@10:0.7050	val_Mrr_filter:0.4728	val_Hits(filter)@1:0.3534	val_Hits(filter)@3:0.5341	val_Hits(filter)@10:0.7092
+Epoch 11 _ Start training:  2024-10-19 08:40:49.030998 =============================================
+Epoch 11, loss 2.6531 2024-10-19 08:42:39.015477
+	Start validating:  2024-10-19 08:42:39.015673
+	train_loss:2.6531	val_loss:3.2665	val_Mrr_raw:0.4624	val_Hits(raw)@1:0.3380	val_Hits(raw)@3:0.5282	val_Hits(raw)@10:0.7045	val_Mrr_filter:0.4808	val_Hits(filter)@1:0.3634	val_Hits(filter)@3:0.5421	val_Hits(filter)@10:0.7084
+	Start testing:  2024-10-19 08:42:50.961236
+	val_loss:3.2033	val_Mrr_raw:0.4620	val_Hits(raw)@1:0.3383	val_Hits(raw)@3:0.5244	val_Hits(raw)@10:0.7092	val_Mrr_filter:0.4749	val_Hits(filter)@1:0.3559	val_Hits(filter)@3:0.5334	val_Hits(filter)@10:0.7126
+Epoch 12 _ Start training:  2024-10-19 08:43:02.716949 =============================================
+Epoch 12, loss 2.5781 2024-10-19 08:44:52.749344
+	Start validating:  2024-10-19 08:44:52.749558
+	train_loss:2.5781	val_loss:3.2881	val_Mrr_raw:0.4576	val_Hits(raw)@1:0.3323	val_Hits(raw)@3:0.5243	val_Hits(raw)@10:0.7060	val_Mrr_filter:0.4753	val_Hits(filter)@1:0.3571	val_Hits(filter)@3:0.5378	val_Hits(filter)@10:0.7095
+	Start testing:  2024-10-19 08:45:04.418785
+	val_loss:3.2148	val_Mrr_raw:0.4630	val_Hits(raw)@1:0.3380	val_Hits(raw)@3:0.5279	val_Hits(raw)@10:0.7112	val_Mrr_filter:0.4760	val_Hits(filter)@1:0.3557	val_Hits(filter)@3:0.5387	val_Hits(filter)@10:0.7149
+Epoch 13 _ Start training:  2024-10-19 08:45:16.225475 =============================================
+Epoch 13, loss 2.5112 2024-10-19 08:47:06.539321
+	Start validating:  2024-10-19 08:47:06.539508
+	train_loss:2.5112	val_loss:3.3308	val_Mrr_raw:0.4553	val_Hits(raw)@1:0.3322	val_Hits(raw)@3:0.5167	val_Hits(raw)@10:0.7037	val_Mrr_filter:0.4723	val_Hits(filter)@1:0.3551	val_Hits(filter)@3:0.5298	val_Hits(filter)@10:0.7072
+	Start testing:  2024-10-19 08:47:18.255436
+	val_loss:3.2598	val_Mrr_raw:0.4590	val_Hits(raw)@1:0.3356	val_Hits(raw)@3:0.5225	val_Hits(raw)@10:0.7059	val_Mrr_filter:0.4720	val_Hits(filter)@1:0.3535	val_Hits(filter)@3:0.5332	val_Hits(filter)@10:0.7095
+Epoch 14 _ Start training:  2024-10-19 08:47:29.960732 =============================================
+Epoch 14, loss 2.4365 2024-10-19 08:49:20.594817
+	Start validating:  2024-10-19 08:49:20.594956
+	train_loss:2.4365	val_loss:3.4060	val_Mrr_raw:0.4552	val_Hits(raw)@1:0.3332	val_Hits(raw)@3:0.5180	val_Hits(raw)@10:0.6965	val_Mrr_filter:0.4731	val_Hits(filter)@1:0.3581	val_Hits(filter)@3:0.5314	val_Hits(filter)@10:0.7013
+	Start testing:  2024-10-19 08:49:32.379791
+	val_loss:3.3141	val_Mrr_raw:0.4595	val_Hits(raw)@1:0.3363	val_Hits(raw)@3:0.5262	val_Hits(raw)@10:0.7007	val_Mrr_filter:0.4726	val_Hits(filter)@1:0.3541	val_Hits(filter)@3:0.5358	val_Hits(filter)@10:0.7044
+Epoch 15 _ Start training:  2024-10-19 08:49:44.271945 =============================================
+Epoch 15, loss 2.3752 2024-10-19 08:51:34.020653
+	Start validating:  2024-10-19 08:51:34.020791
+	train_loss:2.3752	val_loss:3.4071	val_Mrr_raw:0.4583	val_Hits(raw)@1:0.3376	val_Hits(raw)@3:0.5206	val_Hits(raw)@10:0.7014	val_Mrr_filter:0.4756	val_Hits(filter)@1:0.3611	val_Hits(filter)@3:0.5339	val_Hits(filter)@10:0.7052
+	Start testing:  2024-10-19 08:51:45.797849
+	val_loss:3.3138	val_Mrr_raw:0.4607	val_Hits(raw)@1:0.3376	val_Hits(raw)@3:0.5246	val_Hits(raw)@10:0.7066	val_Mrr_filter:0.4739	val_Hits(filter)@1:0.3555	val_Hits(filter)@3:0.5338	val_Hits(filter)@10:0.7106
+Epoch 16 _ Start training:  2024-10-19 08:51:57.485680 =============================================
+Epoch 16, loss 2.3166 2024-10-19 08:53:47.540526
+	Start validating:  2024-10-19 08:53:47.540728
+	train_loss:2.3166	val_loss:3.4252	val_Mrr_raw:0.4585	val_Hits(raw)@1:0.3372	val_Hits(raw)@3:0.5221	val_Hits(raw)@10:0.6997	val_Mrr_filter:0.4766	val_Hits(filter)@1:0.3627	val_Hits(filter)@3:0.5350	val_Hits(filter)@10:0.7051
+	Start testing:  2024-10-19 08:53:59.212880
+	val_loss:3.3510	val_Mrr_raw:0.4571	val_Hits(raw)@1:0.3347	val_Hits(raw)@3:0.5179	val_Hits(raw)@10:0.7041	val_Mrr_filter:0.4697	val_Hits(filter)@1:0.3515	val_Hits(filter)@3:0.5275	val_Hits(filter)@10:0.7071
+Epoch 17 _ Start training:  2024-10-19 08:54:10.988778 =============================================
+Epoch 17, loss 2.2595 2024-10-19 08:56:01.307063
+	Start validating:  2024-10-19 08:56:01.307197
+	train_loss:2.2595	val_loss:3.4407	val_Mrr_raw:0.4603	val_Hits(raw)@1:0.3380	val_Hits(raw)@3:0.5245	val_Hits(raw)@10:0.6995	val_Mrr_filter:0.4786	val_Hits(filter)@1:0.3638	val_Hits(filter)@3:0.5371	val_Hits(filter)@10:0.7031
+	Start testing:  2024-10-19 08:56:12.939787
+	val_loss:3.3613	val_Mrr_raw:0.4611	val_Hits(raw)@1:0.3396	val_Hits(raw)@3:0.5197	val_Hits(raw)@10:0.7032	val_Mrr_filter:0.4738	val_Hits(filter)@1:0.3567	val_Hits(filter)@3:0.5298	val_Hits(filter)@10:0.7065
+Epoch 18 _ Start training:  2024-10-19 08:56:24.613896 =============================================
+Epoch 18, loss 2.2070 2024-10-19 08:58:14.790231
+	Start validating:  2024-10-19 08:58:14.790365
+	train_loss:2.2070	val_loss:3.4754	val_Mrr_raw:0.4567	val_Hits(raw)@1:0.3335	val_Hits(raw)@3:0.5216	val_Hits(raw)@10:0.6967	val_Mrr_filter:0.4747	val_Hits(filter)@1:0.3587	val_Hits(filter)@3:0.5338	val_Hits(filter)@10:0.7011
+	Start testing:  2024-10-19 08:58:26.609362
+	val_loss:3.4063	val_Mrr_raw:0.4599	val_Hits(raw)@1:0.3379	val_Hits(raw)@3:0.5239	val_Hits(raw)@10:0.7009	val_Mrr_filter:0.4734	val_Hits(filter)@1:0.3560	val_Hits(filter)@3:0.5335	val_Hits(filter)@10:0.7050
+Epoch 19 _ Start training:  2024-10-19 08:58:38.256677 =============================================
+Epoch 19, loss 2.1512 2024-10-19 09:00:28.703273
+	Start validating:  2024-10-19 09:00:28.703403
+	train_loss:2.1512	val_loss:3.5025	val_Mrr_raw:0.4553	val_Hits(raw)@1:0.3325	val_Hits(raw)@3:0.5212	val_Hits(raw)@10:0.6927	val_Mrr_filter:0.4736	val_Hits(filter)@1:0.3582	val_Hits(filter)@3:0.5337	val_Hits(filter)@10:0.6971
+	Start testing:  2024-10-19 09:00:40.405198
+	val_loss:3.4292	val_Mrr_raw:0.4575	val_Hits(raw)@1:0.3366	val_Hits(raw)@3:0.5175	val_Hits(raw)@10:0.6993	val_Mrr_filter:0.4696	val_Hits(filter)@1:0.3522	val_Hits(filter)@3:0.5290	val_Hits(filter)@10:0.7022

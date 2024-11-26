@@ -363,7 +363,7 @@ def load_data(dataset, bfs_level=3, relabel=False):
         return knwlgrh.load_link(dataset)
     elif dataset in ['ICEWS18', 'ICEWS14', "GDELT", "SMALL", "ICEWS14s", "ICEWS05-15","YAGO",
                      "WIKI"]:
-        return knwlgrh.load_from_local("../RE-GCN/data", dataset)
+        return knwlgrh.load_from_local("../bertintkg/data", dataset)
     else:
         raise ValueError('Unknown dataset: {}'.format(dataset))
 

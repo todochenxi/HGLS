@@ -3,8 +3,10 @@ import torch
 
 class BaseRGCN(nn.Module):
     def __init__(self, num_nodes, h_dim, out_dim, num_rels, num_bases=-1, num_basis=-1,
-                 num_hidden_layers=1, dropout=0, self_loop=False, skip_connect=False, encoder_name="", opn="sub", rel_emb=None, use_cuda=False, analysis=False):
+                 num_hidden_layers=1, dropout=0, self_loop=False, skip_connect=False, encoder_name="", opn="sub", rel_emb=None, use_cuda=False, analysis=False, pe_init="rw", pe_dim=3):
         super(BaseRGCN, self).__init__()
+        self.pe_init = pe_init
+        self.pe_dim = pe_dim
         self.num_nodes = num_nodes
         self.h_dim = h_dim
         self.out_dim = out_dim

@@ -165,7 +165,7 @@ class RGCNBlockLayer(RGCNLayer):
         nn.init.xavier_uniform_(self.weight, gain=nn.init.calculate_gain('relu'))
 
     def msg_func(self, edges):
-        weight = self.weight.index_select(0, edges.data['type']).view(
+        weight = self.weight.index_select(0, edges.data['etype']).view(
                     -1, self.submat_in, self.submat_out)    # [edge_num, submat_in, submat_out]
         node = edges.src['h'].view(-1, 1, self.submat_in)   # [edge_num * num_bases, 1, submat_in]->
         msg = torch.bmm(node, weight).view(-1, self.out_feat)   # [edge_num, out_feat]
@@ -181,7 +181,7 @@ class RGCNBlockLayer(RGCNLayer):
 
 class UnionRGCNLayer(nn.Module):
     def __init__(self, in_feat, out_feat, num_rels, num_bases=-1,  bias=None,
-                 activation=None, self_loop=False, dropout=0.0, skip_connect=False, rel_emb=None):
+                 activation=None, self_loop=False, dropout=0.0, skip_connect=False, rel_emb=None, pe_init="rw", pe_dim=3):
         super(UnionRGCNLayer, self).__init__()
 
         self.in_feat = in_feat
@@ -194,6 +194,9 @@ class UnionRGCNLayer(nn.Module):
         self.skip_connect = skip_connect
         self.ob = None
         self.sub = None
+        self.pe_init = pe_init
+        self.pe_dim = pe_dim
+        print("pe_dim in UnionRGCNLayer==>", self.pe_dim)
 
         # WL
         self.weight_neighbor = nn.Parameter(torch.Tensor(self.in_feat, self.out_feat))
@@ -215,6 +218,13 @@ class UnionRGCNLayer(nn.Module):
             self.dropout = nn.Dropout(dropout)
         else:
             self.dropout = None
+        self.embeding_p_in = nn.Linear(self.pe_dim, self.in_feat)
+        self.embedding_hp = nn.Linear(self.in_feat+self.pe_dim+20, self.out_feat)
+        self.embedding_rp = nn.Linear(self.in_feat+self.pe_dim+20, self.out_feat)
+        self.embedding_hrp = nn.Linear(self.in_feat+self.pe_dim+20, self.out_feat)
+        # self.embedding_s = nn.Linear(self.pe_dim*2, self.out_feat)
+        # self.embeding_o = nn.Linear(self.pe_dim*2, self.out_feat)
+        # self.embeding_r = nn.Linear(self.pe_dim*2, self.out_feat)
 
     def propagate(self, g):
         g.update_all(lambda x: self.msg_func(x), fn.sum(msg='msg', out='h'), self.apply_func)
@@ -263,6 +273,37 @@ class UnionRGCNLayer(nn.Module):
         edge_type = edges.data['etype']
         edge_num = edge_type.shape[0]
         node = edges.src['h'].view(-1, self.out_feat)
+        if hasattr(edges.src, 'p'):
+            s_p = edges.src['p']
+            o_p = edges.dst['p']
+            r_p = abs(s_p-o_p)
+
+            global_s_p = edges.src['global_p']
+            global_o_p = edges.dst['global_p']
+            global_r_p = abs(global_s_p - global_o_p)
+
+            # i. cat(node, p) + cat(relation, p) 
+            s_p_all = torch.cat((s_p, global_s_p), dim=-1)
+            o_p_all = torch.cat((o_p, global_o_p), dim=-1)
+            r_p_all = torch.cat((r_p, global_r_p), dim=-1)
+
+            node = self.embedding_hp(torch.cat((node, s_p_all), dim=-1))
+            relation = self.embedding_rp(torch.cat((relation, r_p_all), dim=-1))
+            msg = self.embedding_hrp((node+relation, o_p_all), dim=-1)
+
+            # ii. cat(node+relation, pe)
+            # pe = torch.cat((s_p, o_p, r_p), dim=-1)
+            # msg = self.embedding_hrp((node+relation, o_p), dim=-1)
+            # msg = self.embedding_hrp((node+relation, o_p), dim=-1)
+            # msg =  self.embedding_hrp((node+relation, pe), dim=-1)  
+            # src.p 可以到 val_Mrr_raw:0.4927	val_Hits(raw)@1:0.3683	val_Hits(raw)@3:0.5617	val_Hits(raw)@10:0.7339	
+            #  all_pe = 49.15 0.3689 0.5572 0.7317 pe_dim =2
+            # all_pe = 
+
+            # iii. node + relation + pe
+            # msg = node + relation + p
+            # print("node.shape==>", node.shape, "relation.shape==>", relation.shape, "pe.shape==>", p.shape)
+            # msg = node + relation
         # node = torch.cat([torch.matmul(node[:edge_num // 2, :], self.sub),
         #                  torch.matmul(node[edge_num // 2:, :], self.ob)])
         # node = torch.matmul(node, self.sub)
@@ -270,7 +311,9 @@ class UnionRGCNLayer(nn.Module):
         # after add inverse edges, we only use message pass when h as tail entity
         # 这里计算的是每个节点发出的消息，节点发出消息时其作为头实体
         # msg = torch.cat((node, relation), dim=1)
-        msg = node + relation
+        
+        else:
+            msg = node + relation
         # calculate the neighbor message with weight_neighbor
         msg = torch.mm(msg, self.weight_neighbor)
         return {'msg': msg}

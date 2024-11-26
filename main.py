@@ -13,6 +13,7 @@ from torch.utils.data import DataLoader
 from TKG.load_data import load_data
 from hgls import HGLS
 import argparse
+import time
 import yaml
 from yaml import SafeLoader
 import datetime
@@ -21,22 +22,34 @@ import dgl
 import sys
 from sys import exit
 from TKG.utils_new import myFloder_new, collate_new
+from rgcn.knowledge_graph import _read_triplets_as_list
+from rgcn.utils import build_sub_graph
 import warnings
+import random
 warnings.filterwarnings('ignore')
+def set_seed(seed):
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)  # cpu
+    torch.cuda.manual_seed(seed)  # gpu
+    torch.cuda.manual_seed_all(seed)  # all gpus
+    # os.environ['CUBLAS_WORKSPACE_CONFIG'] = ':4096:8'
+    # torch.use_deterministic_algorithms(True)
+set_seed(2018)
 def inplace_relu(m):
     classname = m.__class__.__name__
     if classname.find('ReLU') != -1:
         m.inplace=True
 
-def test(model, total_data, test_dataset, all_ans_list_test, node_id_new, s_t, test_sid):
+def test(model, all_list,total_data, test_dataset, all_ans_list_test, node_id_new, s_t, test_sid, static_graph=None):
     ranks_raw, ranks_filter, mrr_raw_list, mrr_filter_list = [], [], [], []
     test_losses = []
     model.eval()
     for test_data_list in test_dataset:
         with torch.no_grad():
             final_score, final_score_r, test_loss = \
-                model(total_data, test_data_list, node_id_new[:, test_data_list['t'][0]].to(device),
-                      (test_data_list['t'][0] - s_t[:, test_data_list['t'][0]]).to(device), device=device, mode='test')
+                model(all_list, total_data, test_data_list, node_id_new[:, test_data_list['t'][0]].to(device),
+                      (test_data_list['t'][0] - s_t[:, test_data_list['t'][0]]).to(device), device=device, mode='test', static_graph=static_graph)
             mrr_filter_snap, mrr_snap, rank_raw, rank_filter = utils.get_total_rank(test_data_list['triple'].to(device),
                                                                                     final_score,
                                                                                     all_ans_list_test[
@@ -69,7 +82,7 @@ if __name__ == '__main__':
                         help="add entity prediction loss")
 
     # configuration for stat training
-    parser.add_argument("--n-epochs", type=int, default=500,
+    parser.add_argument("--n-epochs", type=int, default=20,
                         help="number of minimum training epochs on each time step")
     parser.add_argument("--lr", type=float, default=0.001,
                         help="learning rate")
@@ -92,16 +105,7 @@ if __name__ == '__main__':
     args = parser.parse_args().__dict__                                          # REGCN 的参数
     short_con = yaml.load(open('short_config.yaml'), Loader=SafeLoader)[args['dataset']]
     long_con = yaml.load(open('long_config.yaml'), Loader=SafeLoader)[args['dataset']]
-    log_file = f'{args["dataset"]}_short_{args["short"]}_long_{args["long"]}_' \
-               f'f_{args["fuse"]}_fr_{args["r_fuse"]}_ta_{args["task"]}' \
-               f'_gnn1_{long_con["encoder"]}_{long_con["a_layer_num"]}_gnn2_{long_con["decoder"]}_{long_con["d_layer_num"]}' \
-               f'_seq_{short_con["sequence"]}_{short_con["sequence_len"]}_max_length_{long_con["max_length"]}_fil_{long_con["filter"]}_ori_{long_con["ori"]}' \
-               f'last_{long_con["last"]}'
-    if args['record']:
-        log_file_path = f'results/g_{args["gpu"]}_' + log_file
-        mkdir_if_not_exist(log_file_path)
-        sys.stdout = Logger(log_file_path)
-        print(f'Logging to {log_file_path}')
+
 
     num_nodes, num_rels, train_list, valid_list, test_list, total_data, all_ans_list_test, all_ans_list_r_test, \
     all_ans_list_valid, all_ans_list_r_valid, graph, node_id_new, s_t, s_f, s_l, train_sid, valid_sid, test_sid, \
@@ -110,20 +114,25 @@ if __name__ == '__main__':
     device = torch.device('cuda:0')
     os.environ["CUDA_VISIBLE_DEVICES"] = args['gpu']
     # regcn的参数补充
-    num_static_rels, num_words, static_triples, static_graph = 0, 0, [], None
-    short_con['num_static_rels'] = num_static_rels
-    short_con['num_words'] = num_words
+    print(short_con["use_static"], '-------------------------------')
+    if short_con["use_static"]:
+        static_triples = np.array(_read_triplets_as_list("../bertintkg/data/" + args["dataset"] + "/e-w-graph.txt", {}, {}, load_time=False))
+        num_static_rels = len(np.unique(static_triples[:, 1]))
+        num_words = len(np.unique(static_triples[:, 2]))
+        static_triples[:, 2] = static_triples[:, 2] + num_nodes 
+        static_node_id = torch.from_numpy(np.arange(num_words + num_nodes)).view(-1, 1).long().to(device)
+        static_graph = build_sub_graph(len(static_node_id), num_static_rels, static_triples, device)
+    else:
+        num_static_rels, num_words, static_triples, static_graph = 0, 0, [], None
+    short_con["num_words"] = num_words
+    short_con["num_static_rels"] = num_static_rels
+    # short_con["static_graph"] = static_graph
     # HGLS的参数补充
     long_con['time_length'] = len(total_data)
     long_con['time_idx'] = time_idx
     print(args)
     print(short_con)
     print(long_con)
-
-    model = HGLS(graph.to(device), num_nodes, num_rels, args['n_hidden'], args['task'], args['relation_prediction'],
-                 args['short'], args['long'], args['fuse'], args['r_fuse'], short_con, long_con).to(device)
-    optimizer = torch.optim.Adam(model.parameters(), lr=args['lr'], weight_decay=1e-5)
-    model.apply(inplace_relu)
     if args['dataset'] in ['ICEWS05-15', 'ICEWS18', 'GDELT']:
         print('load data from folder')
         train_path = 'data/' + '_' + args['dataset'] + '/train/'
@@ -132,7 +141,7 @@ if __name__ == '__main__':
         train_set = myFloder_new(train_path, dgl.load_graphs)
         val_set = myFloder_new(valid_path, dgl.load_graphs)
         test_set = myFloder_new(test_path, dgl.load_graphs)
-        train_dataset = DataLoader(dataset=train_set, batch_size=1, collate_fn=collate_new, shuffle=True, pin_memory=True, num_workers=8)
+        train_dataset = DataLoader(dataset=train_set, batch_size=1, collate_fn=collate_new, shuffle=True, pin_memory=True, num_workers=16)
         val_dataset = DataLoader(dataset=val_set, batch_size=1, collate_fn=collate_new, shuffle=False, pin_memory=True, num_workers=3)
         test_dataset = DataLoader(dataset=test_set, batch_size=1, collate_fn=collate_new, shuffle=False, pin_memory=True, num_workers=3)
     else:
@@ -141,40 +150,71 @@ if __name__ == '__main__':
         val_set = myFloder(valid_list, max_batch=100, start_id=valid_sid, no_batch=True, mode='test')
         test_set = myFloder(test_list, max_batch=100, start_id=test_sid, no_batch=True, mode='test')
         co = Collate(num_nodes, num_rels, s_f, s_t, len(total_data), args['dataset'], long_con['encoder'], long_con['decoder'], max_length=long_con['max_length'], all=False, graph=graph, k=2)
-        train_dataset = DataLoader(dataset=train_set, batch_size=1, collate_fn=co.collate_rel, shuffle=True, pin_memory=True, num_workers=8)
-        val_dataset = DataLoader(dataset=val_set, batch_size=1, collate_fn=co.collate_rel, shuffle=False, pin_memory=True, num_workers=4)
-        test_dataset = DataLoader(dataset=test_set, batch_size=1, collate_fn=co.collate_rel, shuffle=False, pin_memory=True, num_workers=4)
-
-    for epoch in range(args['n_epochs']):
-        print('Epoch {}'.format(epoch), '_', 'Start training: ', datetime.datetime.now(),
-              '=============================================')
-        model.train()
-        stop = True
-        losses = [0]
-        loss_es = [0]
-        loss_rs = []
-        for train_data_list in train_dataset:
-            loss_e, loss_r, loss = model(total_data, train_data_list, node_id_new[:, train_data_list['t'][0]].to(device),
-                                        (train_data_list['t'][0] - s_t[:, train_data_list['t'][0]]).to(device), device=device, mode='train')
-            losses.append(loss.item())
-            loss_es.append(loss_e.item())
-            loss.backward()
-            torch.nn.utils.clip_grad_norm_(model.parameters(), args['grad_norm'])  # clip gradients
-            optimizer.step()
-            optimizer.zero_grad()
-        print('Epoch {}, loss {:.4f}'.format(epoch, np.mean(losses)), datetime.datetime.now())
-        print('\tStart validating: ', datetime.datetime.now())
-        val_result = test(model, total_data, val_dataset, all_ans_list_valid, node_id_new, s_t, valid_sid)
-        print('\ttrain_loss:%.4f\tval_loss:%.4f\tval_Mrr_raw:%.4f\tval_Hits(raw)@1:%.4f\tval_Hits(raw)@3:%.4f\tval_Hits(raw)@10:%.4f'
-              '\tval_Mrr_filter:%.4f\tval_Hits(filter)@1:%.4f\tval_Hits(filter)@3:%.4f\tval_Hits(filter)@10:%.4f' %
-              (np.mean(losses), val_result[0], val_result[1][0], val_result[1][1], val_result[1][2], val_result[1][3],
-               val_result[2][0], val_result[2][1], val_result[2][2], val_result[2][3]))
-        print('\tStart testing: ', datetime.datetime.now())
-        test_result = test(model, total_data, test_dataset, all_ans_list_test, node_id_new, s_t, test_sid)
-        print('\tval_loss:%.4f\tval_Mrr_raw:%.4f\tval_Hits(raw)@1:%.4f\tval_Hits(raw)@3:%.4f\tval_Hits(raw)@10:%.4f'
-              '\tval_Mrr_filter:%.4f\tval_Hits(filter)@1:%.4f\tval_Hits(filter)@3:%.4f\tval_Hits(filter)@10:%.4f' %
-              (test_result[0], test_result[1][0], test_result[1][1], test_result[1][2], test_result[1][3],
-               test_result[2][0], test_result[2][1], test_result[2][2], test_result[2][3]))
+        train_dataset = DataLoader(dataset=train_set, batch_size=1, collate_fn=co.collate_rel, shuffle=True, pin_memory=True, num_workers=16)
+        val_dataset = DataLoader(dataset=val_set, batch_size=1, collate_fn=co.collate_rel, shuffle=False, pin_memory=True, num_workers=16)
+        test_dataset = DataLoader(dataset=test_set, batch_size=1, collate_fn=co.collate_rel, shuffle=False, pin_memory=True, num_workers=16)
+    seq_len_lis = short_con["sequence_len_lis"]
+    del short_con["sequence_len_lis"]
+    short_model = short_con["short_model"]
+    pe_dim_lis = short_con["pe_dim_lis"]
+    long_pe_dim_lis = long_con["pe_dim_lis"]
+    del short_con["pe_dim_lis"]
+    del long_con["pe_dim_lis"]
+    # short_con["pe_dim"] = pe_dim_lis[0]
+    for pe_dim in pe_dim_lis:
+        
+        short_con["pe_dim"] = pe_dim
+        for seq_len in seq_len_lis:
+            short_con["sequence_len"] = seq_len
+            log_file = f'{args["dataset"]}_short_{args["short"]}_short-model_{short_model}_long_{args["long"]}_' \
+                    f'f_{args["fuse"]}_fr_{args["r_fuse"]}_ta_{args["task"]}' \
+                    f'_gnn1_{long_con["encoder"]}_{long_con["a_layer_num"]}_gnn2_{long_con["decoder"]}_{long_con["d_layer_num"]}' \
+                    f'_seq_{short_con["sequence"]}_{short_con["sequence_len"]}_max_length_{long_con["max_length"]}_fil_{long_con["filter"]}_ori_{long_con["ori"]}' \
+                    f'last_{long_con["last"]}'
+            if args['record']:
+                log_file_path = f'results/g_{args["gpu"]}_' + log_file
+                mkdir_if_not_exist(log_file_path)
+                sys.stdout = Logger(log_file_path)
+                print(f'Logging to {log_file_path}')
+            model = HGLS(graph.to(device), num_nodes, num_rels, args['n_hidden'], args['task'], args['relation_prediction'],
+                        args['short'], args['long'], args['fuse'], args['r_fuse'], short_con, long_con, short_model=short_model).to(device)
+            optimizer = torch.optim.Adam(model.parameters(), lr=args['lr'], weight_decay=1e-5)
+            model.apply(inplace_relu)
+            # compute global pe
+            # print(len(total_data), total_data[0].shape, type(total_data[0]))
+            st = time.time()
+            all_glist = build_sub_graph(num_nodes, num_rels, np.concatenate(total_data, axis=0), device, pe_init="rw", pe_dim=20)            
+            # print(time.time()-st)
+            for epoch in range(args['n_epochs']):
+                print('Epoch {}'.format(epoch), '_', 'Start training: ', datetime.datetime.now(),
+                    '=============================================')
+                model.train()
+                stop = True
+                losses = [0]
+                loss_es = [0]
+                loss_rs = []
+                for train_data_list in train_dataset:
+                    loss_e, loss_r, loss = model(all_glist,total_data, train_data_list, node_id_new[:, train_data_list['t'][0]].to(device),
+                                                (train_data_list['t'][0] - s_t[:, train_data_list['t'][0]]).to(device), device=device, mode='train', static_graph=static_graph)
+                    losses.append(loss.item())
+                    loss_es.append(loss_e.item())
+                    loss.backward()
+                    torch.nn.utils.clip_grad_norm_(model.parameters(), args['grad_norm'])  # clip gradients
+                    optimizer.step()
+                    optimizer.zero_grad()
+                print('Epoch {}, loss {:.4f}'.format(epoch, np.mean(losses)), datetime.datetime.now())
+                print('\tStart validating: ', datetime.datetime.now())
+                val_result = test(model, all_glist, total_data, val_dataset, all_ans_list_valid, node_id_new, s_t, valid_sid, static_graph=static_graph)
+                print('\ttrain_loss:%.4f\tval_loss:%.4f\tval_Mrr_raw:%.4f\tval_Hits(raw)@1:%.4f\tval_Hits(raw)@3:%.4f\tval_Hits(raw)@10:%.4f'
+                    '\tval_Mrr_filter:%.4f\tval_Hits(filter)@1:%.4f\tval_Hits(filter)@3:%.4f\tval_Hits(filter)@10:%.4f' %
+                    (np.mean(losses), val_result[0], val_result[1][0], val_result[1][1], val_result[1][2], val_result[1][3],
+                    val_result[2][0], val_result[2][1], val_result[2][2], val_result[2][3]))
+                print('\tStart testing: ', datetime.datetime.now())
+                test_result = test(model, all_glist, total_data, test_dataset, all_ans_list_test, node_id_new, s_t, test_sid, static_graph=static_graph)
+                print('\tval_loss:%.4f\tval_Mrr_raw:%.4f\tval_Hits(raw)@1:%.4f\tval_Hits(raw)@3:%.4f\tval_Hits(raw)@10:%.4f'
+                    '\tval_Mrr_filter:%.4f\tval_Hits(filter)@1:%.4f\tval_Hits(filter)@3:%.4f\tval_Hits(filter)@10:%.4f' %
+                    (test_result[0], test_result[1][0], test_result[1][1], test_result[1][2], test_result[1][3],
+                    test_result[2][0], test_result[2][1], test_result[2][2], test_result[2][3]))
 
 
 

@@ -3,8 +3,12 @@ ICEWS14s:
   num_hidden_layers: 2
   decoder: 'convtranse'
   encoder: 'uvrgcn'
-  sequence: 'rnn'
-  sequence_len: 3
+  sequence: 'regcn'
+  short_model: "regcn"
+  pe_init: "rw"
+  pe_dim: 9
+  pe_dim_lis: [2, 1, 3, 4, 5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+  sequence_len_lis: [2] # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]  # grid search
   use_static: False
   weight: 0.5
   discount: 1

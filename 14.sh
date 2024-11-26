@@ -2,7 +2,7 @@
 nohup  python -u  main.py \
   --dataset='ICEWS14s'\
   --relation-prediction \
-  --gpu=1 \
+  --gpu=0 \
   --long \
   --short \
   --lr=0.001 \
@@ -10,5 +10,5 @@ nohup  python -u  main.py \
   --r_fuse=gate \
   --record \
   --model_record \
- &
+ > long_pe_dim_research.log 2>&1 &
 

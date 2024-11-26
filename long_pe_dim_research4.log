@@ -1,0 +1,263 @@
+../bertintkg/data/ICEWS14s
+# Sanity Check:  entities: 7128
+# Sanity Check:  relations: 230
+# Sanity Check:  edges: 74845
+../bertintkg/data/ICEWS14s
+# Sanity Check:  entities: 7128
+# Sanity Check:  relations: 230
+# Sanity Check:  edges: 74845
+# Sanity Check:  ave node num : 226.654605, ave rel num : 92.960526, snapshots num: 0304, max edges num: 0389, min edges num: 0093, max union rate: 1.0000, min union rate: 1.0000
+# Sanity Check:  ave node num : 242.866667, ave rel num : 100.400000, snapshots num: 0030, max edges num: 0398, min edges num: 0159, max union rate: 1.0000, min union rate: 1.0000
+# Sanity Check:  ave node num : 219.677419, ave rel num : 91.935484, snapshots num: 0031, max edges num: 0357, min edges num: 0112, max union rate: 1.0000, min union rate: 1.0000
+# Sanity Check:  ave node num : 219.677419, ave rel num : 91.935484, snapshots num: 0031, max edges num: 0357, min edges num: 0112, max union rate: 1.0000, min union rate: 1.0000
+# Sanity Check:  ave node num : 219.677419, ave rel num : 91.935484, snapshots num: 0031, max edges num: 0357, min edges num: 0112, max union rate: 1.0000, min union rate: 1.0000
+# Sanity Check:  ave node num : 242.866667, ave rel num : 100.400000, snapshots num: 0030, max edges num: 0398, min edges num: 0159, max union rate: 1.0000, min union rate: 1.0000
+# Sanity Check:  ave node num : 242.866667, ave rel num : 100.400000, snapshots num: 0030, max edges num: 0398, min edges num: 0159, max union rate: 1.0000, min union rate: 1.0000
+False -------------------------------
+{'gpu': '1', 'dataset': 'ICEWS14s', 'n_layers': 2, 'self_loop': True, 'layer_norm': False, 'relation_prediction': True, 'entity_prediction': False, 'n_epochs': 20, 'lr': 0.001, 'grad_norm': 1.0, 'n_hidden': 200, 'k_hop': 2, 'task': 0.7, 'short': True, 'long': True, 'gnn': 'regcn', 'fuse': 'gate', 'r_fuse': 'gate', 'record': True, 'model_record': True, 'config': 'long_config.yaml'}
+{'h_dim': 200, 'num_hidden_layers': 2, 'decoder': 'convtranse', 'encoder': 'uvrgcn', 'sequence': 'regcn', 'short_model': 'regcn', 'pe_init': 'rw', 'pe_dim': 9, 'pe_dim_lis': [2], 'sequence_len_lis': [1], 'use_static': False, 'weight': 0.5, 'discount': 1, 'angle': 10, 'dropout': 0.2, 'num_bases': 100, 'num_basis': 100, 'self_loop': True, 'skip_connect': False, 'input_dropout': 0.2, 'hidden_dropout': 0.2, 'feat_dropout': 0.2, 'aggregation': 'none', 'entity_prediction': True, 'relation_prediction': True, 'opn': 'sub', 'num_words': 0, 'num_static_rels': 0}
+{'h_dim': 200, 'out_dim': 200, 'encoder': 'regcn', 'decoder': 'rgat_r1', 'feat_drop': 0.0, 'attn_drop': 0.0, 'a_layer_num': 2, 'd_layer_num': 3, 'max_length': 10, 'filter': False, 'low_memory': True, 'last': True, 'ori': False, 'pe_init': 'rw', 'pe_dim_lis': [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], 'pe_dim': 3, 'time_length': 365, 'time_idx': array([    0,   131,   322,   490,   626,   747,   974,  1207,  1427,
+        1683,  1936,  2053,  2218,  2496,  2715,  2964,  3229,  3472,
+        3623,  3749,  4032,  4293,  4565,  4832,  5080,  5225,  5384,
+        5639,  5876,  6144,  6429,  6683,  6811,  6949,  7193,  7466,
+        7727,  7996,  8219,  8368,  8483,  8765,  9023,  9289,  9564,
+        9826, 10008, 10132, 10389, 10666, 10932, 11210, 11471, 11655,
+       11792, 12082, 12362, 12644, 12925, 13177, 13341, 13497, 13743,
+       13997, 14242, 14478, 14706, 14849, 14991, 15240, 15514, 15802,
+       16064, 16350, 16490, 16629, 16900, 17163, 17414, 17675, 17937,
+       18075, 18205, 18475, 18744, 19006, 19278, 19528, 19667, 19810,
+       20067, 20320, 20573, 20818, 21083, 21242, 21382, 21640, 21938,
+       22222, 22475, 22719, 22859, 22982, 23286, 23562, 23798, 24035,
+       24229, 24355, 24483, 24680, 24897, 25124, 25379, 25636, 25797,
+       25957, 26162, 26442, 26728, 26929, 27156, 27298, 27458, 27719,
+       28010, 28279, 28534, 28807, 28965, 29136, 29404, 29676, 29914,
+       30180, 30456, 30611, 30736, 31042, 31369, 31660, 31963, 32227,
+       32407, 32595, 32816, 33046, 33322, 33622, 33869, 34015, 34152,
+       34401, 34665, 34938, 35203, 35466, 35628, 35765, 36036, 36322,
+       36552, 36820, 37090, 37234, 37381, 37701, 37999, 38287, 38588,
+       38867, 38992, 39122, 39426, 39673, 39924, 40180, 40423, 40564,
+       40682, 40951, 41211, 41458, 41730, 41995, 42138, 42280, 42553,
+       42831, 43076, 43313, 43543, 43668, 43811, 44064, 44317, 44556,
+       44808, 45047, 45183, 45321, 45565, 45785, 46043, 46289, 46515,
+       46630, 46749, 46972, 47186, 47413, 47658, 47864, 47987, 48116,
+       48342, 48584, 48822, 49067, 49285, 49408, 49548, 49838, 50092,
+       50354, 50566, 50793, 50911, 51050, 51311, 51578, 51804, 52043,
+       52262, 52396, 52523, 52812, 53076, 53348, 53628, 53812, 53968,
+       54099, 54372, 54664, 54949, 55213, 55441, 55591, 55753, 56044,
+       56308, 56602, 56895, 57149, 57301, 57470, 57759, 58013, 58282,
+       58556, 58823, 58977, 59141, 59438, 59730, 59982, 60251, 60506,
+       60683, 60799, 61096, 61363, 61662, 61960, 62216, 62336, 62480,
+       62722, 63020, 63283, 63553, 63787, 63943, 64094, 64364, 64646,
+       64953, 65234, 65500, 65670, 65810, 66134, 66440, 66727, 67006,
+       67237, 67382, 67522, 67822, 68105, 68401, 68643, 68903, 69045,
+       69195, 69478, 69741, 70009, 70274, 70529, 70693, 70846, 71148,
+       71427, 71726, 72025, 72284, 72449, 72589, 72917, 73214, 73514,
+       73808, 74095, 74272, 74431, 74730, 74993, 75304, 75594, 75854,
+       76008, 76189, 76495, 76779, 77080, 77331, 77570, 77732, 77908,
+       78196, 78469, 78756, 79055, 79297, 79410, 79555, 79852, 80132,
+       80393, 80644, 80868, 80989, 81123, 81372, 81621, 81802, 81928,
+       82095, 82217, 82343, 82593, 82801, 82999])}
+load data online
+Logging to results/g_1_ICEWS14s_short_True_short-model_regcn_long_True_f_gate_fr_gate_ta_0.7_gnn1_regcn_2_gnn2_rgat_r1_3_seq_regcn_1_max_length_10_fil_False_ori_Falselast_True
+use layer :uvrgcn
+activate function: <function rrelu at 0x78b8cf789300>
+pe_dim in UnionRGCNLayer==> 2
+activate function: <function rrelu at 0x78b8cf789300>
+pe_dim in UnionRGCNLayer==> 2
+use layer :uvrgcn
+activate function: <function rrelu at 0x78b8cf789300>
+pe_dim in UnionRGCNLayer==> 2
+activate function: <function rrelu at 0x78b8cf789300>
+pe_dim in UnionRGCNLayer==> 2
+Epoch 0 _ Start training:  2024-11-13 22:01:38.880626 =============================================
+Epoch 0, loss 4.6399 2024-11-13 22:08:23.104213
+	Start validating:  2024-11-13 22:08:23.104319
+	train_loss:4.6399	val_loss:3.8708	val_Mrr_raw:0.3153	val_Hits(raw)@1:0.2161	val_Hits(raw)@3:0.3444	val_Hits(raw)@10:0.5111	val_Mrr_filter:0.3257	val_Hits(filter)@1:0.2297	val_Hits(filter)@3:0.3533	val_Hits(filter)@10:0.5153
+	Start testing:  2024-11-13 22:09:06.369405
+	val_loss:3.9071	val_Mrr_raw:0.3064	val_Hits(raw)@1:0.2085	val_Hits(raw)@3:0.3333	val_Hits(raw)@10:0.5006	val_Mrr_filter:0.3130	val_Hits(filter)@1:0.2176	val_Hits(filter)@3:0.3375	val_Hits(filter)@10:0.5041
+Epoch 1 _ Start training:  2024-11-13 22:09:50.528630 =============================================
+Epoch 1, loss 3.7947 2024-11-13 22:16:39.720539
+	Start validating:  2024-11-13 22:16:39.720652
+	train_loss:3.7947	val_loss:3.5065	val_Mrr_raw:0.3807	val_Hits(raw)@1:0.2666	val_Hits(raw)@3:0.4263	val_Hits(raw)@10:0.6059	val_Mrr_filter:0.3961	val_Hits(filter)@1:0.2880	val_Hits(filter)@3:0.4382	val_Hits(filter)@10:0.6108
+	Start testing:  2024-11-13 22:17:23.315317
+	val_loss:3.5011	val_Mrr_raw:0.3769	val_Hits(raw)@1:0.2646	val_Hits(raw)@3:0.4195	val_Hits(raw)@10:0.5989	val_Mrr_filter:0.3875	val_Hits(filter)@1:0.2791	val_Hits(filter)@3:0.4281	val_Hits(filter)@10:0.6017
+Epoch 2 _ Start training:  2024-11-13 22:18:07.237660 =============================================
+Epoch 2, loss 3.4830 2024-11-13 22:24:52.835169
+	Start validating:  2024-11-13 22:24:52.835417
+	train_loss:3.4830	val_loss:3.3365	val_Mrr_raw:0.4155	val_Hits(raw)@1:0.2976	val_Hits(raw)@3:0.4669	val_Hits(raw)@10:0.6442	val_Mrr_filter:0.4325	val_Hits(filter)@1:0.3218	val_Hits(filter)@3:0.4797	val_Hits(filter)@10:0.6485
+	Start testing:  2024-11-13 22:25:36.757928
+	val_loss:3.3150	val_Mrr_raw:0.4136	val_Hits(raw)@1:0.2955	val_Hits(raw)@3:0.4626	val_Hits(raw)@10:0.6507	val_Mrr_filter:0.4262	val_Hits(filter)@1:0.3133	val_Hits(filter)@3:0.4712	val_Hits(filter)@10:0.6542
+Epoch 3 _ Start training:  2024-11-13 22:26:21.233045 =============================================
+Epoch 3, loss 3.2765 2024-11-13 22:33:05.940551
+	Start validating:  2024-11-13 22:33:05.940667
+	train_loss:3.2765	val_loss:3.2160	val_Mrr_raw:0.4363	val_Hits(raw)@1:0.3144	val_Hits(raw)@3:0.4919	val_Hits(raw)@10:0.6798	val_Mrr_filter:0.4537	val_Hits(filter)@1:0.3380	val_Hits(filter)@3:0.5056	val_Hits(filter)@10:0.6847
+	Start testing:  2024-11-13 22:33:49.475132
+	val_loss:3.1777	val_Mrr_raw:0.4379	val_Hits(raw)@1:0.3175	val_Hits(raw)@3:0.4919	val_Hits(raw)@10:0.6785	val_Mrr_filter:0.4516	val_Hits(filter)@1:0.3367	val_Hits(filter)@3:0.5008	val_Hits(filter)@10:0.6816
+Epoch 4 _ Start training:  2024-11-13 22:34:33.698089 =============================================
+Epoch 4, loss 3.1127 2024-11-13 22:41:21.966787
+	Start validating:  2024-11-13 22:41:21.967119
+	train_loss:3.1127	val_loss:3.1447	val_Mrr_raw:0.4530	val_Hits(raw)@1:0.3298	val_Hits(raw)@3:0.5135	val_Hits(raw)@10:0.6973	val_Mrr_filter:0.4720	val_Hits(filter)@1:0.3566	val_Hits(filter)@3:0.5269	val_Hits(filter)@10:0.7018
+	Start testing:  2024-11-13 22:42:07.564766
+	val_loss:3.1085	val_Mrr_raw:0.4503	val_Hits(raw)@1:0.3261	val_Hits(raw)@3:0.5088	val_Hits(raw)@10:0.6962	val_Mrr_filter:0.4639	val_Hits(filter)@1:0.3447	val_Hits(filter)@3:0.5193	val_Hits(filter)@10:0.6992
+Epoch 5 _ Start training:  2024-11-13 22:42:54.504761 =============================================
+Epoch 5, loss 2.9660 2024-11-13 22:49:44.415396
+	Start validating:  2024-11-13 22:49:44.415616
+	train_loss:2.9660	val_loss:3.1312	val_Mrr_raw:0.4554	val_Hits(raw)@1:0.3282	val_Hits(raw)@3:0.5224	val_Hits(raw)@10:0.7054	val_Mrr_filter:0.4741	val_Hits(filter)@1:0.3538	val_Hits(filter)@3:0.5372	val_Hits(filter)@10:0.7094
+	Start testing:  2024-11-13 22:50:28.502953
+	val_loss:3.0757	val_Mrr_raw:0.4618	val_Hits(raw)@1:0.3381	val_Hits(raw)@3:0.5225	val_Hits(raw)@10:0.7059	val_Mrr_filter:0.4767	val_Hits(filter)@1:0.3592	val_Hits(filter)@3:0.5326	val_Hits(filter)@10:0.7090
+Epoch 6 _ Start training:  2024-11-13 22:51:13.987634 =============================================
+Epoch 6, loss 2.8345 2024-11-13 22:58:05.651794
+	Start validating:  2024-11-13 22:58:05.651896
+	train_loss:2.8345	val_loss:3.1056	val_Mrr_raw:0.4615	val_Hits(raw)@1:0.3315	val_Hits(raw)@3:0.5330	val_Hits(raw)@10:0.7137	val_Mrr_filter:0.4805	val_Hits(filter)@1:0.3580	val_Hits(filter)@3:0.5468	val_Hits(filter)@10:0.7179
+	Start testing:  2024-11-13 22:58:49.189419
+	val_loss:3.0516	val_Mrr_raw:0.4674	val_Hits(raw)@1:0.3417	val_Hits(raw)@3:0.5297	val_Hits(raw)@10:0.7154	val_Mrr_filter:0.4816	val_Hits(filter)@1:0.3617	val_Hits(filter)@3:0.5410	val_Hits(filter)@10:0.7185
+Epoch 7 _ Start training:  2024-11-13 22:59:34.866409 =============================================
+Epoch 7, loss 2.7105 2024-11-13 23:06:24.115280
+	Start validating:  2024-11-13 23:06:24.115363
+	train_loss:2.7105	val_loss:3.0815	val_Mrr_raw:0.4727	val_Hits(raw)@1:0.3433	val_Hits(raw)@3:0.5429	val_Hits(raw)@10:0.7229	val_Mrr_filter:0.4922	val_Hits(filter)@1:0.3703	val_Hits(filter)@3:0.5574	val_Hits(filter)@10:0.7271
+	Start testing:  2024-11-13 23:07:07.899081
+	val_loss:3.0363	val_Mrr_raw:0.4756	val_Hits(raw)@1:0.3493	val_Hits(raw)@3:0.5425	val_Hits(raw)@10:0.7224	val_Mrr_filter:0.4906	val_Hits(filter)@1:0.3703	val_Hits(filter)@3:0.5519	val_Hits(filter)@10:0.7253
+Epoch 8 _ Start training:  2024-11-13 23:07:52.397523 =============================================
+Epoch 8, loss 2.5972 2024-11-13 23:14:48.264090
+	Start validating:  2024-11-13 23:14:48.282187
+	train_loss:2.5972	val_loss:3.0942	val_Mrr_raw:0.4762	val_Hits(raw)@1:0.3463	val_Hits(raw)@3:0.5474	val_Hits(raw)@10:0.7267	val_Mrr_filter:0.4965	val_Hits(filter)@1:0.3747	val_Hits(filter)@3:0.5614	val_Hits(filter)@10:0.7310
+	Start testing:  2024-11-13 23:15:33.128391
+	val_loss:3.0554	val_Mrr_raw:0.4788	val_Hits(raw)@1:0.3541	val_Hits(raw)@3:0.5457	val_Hits(raw)@10:0.7236	val_Mrr_filter:0.4933	val_Hits(filter)@1:0.3743	val_Hits(filter)@3:0.5555	val_Hits(filter)@10:0.7268
+Epoch 9 _ Start training:  2024-11-13 23:16:18.226160 =============================================
+Epoch 9, loss 2.4941 2024-11-13 23:23:11.439748
+	Start validating:  2024-11-13 23:23:11.439988
+	train_loss:2.4941	val_loss:3.0943	val_Mrr_raw:0.4787	val_Hits(raw)@1:0.3488	val_Hits(raw)@3:0.5498	val_Hits(raw)@10:0.7304	val_Mrr_filter:0.4982	val_Hits(filter)@1:0.3760	val_Hits(filter)@3:0.5642	val_Hits(filter)@10:0.7347
+	Start testing:  2024-11-13 23:23:55.071556
+	val_loss:3.0467	val_Mrr_raw:0.4833	val_Hits(raw)@1:0.3597	val_Hits(raw)@3:0.5464	val_Hits(raw)@10:0.7275	val_Mrr_filter:0.4980	val_Hits(filter)@1:0.3797	val_Hits(filter)@3:0.5573	val_Hits(filter)@10:0.7309
+Epoch 10 _ Start training:  2024-11-13 23:24:39.137118 =============================================
+Epoch 10, loss 2.4003 2024-11-13 23:31:35.400309
+	Start validating:  2024-11-13 23:31:35.400399
+	train_loss:2.4003	val_loss:3.1217	val_Mrr_raw:0.4827	val_Hits(raw)@1:0.3548	val_Hits(raw)@3:0.5534	val_Hits(raw)@10:0.7310	val_Mrr_filter:0.5030	val_Hits(filter)@1:0.3835	val_Hits(filter)@3:0.5664	val_Hits(filter)@10:0.7358
+	Start testing:  2024-11-13 23:32:18.946398
+	val_loss:3.0705	val_Mrr_raw:0.4870	val_Hits(raw)@1:0.3641	val_Hits(raw)@3:0.5511	val_Hits(raw)@10:0.7262	val_Mrr_filter:0.5022	val_Hits(filter)@1:0.3858	val_Hits(filter)@3:0.5621	val_Hits(filter)@10:0.7303
+Epoch 11 _ Start training:  2024-11-13 23:33:02.969948 =============================================
+Epoch 11, loss 2.3114 2024-11-13 23:39:49.788437
+	Start validating:  2024-11-13 23:39:49.788657
+	train_loss:2.3114	val_loss:3.1256	val_Mrr_raw:0.4840	val_Hits(raw)@1:0.3551	val_Hits(raw)@3:0.5548	val_Hits(raw)@10:0.7308	val_Mrr_filter:0.5044	val_Hits(filter)@1:0.3837	val_Hits(filter)@3:0.5685	val_Hits(filter)@10:0.7351
+	Start testing:  2024-11-13 23:40:33.128837
+	val_loss:3.0759	val_Mrr_raw:0.4868	val_Hits(raw)@1:0.3635	val_Hits(raw)@3:0.5518	val_Hits(raw)@10:0.7274	val_Mrr_filter:0.5013	val_Hits(filter)@1:0.3840	val_Hits(filter)@3:0.5622	val_Hits(filter)@10:0.7314
+Epoch 12 _ Start training:  2024-11-13 23:41:17.131201 =============================================
+Epoch 12, loss 2.2357 2024-11-13 23:48:03.779800
+	Start validating:  2024-11-13 23:48:03.779923
+	train_loss:2.2357	val_loss:3.1522	val_Mrr_raw:0.4845	val_Hits(raw)@1:0.3566	val_Hits(raw)@3:0.5539	val_Hits(raw)@10:0.7297	val_Mrr_filter:0.5043	val_Hits(filter)@1:0.3839	val_Hits(filter)@3:0.5696	val_Hits(filter)@10:0.7339
+	Start testing:  2024-11-13 23:48:48.703687
+	val_loss:3.0929	val_Mrr_raw:0.4887	val_Hits(raw)@1:0.3663	val_Hits(raw)@3:0.5551	val_Hits(raw)@10:0.7243	val_Mrr_filter:0.5034	val_Hits(filter)@1:0.3869	val_Hits(filter)@3:0.5647	val_Hits(filter)@10:0.7285
+Epoch 13 _ Start training:  2024-11-13 23:49:35.305867 =============================================
+Epoch 13, loss 2.1660 2024-11-13 23:56:28.168725
+	Start validating:  2024-11-13 23:56:28.168970
+	train_loss:2.1660	val_loss:3.1810	val_Mrr_raw:0.4843	val_Hits(raw)@1:0.3559	val_Hits(raw)@3:0.5574	val_Hits(raw)@10:0.7281	val_Mrr_filter:0.5047	val_Hits(filter)@1:0.3851	val_Hits(filter)@3:0.5715	val_Hits(filter)@10:0.7330
+	Start testing:  2024-11-13 23:57:11.757827
+	val_loss:3.1289	val_Mrr_raw:0.4876	val_Hits(raw)@1:0.3648	val_Hits(raw)@3:0.5539	val_Hits(raw)@10:0.7249	val_Mrr_filter:0.5024	val_Hits(filter)@1:0.3857	val_Hits(filter)@3:0.5642	val_Hits(filter)@10:0.7280
+Epoch 14 _ Start training:  2024-11-13 23:57:58.121576 =============================================
+Epoch 14, loss 2.1010 2024-11-14 00:04:56.131405
+	Start validating:  2024-11-14 00:04:56.131502
+	train_loss:2.1010	val_loss:3.2287	val_Mrr_raw:0.4861	val_Hits(raw)@1:0.3584	val_Hits(raw)@3:0.5567	val_Hits(raw)@10:0.7328	val_Mrr_filter:0.5071	val_Hits(filter)@1:0.3890	val_Hits(filter)@3:0.5701	val_Hits(filter)@10:0.7365
+	Start testing:  2024-11-14 00:05:42.725803
+	val_loss:3.1814	val_Mrr_raw:0.4877	val_Hits(raw)@1:0.3666	val_Hits(raw)@3:0.5536	val_Hits(raw)@10:0.7228	val_Mrr_filter:0.5021	val_Hits(filter)@1:0.3869	val_Hits(filter)@3:0.5629	val_Hits(filter)@10:0.7266
+Epoch 15 _ Start training:  2024-11-14 00:06:28.534663 =============================================
+Epoch 15, loss 2.0468 2024-11-14 00:13:19.784232
+	Start validating:  2024-11-14 00:13:19.784358
+	train_loss:2.0468	val_loss:3.2640	val_Mrr_raw:0.4843	val_Hits(raw)@1:0.3575	val_Hits(raw)@3:0.5551	val_Hits(raw)@10:0.7283	val_Mrr_filter:0.5041	val_Hits(filter)@1:0.3852	val_Hits(filter)@3:0.5700	val_Hits(filter)@10:0.7326
+	Start testing:  2024-11-14 00:14:03.581783
+	val_loss:3.2131	val_Mrr_raw:0.4834	val_Hits(raw)@1:0.3603	val_Hits(raw)@3:0.5506	val_Hits(raw)@10:0.7209	val_Mrr_filter:0.4973	val_Hits(filter)@1:0.3795	val_Hits(filter)@3:0.5598	val_Hits(filter)@10:0.7244
+Epoch 16 _ Start training:  2024-11-14 00:14:47.785569 =============================================
+Epoch 16, loss 1.9923 2024-11-14 00:21:35.693708
+	Start validating:  2024-11-14 00:21:35.693825
+	train_loss:1.9923	val_loss:3.3195	val_Mrr_raw:0.4807	val_Hits(raw)@1:0.3538	val_Hits(raw)@3:0.5517	val_Hits(raw)@10:0.7222	val_Mrr_filter:0.5007	val_Hits(filter)@1:0.3821	val_Hits(filter)@3:0.5654	val_Hits(filter)@10:0.7269
+	Start testing:  2024-11-14 00:22:19.167233
+	val_loss:3.2662	val_Mrr_raw:0.4836	val_Hits(raw)@1:0.3630	val_Hits(raw)@3:0.5494	val_Hits(raw)@10:0.7168	val_Mrr_filter:0.4976	val_Hits(filter)@1:0.3826	val_Hits(filter)@3:0.5591	val_Hits(filter)@10:0.7203
+Epoch 17 _ Start training:  2024-11-14 00:23:03.095216 =============================================
+Epoch 17, loss 1.9432 2024-11-14 00:29:56.952424
+	Start validating:  2024-11-14 00:29:56.952573
+	train_loss:1.9432	val_loss:3.3364	val_Mrr_raw:0.4816	val_Hits(raw)@1:0.3553	val_Hits(raw)@3:0.5544	val_Hits(raw)@10:0.7244	val_Mrr_filter:0.5017	val_Hits(filter)@1:0.3834	val_Hits(filter)@3:0.5699	val_Hits(filter)@10:0.7277
+	Start testing:  2024-11-14 00:30:40.346588
+	val_loss:3.2782	val_Mrr_raw:0.4815	val_Hits(raw)@1:0.3584	val_Hits(raw)@3:0.5488	val_Hits(raw)@10:0.7181	val_Mrr_filter:0.4956	val_Hits(filter)@1:0.3779	val_Hits(filter)@3:0.5591	val_Hits(filter)@10:0.7217
+Epoch 18 _ Start training:  2024-11-14 00:31:24.622251 =============================================
+Epoch 18, loss 1.8936 2024-11-14 00:38:13.809349
+	Start validating:  2024-11-14 00:38:13.809551
+	train_loss:1.8936	val_loss:3.3313	val_Mrr_raw:0.4819	val_Hits(raw)@1:0.3547	val_Hits(raw)@3:0.5526	val_Hits(raw)@10:0.7250	val_Mrr_filter:0.5027	val_Hits(filter)@1:0.3851	val_Hits(filter)@3:0.5660	val_Hits(filter)@10:0.7284
+	Start testing:  2024-11-14 00:38:59.890827
+	val_loss:3.2987	val_Mrr_raw:0.4804	val_Hits(raw)@1:0.3590	val_Hits(raw)@3:0.5450	val_Hits(raw)@10:0.7156	val_Mrr_filter:0.4940	val_Hits(filter)@1:0.3782	val_Hits(filter)@3:0.5551	val_Hits(filter)@10:0.7197
+Epoch 19 _ Start training:  2024-11-14 00:39:43.882137 =============================================
+Epoch 19, loss 1.8570 2024-11-14 00:46:35.100649
+	Start validating:  2024-11-14 00:46:35.100736
+	train_loss:1.8570	val_loss:3.3566	val_Mrr_raw:0.4788	val_Hits(raw)@1:0.3535	val_Hits(raw)@3:0.5476	val_Hits(raw)@10:0.7229	val_Mrr_filter:0.4977	val_Hits(filter)@1:0.3796	val_Hits(filter)@3:0.5623	val_Hits(filter)@10:0.7265
+	Start testing:  2024-11-14 00:47:19.490440
+	val_loss:3.2963	val_Mrr_raw:0.4796	val_Hits(raw)@1:0.3584	val_Hits(raw)@3:0.5450	val_Hits(raw)@10:0.7158	val_Mrr_filter:0.4928	val_Hits(filter)@1:0.3766	val_Hits(filter)@3:0.5559	val_Hits(filter)@10:0.7202
+Logging to results/g_1_ICEWS14s_short_True_short-model_regcn_long_True_f_gate_fr_gate_ta_0.7_gnn1_regcn_2_gnn2_rgat_r1_3_seq_regcn_1_max_length_10_fil_False_ori_Falselast_True
+use layer :uvrgcn
+activate function: <function rrelu at 0x78b8cf789300>
+pe_dim in UnionRGCNLayer==> 2
+activate function: <function rrelu at 0x78b8cf789300>
+pe_dim in UnionRGCNLayer==> 2
+use layer :uvrgcn
+activate function: <function rrelu at 0x78b8cf789300>
+pe_dim in UnionRGCNLayer==> 2
+activate function: <function rrelu at 0x78b8cf789300>
+pe_dim in UnionRGCNLayer==> 2
+Epoch 0 _ Start training:  2024-11-14 00:48:04.602799 =============================================
+Epoch 0, loss 4.6309 2024-11-14 00:54:49.055091
+	Start validating:  2024-11-14 00:54:49.055294
+	train_loss:4.6309	val_loss:3.8182	val_Mrr_raw:0.3167	val_Hits(raw)@1:0.2130	val_Hits(raw)@3:0.3492	val_Hits(raw)@10:0.5211	val_Mrr_filter:0.3278	val_Hits(filter)@1:0.2283	val_Hits(filter)@3:0.3589	val_Hits(filter)@10:0.5245
+	Start testing:  2024-11-14 00:55:32.873380
+	val_loss:3.8404	val_Mrr_raw:0.3081	val_Hits(raw)@1:0.2074	val_Hits(raw)@3:0.3340	val_Hits(raw)@10:0.5064	val_Mrr_filter:0.3146	val_Hits(filter)@1:0.2160	val_Hits(filter)@3:0.3388	val_Hits(filter)@10:0.5106
+Epoch 1 _ Start training:  2024-11-14 00:56:17.249386 =============================================
+Epoch 1, loss 3.7797 2024-11-14 01:03:01.231773
+	Start validating:  2024-11-14 01:03:01.231965
+	train_loss:3.7797	val_loss:3.5436	val_Mrr_raw:0.3740	val_Hits(raw)@1:0.2634	val_Hits(raw)@3:0.4154	val_Hits(raw)@10:0.5909	val_Mrr_filter:0.3887	val_Hits(filter)@1:0.2838	val_Hits(filter)@3:0.4259	val_Hits(filter)@10:0.5951
+	Start testing:  2024-11-14 01:03:44.818310
+	val_loss:3.5229	val_Mrr_raw:0.3699	val_Hits(raw)@1:0.2595	val_Hits(raw)@3:0.4103	val_Hits(raw)@10:0.5887	val_Mrr_filter:0.3798	val_Hits(filter)@1:0.2727	val_Hits(filter)@3:0.4177	val_Hits(filter)@10:0.5925
+Epoch 2 _ Start training:  2024-11-14 01:04:28.843452 =============================================
+Epoch 2, loss 3.4944 2024-11-14 01:11:15.947466
+	Start validating:  2024-11-14 01:11:15.947568
+	train_loss:3.4944	val_loss:3.3437	val_Mrr_raw:0.4045	val_Hits(raw)@1:0.2868	val_Hits(raw)@3:0.4555	val_Hits(raw)@10:0.6381	val_Mrr_filter:0.4205	val_Hits(filter)@1:0.3090	val_Hits(filter)@3:0.4676	val_Hits(filter)@10:0.6424
+	Start testing:  2024-11-14 01:12:00.178878
+	val_loss:3.3207	val_Mrr_raw:0.4029	val_Hits(raw)@1:0.2882	val_Hits(raw)@3:0.4466	val_Hits(raw)@10:0.6313	val_Mrr_filter:0.4143	val_Hits(filter)@1:0.3038	val_Hits(filter)@3:0.4558	val_Hits(filter)@10:0.6354
+Epoch 3 _ Start training:  2024-11-14 01:12:44.703420 =============================================
+Epoch 3, loss 3.2941 2024-11-14 01:19:37.797472
+	Start validating:  2024-11-14 01:19:37.797693
+	train_loss:3.2941	val_loss:3.2409	val_Mrr_raw:0.4301	val_Hits(raw)@1:0.3094	val_Hits(raw)@3:0.4860	val_Hits(raw)@10:0.6723	val_Mrr_filter:0.4474	val_Hits(filter)@1:0.3330	val_Hits(filter)@3:0.4984	val_Hits(filter)@10:0.6765
+	Start testing:  2024-11-14 01:20:21.773556
+	val_loss:3.2100	val_Mrr_raw:0.4271	val_Hits(raw)@1:0.3083	val_Hits(raw)@3:0.4812	val_Hits(raw)@10:0.6653	val_Mrr_filter:0.4398	val_Hits(filter)@1:0.3255	val_Hits(filter)@3:0.4917	val_Hits(filter)@10:0.6690
+Epoch 4 _ Start training:  2024-11-14 01:21:07.881566 =============================================
+Epoch 4, loss 3.1245 2024-11-14 01:27:55.966498
+	Start validating:  2024-11-14 01:27:55.966719
+	train_loss:3.1245	val_loss:3.1729	val_Mrr_raw:0.4423	val_Hits(raw)@1:0.3191	val_Hits(raw)@3:0.5040	val_Hits(raw)@10:0.6882	val_Mrr_filter:0.4604	val_Hits(filter)@1:0.3440	val_Hits(filter)@3:0.5159	val_Hits(filter)@10:0.6925
+	Start testing:  2024-11-14 01:28:40.217293
+	val_loss:3.1389	val_Mrr_raw:0.4432	val_Hits(raw)@1:0.3229	val_Hits(raw)@3:0.4986	val_Hits(raw)@10:0.6812	val_Mrr_filter:0.4571	val_Hits(filter)@1:0.3422	val_Hits(filter)@3:0.5085	val_Hits(filter)@10:0.6842
+Epoch 5 _ Start training:  2024-11-14 01:29:25.055631 =============================================
+Epoch 5, loss 2.9817 2024-11-14 01:36:13.581755
+	Start validating:  2024-11-14 01:36:13.582093
+	train_loss:2.9817	val_loss:3.1230	val_Mrr_raw:0.4566	val_Hits(raw)@1:0.3306	val_Hits(raw)@3:0.5199	val_Hits(raw)@10:0.7049	val_Mrr_filter:0.4749	val_Hits(filter)@1:0.3555	val_Hits(filter)@3:0.5352	val_Hits(filter)@10:0.7083
+	Start testing:  2024-11-14 01:36:57.817361
+	val_loss:3.0835	val_Mrr_raw:0.4545	val_Hits(raw)@1:0.3329	val_Hits(raw)@3:0.5102	val_Hits(raw)@10:0.6998	val_Mrr_filter:0.4683	val_Hits(filter)@1:0.3520	val_Hits(filter)@3:0.5210	val_Hits(filter)@10:0.7032
+Epoch 6 _ Start training:  2024-11-14 01:37:44.263990 =============================================
+Epoch 6, loss 2.8455 2024-11-14 01:44:29.816394
+	Start validating:  2024-11-14 01:44:29.816595
+	train_loss:2.8455	val_loss:3.0941	val_Mrr_raw:0.4672	val_Hits(raw)@1:0.3430	val_Hits(raw)@3:0.5317	val_Hits(raw)@10:0.7108	val_Mrr_filter:0.4860	val_Hits(filter)@1:0.3687	val_Hits(filter)@3:0.5450	val_Hits(filter)@10:0.7147
+	Start testing:  2024-11-14 01:45:13.304769
+	val_loss:3.0552	val_Mrr_raw:0.4629	val_Hits(raw)@1:0.3398	val_Hits(raw)@3:0.5230	val_Hits(raw)@10:0.7046	val_Mrr_filter:0.4773	val_Hits(filter)@1:0.3597	val_Hits(filter)@3:0.5337	val_Hits(filter)@10:0.7076
+Epoch 7 _ Start training:  2024-11-14 01:45:57.195932 =============================================
+Epoch 7, loss 2.7214 2024-11-14 01:52:45.267692
+	Start validating:  2024-11-14 01:52:45.267915
+	train_loss:2.7214	val_loss:3.0855	val_Mrr_raw:0.4711	val_Hits(raw)@1:0.3463	val_Hits(raw)@3:0.5326	val_Hits(raw)@10:0.7203	val_Mrr_filter:0.4904	val_Hits(filter)@1:0.3734	val_Hits(filter)@3:0.5467	val_Hits(filter)@10:0.7237
+	Start testing:  2024-11-14 01:53:31.258398
+	val_loss:3.0422	val_Mrr_raw:0.4688	val_Hits(raw)@1:0.3438	val_Hits(raw)@3:0.5313	val_Hits(raw)@10:0.7141	val_Mrr_filter:0.4835	val_Hits(filter)@1:0.3643	val_Hits(filter)@3:0.5410	val_Hits(filter)@10:0.7177
+Epoch 8 _ Start training:  2024-11-14 01:54:16.250906 =============================================
+Epoch 8, loss 2.6068 2024-11-14 02:01:09.692784
+	Start validating:  2024-11-14 02:01:09.692986
+	train_loss:2.6068	val_loss:3.1088	val_Mrr_raw:0.4735	val_Hits(raw)@1:0.3447	val_Hits(raw)@3:0.5446	val_Hits(raw)@10:0.7213	val_Mrr_filter:0.4936	val_Hits(filter)@1:0.3733	val_Hits(filter)@3:0.5576	val_Hits(filter)@10:0.7256
+	Start testing:  2024-11-14 02:01:53.691417
+	val_loss:3.0691	val_Mrr_raw:0.4744	val_Hits(raw)@1:0.3497	val_Hits(raw)@3:0.5376	val_Hits(raw)@10:0.7158	val_Mrr_filter:0.4890	val_Hits(filter)@1:0.3706	val_Hits(filter)@3:0.5486	val_Hits(filter)@10:0.7193
+Epoch 9 _ Start training:  2024-11-14 02:02:37.738670 =============================================
+Epoch 9, loss 2.5011 2024-11-14 02:09:25.600837
+	Start validating:  2024-11-14 02:09:25.601018
+	train_loss:2.5011	val_loss:3.0833	val_Mrr_raw:0.4771	val_Hits(raw)@1:0.3484	val_Hits(raw)@3:0.5480	val_Hits(raw)@10:0.7247	val_Mrr_filter:0.4969	val_Hits(filter)@1:0.3764	val_Hits(filter)@3:0.5611	val_Hits(filter)@10:0.7293
+	Start testing:  2024-11-14 02:10:09.445149
+	val_loss:3.0549	val_Mrr_raw:0.4765	val_Hits(raw)@1:0.3525	val_Hits(raw)@3:0.5422	val_Hits(raw)@10:0.7163	val_Mrr_filter:0.4912	val_Hits(filter)@1:0.3731	val_Hits(filter)@3:0.5516	val_Hits(filter)@10:0.7190
+Epoch 10 _ Start training:  2024-11-14 02:10:53.684968 =============================================

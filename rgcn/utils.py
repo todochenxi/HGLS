@@ -10,7 +10,9 @@ import dgl
 from tqdm import tqdm
 import rgcn.knowledge_graph as knwlgrh
 from collections import defaultdict
-
+import sys
+sys.path.append('../')
+from pos_encoder import lap_positional_encoding_tkg, rw_positional_encoding_tkg
 
 #######################################################################
 #
@@ -95,7 +97,7 @@ def r2e(triplets, num_rels):
     return uniq_r, r_len, e_idx
 
 
-def build_sub_graph(num_nodes, num_rels, triples, device):
+def build_sub_graph(num_nodes, num_rels, triples, device, pe_init="rw", pe_dim=3, all_list=None):
     """
     :param node_id: node id in the large graph
     :param num_rels: number of relation
@@ -130,6 +132,12 @@ def build_sub_graph(num_nodes, num_rels, triples, device):
     g.r_len = r_len
     g.to(device)
     g.r_to_e = torch.from_numpy(np.array(r_to_e))
+    if all_list != None:
+        g.ndata["global_p"] = all_list.ndata["p"]
+    if pe_init == "rw":
+        return rw_positional_encoding_tkg(g, pos_enc_dim=pe_dim)
+    elif pe_init == "lap":
+        return lap_positional_encoding_tkg(g, pos_enc_dim=pe_dim)
     return g
 
 def get_total_rank(test_triples, score, all_ans, eval_bz, rel_predict=0):
@@ -362,7 +370,7 @@ def load_data(dataset, bfs_level=3, relabel=False):
         return knwlgrh.load_link(dataset)
     elif dataset in ['ICEWS18', 'ICEWS14', "GDELT", "SMALL", "ICEWS14s", "ICEWS05-15","YAGO",
                      "WIKI"]:
-        return knwlgrh.load_from_local("../RE-GCN/data", dataset)
+        return knwlgrh.load_from_local("../bertintkg/data", dataset)
     else:
         raise ValueError('Unknown dataset: {}'.format(dataset))
 
